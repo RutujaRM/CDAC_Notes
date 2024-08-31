@@ -1,0 +1,302 @@
+1. CallableStatement :
+It is used when you want to use the database stored procedures. CallableStatement can accept runtime input parameters.
+
+
+
+
+2. PreparedStatement :
+It is used when you want to use SQL statements many times. The PreparedStatement interface accepts input parameters at runtime
+
+
+1. Statement : 
+It is used for accessing your database. Statement interface cannot accept parameters and useful when you are using static SQL statements at runtime. If you want to run SQL query only once then this interface is preferred over PreparedStatement. 
+
+
+Differance :-
+CallableStatement :- It is used when the stored procedures are to be executed,You can pass 3 types of parameter IN, OUT, INOUT.,Used to execute functions.,Performance is very high.Used to call the stored procedures.It extends PreparedStatement interface.No protocol is used for communication.
+
+
+PreparedStatement :- It is used when SQL query is to be executed multiple times.,You can pass any type of parameters at runtime.Used for the queries which are to be executed multiple times,Performance is better than Statement,Used to execute dynamic SQL queries,It extends Statement Interface,Protocol is used for communication.
+
+
+java.util.date contains both date and time. Whereas, java.sql.date contains only date.
+
+
+ PreparedStatement in Java improves performance and also prevents from SQL injection.
+
+ java.sql.Time contains only time. Whereas, java.sql.TimeStamp contains both time and date.
+
+ CallableStatement is used in JDBC to call stored procedure from Java program.
+
+setMaxRows(int i) method is used to limit the number of rows that the database returns from the query.
+
+rollback() method is used to rollback the transaction. It will rollback all the changes made by the transaction.
+
+
+
+
+
+ What are the major components of the JDBC?
+
+DriverManager, Driver, Connection, Statement, and ResultSet
+
+
+
+The JDBC thin driver is a pure Java driver. It is also known as Type-4 Driver. It is platform-independent so it does not require any additional Oracle software on the client-side. It communicates with the server using SQL *Net to access Oracle Database.
+
+ Which of the following method is static and synchronized in JDBC API?
+
+getConnection()
+
+8) Which methods are required to load a database driver in JDBC?
+registerDriver()
+forName()
+
+
+ What does setAutoCommit(false) do?
+It explicitly commits the transaction.
+
+Stored procedure can be called by using the ????..?
+Statement
+
+
+What should be the correct order to close the database resource?What should be the correct order to close the database resource?
+ResultSet, Statements, and then Connection
+
+
+
+16) Which JDBC driver can be used in servlet and applet both?
+
+
+ Type 3 driver follows the three-tier approach which is used to access the databases. The JDBC clients use standard network sockets to communicate with a middleware application server. In a Type 4 driver, a pure Java-based driver that communicates directly with the vendor's database through a socket connection.
+
+
+ There are three types of ResultSet object:
+
+TYPE_FORWARD_ONLY: This is the default type and the cursor can only move forward in the result set.
+TYPE_SCROLL_INSENSITIVE: The cursor can move forward and backward, and the result set is not sensitive to changes made by others to the database after the result set was created.
+TYPE_SCROLL_SENSITIVE: The cursor can move forward and backward, and the result set is sensitive to changes made by others to the database after the result set was created.
+Based on the concurrency there are two types of ResultSet object.
+
+CONCUR_READ_ONLY: The ResultSet is read-only, this is the default concurrency type.
+CONCUR_UPDATABLE: We can use the ResultSet update method to update the rows data.
+
+
+
+What is blob in the following statement?
+
+create table profilepic(photo blob);  
+ans=data type
+
+
+ Which data type is used to store files in the database table?
+CLOB
+
+
+ Which statement(s) is/ are true about transactions?
+i. A transaction is a set of one or more SQL statements that make up a logical unit of work.
+
+ii. A transaction ends with either a commit or a rollback, depending on whether there are any problems with data consistency or data concurrency.
+iv. To avoid conflicts during a transaction, a DBMS uses locks, mechanisms for blocking access by others to the data that is being accessed by the transaction.
+
+
+ JDBC API supports____________ and __________ architecture model for accessing the database.
+Two-tier
+Three-tier
+
+
+
+
+
+How many stages are used by Java programmers while using JDBC in their programs?
+6
+Register the driver
+Connecting to a database
+Preparing SQL statements in Java
+Executing the SQL statements on the database
+Retrieving the results
+Closing the connection
+
+
+Which of the following is the correct to register a JdbcOdbcDriver?
+jdbc.odbc.JdbcOdbcDriver obj = new sun.jdbc.odbc.JdbcOdbcDriver();
+
+
+ How many ways to register a driver?
+4
+Driver
+registerDriver() 
+forName()
+getProperty() 
+
+
+Identify the DSN in the following statement:
+
+DriverManager.getConnection("jdbc:odbc:oradsn", "scott", "tiger")  
+
+ans=oradsn
+
+
+
+ Which statement is correct if we want to connect the Oracle database using the thin driver provided by Oracle Corp.?
+getConnection("jdbc::thin@localhost:1521:oracle", "scott", "tiger");
+
+
+
+how many statement objects can be created using a Connection?
+ans=multiple
+
+ Which of the following interface provides the commit() and rollback() methods?
+Connection Interface
+
+
+) Are ResultSets updateable?
+Yes, but only if we indicate a concurrency strategy when executing the statement, and if the driver and database support this option.
+
+
+Which of the following driver converts the JDBC calls into database-specific calls?
+Native API-partly Java Driver (Type 2)
+
+
+ DatabaseMetaData interface is used to get?
+Comprehensive information about the database as a whole.
+
+  									
+												SERVLET 
+
+
+
+
+
+
+
+How constructor can be used for a servlet?
+ Initialization and Constructor function
+:-We cannot declare constructors for interface in Java. This means we cannot enforce this requirement to any class which implements Servlet interface.
+Also, Servlet requires ServletConfig object for initialization which is created by container.
+
+
+ServletConfig object is created after the constructor is called and before init() is called. So, servlet init parameters cannot be accessed in the constructor.
+
+
+Which of the following code retrieves the body of the request as binary data?
+ DataInputStream data = request.getInputStream()
+
+
+Which of the following is used for session migration?
+a) Persisting the session in database
+
+Which of the following leads to high network traffic?
+a) URL rewriting
+
+Which of the following is true about session?
+All users connect to the same session
+All users have same session variable
+d) New session cannot be created for a new user
+
+
+
+
+
+8. How can we invalidate a session?
+b) session.invalidate()
+
+10. Which object is used by spring for authentication?
+d) SecurityContextHolder
+
+
+
+Which object of HttpSession can be used to view and manipulate information about a session?
+a. session identifier
+b. creation time
+c. last accessed time
+ANSWER: All mentioned above
+
+
+The sendRedirect() method of HttpServletResponse interface can be used to redirect response to another resource, it may be servlet, jsp or html file.
+
+
+6)   Which of these ways used to communicate from an applet to servlet.
+
+a. RMI Communication
+b. HTTP Communication
+c. Socket Communication
+
+
+ Which type of ServletEngine is a server that includes built-in support for servlets?
+ Standalone ServletEngine
+
+
+ What type of servlets use these methods doGet(), doPost(),doHead, doDelete(), doTrace()?
+HttpServlets
+
+ 
+
+Which cookie it is valid for single session only and it is removed each time when the user closes the browser?
+ Non-persistent cookie
+
+
+
+
+Servlets handle multiple simultaneous requests by using threads.
+
+
+Which method is used to send the same request and response objects to another servlet in RequestDispacher ?
+:-forward()
+
+
+
+Which packages represent interfaces and classes for servlet API?
+a. javax.servlet
+b. javax.servlet.http
+
+Which class can handle any type of request so that it is protocol-independent?
+GenericServlet
+
+
+
+ Which HTTP Request method is non-idempotent?
+post
+
+
+
+Which object is created by the web container at time of deploying the project?
+ServletContext
+
+   Which method in session tracking is used in a bit of information that is sent by a web server to a browser and which can later be read back from that browser?
+cookies
+
+
+ Which one of the following scopes does the attribute in servlet is an object that can be set, get or removed?
+- Published on 13 Jul 15
+
+a. session scope
+b. request scope
+c. application scope
+
+
+
+
+   Which are the examples of Application Server?
+c. JBoss
+d. Weblogic
+
+
+
+
+In the following statements identify the disadvantages of CGI?
+
+
+a. If number of clients increases, it takes more time for sending response
+b. For each request, it starts a process and Web server is limited to start processes
+c. It uses platform dependent language e.g. C, C++, perl
+
+
+Common Gateway Interface (CGI)  .
+
+The Common Gateway Interface (CGI) provides the middleware between WWW servers and external databases and information sources. The World Wide Web Consortium (W3C) defined the Common Gateway Interface (CGI) and also defined how a program interacts with a Hyper Text Transfer Protocol (HTTP) server. The Web server typically passes the form information to a small application program that processes the data and may send back a confirmation message. This process or convention for passing data back and forth between the server and the application is called the common gateway interface (CGI). 
+
+
+
+
+
