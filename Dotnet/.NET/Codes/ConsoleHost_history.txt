@@ -1,0 +1,111 @@
+wsl --install
+wsl --install-d Ubuntu-20.04
+wsl.exe
+exit
+npm start
+npm i -g json-server
+npm start
+cd src
+cd .\database\
+json-server --watch .\db.json--port 4000
+node 1.js
+node server.js
+noed server.js
+node server.js
+npm init -y
+cls
+npm init -y
+npm start
+npm install express
+npm start
+npm init -y
+npm install express
+npm start
+javac fact.java
+cmd
+Get-NetTCPConnection
+Get-NetTCPConnection -State Listen
+netsh interface portproxy set v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=127.0.0.1
+netsh interface portproxy set v4tov4 listenport=8080 listenaddress=0.0.0.0 connectport=8080 connectaddress=$(wsl hostname -I)
+netsh interface portproxy show v4tov4
+ping 172.28.43.105
+ping 192.168.24.31
+netstat -an -p tcp
+netsh interface portproxy show all
+echo $profile
+mkdir C:\Users\CDAC\Documents\WindowsPowerShell
+Set-ExecutionPolicy Unrestricted
+notepad $profile
+ls
+ildasm
+ilasm
+dotnet --version
+echo $PATH
+echo path
+path
+Invoke-WebRequest -Uri cdaclab.bkc.met.edu/shared/dotnet/ilasm.exe -OutFile $HOME/.dotnet/tools
+ls C:\Users\CDAC\.dotnet\tools\
+Invoke-WebRequest -Uri cdaclab.bkc.met.edu/shared/dotnet/ilasm.exe -OutFile $HOME/.dotnet/tools/ilasm.exe
+ilasm
+rm $HOME/.dotnet/tools/ilasm.exe
+ilasm
+exit
+mkdir $HOME/.dotnet/tools
+rmdir $HOME/.dotnet/tools
+exit
+cd ..\Testing\DotNet\Language\Basics\PrimitiveTypeTest\
+ls
+cd .\DemoApp\
+notepad .\DemoApp.csproj
+dir
+code .
+dotnet --version
+mkdir Language
+cd .\Language\
+mkdir Basics
+cd .\Basics\
+notepad Hello.cs
+Invoke-WebRequest -Uri cdaclab.bkc.met.edu/shared/dotnet/dotnet-csc.cmd -OutFile dotnet-csc.cmd
+ls
+.\dotnet-csc.cmd .\Hello.cs
+ls
+notepad.exe .\Hello.runtimeconfig.json
+dotnet .\Hello.dll
+cd .\Language\Basics\
+ls
+notepad Hello.cs
+:history >> cmd201222_m.txt
+history
+ls
+mkdir PrimitiveTypeTest
+cd .\PrimitiveTypeTest\
+mkdir DemoApp
+cd .\DemoApp\
+notepad Program.cs
+notepad DemoApp.csproj
+dotnet build
+dir
+dotnet .\bin\Debug\net7.0\DemoApp.dll
+ls .\bin\Debug\net7.0\
+.\bin\Debug\net7.0\DemoApp.exe
+.\bin\Debug\net7.0\DemoApp
+dotnet clean
+.\bin\Debug\net7.0\DemoApp.exe
+dotnet build
+dotnet .\bin\Debug\net7.0\DemoApp.dll
+dotnet build
+dotnet .\bin\Debug\net7.0\DemoApp.dll
+dotnet run
+code .
+dotnet run 50000 6
+cd ../..
+cp -r .\PrimitiveTypeTest\ StructTypeTest
+cd .\StructTypeTest\DemoApp\
+code .
+dotnet run 50000 6
+dotnet run 200000 5
+dotnet run 50000 6
+dotnet run 200000 5
+:wq
+Get-History
+Get-History | Export-CSV C:CommandHistory.CSV
