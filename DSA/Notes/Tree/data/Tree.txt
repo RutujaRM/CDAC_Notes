@@ -1,0 +1,243 @@
+TREE
+=================
+Linear Data Structure : Array List
+
+Trees
+Hirarchical data structure 
+Data is a stored in a non-linear manner
+
+E.g
+In Family Tree We used Tree DS
+
+We can not store non-linear info in linear data structure
+
+================================
+DOM-Document Object Model
+=============================
+*Terminology*
+When We represent a Tree
+
+Root,Nodes,Leaf,Children
+======================
+Nodes=Stored data in nodes
+=====
+Root Node=The one Which is at the top(Parent Node)
+=====
+Edges=Connect one node with another
+=====
+1-> (2 -> 4  &  3-> 5) 
+Node 1 is the parent Of Child Nodes 2 & 3
+Node 2 is Parent Of Child node 4
+Node 3 is Parent Of Child node 5
+=====
+4 & 5 are leaf Nodes Do not have any childrens
+=====
+Root node do not have parent
+=========================
+1 -> ( 2 -> 4  &  3)
+
+Path:- Node visited to reach from a source node to destination
+=======
+Height :- length of Longest path from root to a leaf node 
+1 to 3 height = 1
+1 to 4 height = 2
+
+If tree has only one node root node then height of tree is 1
+=======
+Depth :-length of the path to that node from leaf
+
+Depth Of 2 from root 1 -> 2 = 2
+Depth of 2 =2
+
+=========================
+*Types Of Trees*
+
+A]Bases on number of child nodes
+
+1)Binary Tree :- Each node will have maximum of 2 children
+
+2)Ternary Tree:- Each node will have max of 3 Children
+3)N-ary Tree :- Tree in which each node will ahve max of n children
+N = 4
+ 1 ->((2->(6 & 7)) & (3->8) & (4) & (5->(9 & 10->(13) & 11 & 12))
+ =========================
+B]Based On how data is stored/Organised
+
+1)Expression Tree :-
+a+b *c -d /e like that
+
+Operands are stored at leaf nodes
+and operators are non leaf nodes
+
+2)Binary Search Tree:-
+Each node satisfying following property
+Data of nodes in left subtree < Node data(root) < Data of nodes in right subtree
+
+3)Skewed Tree
+-Left Skewed (Root have only left side nodes)
+-Right Skewed(Root have only right side nodes)
+
+4)AVL/Red-Black Tree
+Height Balnace Tree
+
+Trie:- Dictionary
+ab a abc bc
+ab=root
+
+B-Tree:-Self balancing tree N-ary Tree
+Use of B-Tree-File Systems & data Base systems
+Indexing
+==========================================
+*Transversal*
+
+BFS:-Level order Transversal 
+1 -> ( 2 -> (4 & 5) & 3->6)
+
+1 -> 2 -> 3 -> 4 -> 5 -> 6(0 level then 1 level then 2 level and above)
+transverse 0 at level 1 first 
+then travel 2 & 3 at level 1 and 
+then travel 4, 5 & 6 at level 2
+======
+DFS:-
+1 -> (2 ->(4 & 5) & 3 -> 6)
+
+travel from root first then 2 then 4 then 2 then again root thrn 3 and at last 6
+1->2->4->2->1->3->6
+======
+DFS - Done with Three Ways
+1)InOrder
+2)PreOrder
+3)PostOrder
+=====
+1)Inorder:-
+Process nodes in left subTree first and 
+then process nodes data
+then process nodes in right subTree 
+=======
+2)PreOrder:-
+process node's data
+then process nodes left subTree
+then process nodes right subTree
+=====
+3)PostOrder:-
+process nodes left subTree
+then process nodes right subTree
+then process nodes data
+======
+1)Preorder:-
+1 -> ((2 -> 4) & 3)
+
+1)Process root's data
+print 1
+2)Go to node 2
+print 2
+3)Go to node 4
+print 4
+4)pop parent node 2(stack)
+i.e node 2
+5)pop parent node for 2(stack)
+i.e node 1
+6)Go to node 3
+print 3
+====
+1 -> ((2 -> 4) & 3)
+
+1 ->2 ->4 ->3
+Algorithm for PreOrder Traversal
+PreOrder(root)
+-If root is empty
+ -stop
+-Process root node's data
+-If root node left child exits then
+ -PreOrder(root's left child) >C2
+-If root node right child exits then
+ -PreOrder(root's right child) >C3
+
+PreOrder(1) >C1
+
+N2 - root
+C2
+N1 - root
+C1
+PreOrder of N2
+====
+N4 - root -top
+C2
+N2 - root 
+C2
+N1 - root
+C1
+PreOrder of N4
+====
+N2 -root - top
+C2
+N1 - root
+C1
+After PreOrder(N4) is over
+====
+N1 - root - top
+C1
+================================
+1 -> ((2 -> 4) & 3)
+
+4 ->3 ->1 ->1
+Algorithm for PostOrder Traversal
+PostOrder(root)
+-If root is empty
+ -stop
+-If root node left child exits then
+ -PostOrder(root's left child) 
+-If root node right child exits then
+ -PostOrder(root's right child)
+Process Root's nodes data
+===============================
+1 -> ((2 -> 4) & 3)
+
+4 ->2 ->1 ->3
+Algorithm for InOrder Traversal
+InOrder(root)
+-If root is empty
+ -stop
+-If root node left child exits then
+ -PreOrder(root's left child) 
+-Process root node's data
+-If root node right child exits then
+ -PreOrder(root's right child) 
+===========================
+LEVEL ORDER TRAVERSAL
+
+1 -> (2->(4 & 5) & 3->6)
+
+Start with root node 1
+print 1
+Goto node 2
+print 2
+Goto node 3
+print 3
+====
+FIFO-> QUEUE Used to implement
+=====
+*Algorithm*
+
+LevelOrderTraversal(root)
+-If root is empty then
+-Stop
+-Add root node to queue 
+-While queue is not empty do
+ -Get a node from queue.
+ -process the node
+ -Add non empty child of node to queue
+ 
+ 1 2 3 4 5 6
+========================================
+
+    
+
+
+
+ 
+
+
+
+
+

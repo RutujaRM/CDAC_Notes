@@ -1,0 +1,189 @@
+Day-8
+======================================
+
+=========================================
+INORDER TRAVERSAL -ITERATIVE
+
+1 -> (( 2 -> 4) & 3)
+
+Processed(left-root-right)
+4 -> 2 -> 1 -> 3
+========
+*ALGORITHM*
+
+InOrder(root) - Iterative
+-if root is empty then 
+-Stop
+-Set Current to root node
+
+-do
+//Find the leftmost node of current
+-While current's left child is empty do
+ -Push Current node on stack
+ -Move current to it's left child
+-Process current node
+
+//Process parent of left sub tree that do not have right child
+-While current node do not have right child do
+ -pop node from stack ,into current
+ -process cureent node
+ 
+-If current node had right child then
+ -Set current to current's right child
+
+-While stack is empty 
+=========================================================
+==========================================================
+*BINARY SEARCH TREE*
+
+-Search 
+-Add
+-Delete
+
+Each node satisfying following property
+Data of nodes in left subtree < Node data(root) < Data of nodes in right subtree
+E.g
+5 -> ((2 -> 1) & (10 -> (9 & 20)
+====================
+1)Search(element)
+Search For element
+5 -> ((2 -> 1) & (10 -> (9 & 20)
+
+Search(3)
+Search(5)
+Search(1)
+Understand belo algorithm
+==
+(ALGORITHM)
+
+SearchInBST(root,element)
+-Set current to root node
+-While current is not empty do
+ -if current node's data is element then
+  -End the loop
+  
+ -If element < current node's data then
+  -Move current to current's left child 
+ -Else 
+ -Move current tp current's right child.
+ 
+-If current node is empty then
+ -Element not found
+ Else
+ -Elememt is present
+-Stop
+===============================================
+2)Insert(element)
+ ...suppose initially empty
+Insert 5 then 2 then 1 then 10,9,20 resp 
+understand below algorithm
+
+
+(ALGORITHM)
+Insert(element) -In BST
+
+-Make space to store the element,say newNode
+-Store element in newNode and set child nodes to empty
+-if tree is empty then 
+ -Make newNode as root node 
+ -Stop
+-Set current to root node
+-While current is not empty do
+ -Set previous to current
+ -If element < current node's data then
+  -Move current to current's left child 
+   Else 
+  -Move current tp current's right child.
+// Make new node a child of previous node
+ -if element < previous node data then
+  -Make newNode as left child of previous node.
+  Else
+  -Make newNode  as right child of previous node.
+  Stop
+=====================================================
+3)Delete(element)
+
+5 -> ((2 -> 1) & (10 -> (9 & 20)
+
+Delete(1) 
+->Delete a leaf node
+5 -> (2 & (10 -> (9 & 20))
+
+Delete(2) 
+->Delete a non-leaf node(delete a node which have only one child)
+5 -> (1 & (10 -> (9 & 20))
+
+Delete(10)
+-> Delete a node wwith two children
+We delete the inorder successor of the node to be deleted
+5 -> ((2 -> 1) & (20 ->9))
+
+inOrder Suceessor-> the node that is processed after 
+this node in inOrder Traversal
+====
+(ALGORITHM)
+Delete(element) -In BST
+
+-Set current to root node
+-Set previous to empty
+-While current is non empty do
+ -If current node's data is element then
+  -End the loop
+ -Set previous to current node.
+ -If element < current node's data
+   -Move current to current's node left child
+ -Move current to current's node right child
+ 
+-If current is empty then
+  -Stop .//Element not present in BST
+========Block 1
+//Delet current if it's a leaf node
+-If current node is a leaf node then
+ -If previous left child is empty
+  -Set previous left child to empty
+ -Set previous right child to empty
+ -Stop/
+========Block 2
+ //Delete current having only one child
+ -If current left child is empty then 
+ //Make current's right child ,a child of previous node
+ -If previous left child is current then
+  -Set current node's right child as left child of previous
+ Else
+  -Set current node's right child as right child of previous
+ -Stop
+ -If current right child is empty then 
+  //Make current's left child ,a child of previous node
+ -If previous left child is current then
+  -Set current node's left child as left child of previous
+ Else
+  -Set current node's left child as right child of previous
+ -Stop
+=======Block 3
+ //Delete current has two children
+ //Find inorder successor of current
+ -Set previous to current
+ -Set inOrderSuccessor to current node's right child.
+ -While inOrderSuceesor have left child do
+  -Set previous to inOrderSuceesor 
+  -Move inOrderSuceesor to it's left child.
+  
+  -Swap data of current and inOrderSuceesor node
+  
+ //Delete inOrderSuceesor node, 
+ //that will eighter be leaf or only one child
+ -Set current to inOrderSuceesor
+ //Perform Block 1
+ //Perform block 2
+ 
+ -Stop
+======================================================
+Properties
+
+1)All nodes of left sub tree are lesser 
+2)All nodes of right sub btree are greater
+3)Left and Right Subtree's are also BST.
+4)there are no duplicate nodes
+5)InOrder Traversal of BST gives a ascending sorted array.
+================================
+  

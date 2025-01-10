@@ -1,0 +1,152 @@
+DELETE A NODE FROM THE SINGLY LINKED LIST
+======================================
+supose it is on index position of 2 and total 5
+elements in list i.e indexing from 0 to 4
+suppose the element are  
+previous node is initially empty
+head -> 1 -> 3  -> 5  -> 10 -> 15 -> null
+======================================
+1) Delete(5)
+then 5 is gone(deleted)
+linked list is updated
+head -> 1 -> 3  ->  10 -> 15 -> null
+(3)the element previous to deleted element 5 
+pointing to
+the next element(10) to deleted element 5.
+==================================================
+
+Delete(element) algorithm
+when element is present and not the first and last node
+
+-Set current to first node of list
+-Set previous to empty
+-While (current is not empty) do
+-If current node's data is element(we need to delete) 
+then
+-end the loop
+-set previous to current node 
+-Set previous node's next to current node's next
+===================================================
+Result after o/p
+head -> 1 -> 3  ->  10 -> 15 -> null
+==================================================
+===================================================
+Delete(100)
+
+*List*
+head -> 1 -> 3  ->  10 -> 15 -> null
+
+Delete(element) algorithm
+
+-Set current to first node of list
+-Set previous to empty
+-While (current is not empty) do
+-If current node's data is element(we need to delete) 
+then
+-end the loop
+-Set previous to current node
+-Set current to current node's next
+-If current node is empty then
+//No node is to be deleted as element not found 
+OR List is empty
+-Stop. 
+-Set previous node's next to current node's next
+
+==================================================
+tranverse in Linked list element is present or not
+if current is pointing to empty
+i.e the element we want to delete is not present in the list
+==================================================
+Result o/p
+head -> 1 -> 3  ->  10 -> 15 -> null
+==================================================
+==================================================
+Delete(1)
+
+head -> 1 -> 3  ->  10 -> 15 -> null
+now initially current is 1 and previous is empty
+so we can not do the step
+((-Set previous node's next to current node's next))
+because previous is empty 
+when we delete a 1st position node
+=================================================
+ABOVE IS SPECIAL CASE 
+WHEN CURRENT(ELEMENT TO BE DELETED) IS HEAD NODE
+in this case we update head
+head -> 3  ->  10 -> 15 -> null
+=============================================-===
+ALGORITHM
+-Set current to first node of list
+-Set previous to empty
+-While (current is not empty) do
+-If current node's data is element(we need to delete) 
+then
+-End the loop
+-Set previous to current node
+-Set current to current node's next
+-If current node is empty then
+//No node is to be deleted as element not found 
+OR List is empty
+-Stop. 
+-If current node is the first node then
+//Deleting the first node of linked list
+-Set head to current node next
+-Stop 
+-Set previous node's next to current node's next
+==================================================
+Result o/p
+head -> 3  ->  10 -> 15 -> null(tail)
+==================================================
+==================================================
+Delete(15)
+
+Linked List
+head -> 3  ->  10 -> 15 -> null
+
+ALGORITHM
+-Set current to first node of list
+-Set previous to empty
+-While (current is not empty) do
+-If current node's data is element(we need to delete) 
+then
+-End the loop
+-Set previous to current node
+-Set current to current node's next
+-If current node is empty then
+//No node is to be deleted as element not found 
+OR List is empty
+-Stop. 
+-If current node is the first node then
+//Deleting the first node of linked list
+-Set head to current node next
+-Stop 
+-If current node is the last node then
+//Deleting the last node of linked list
+-Set previous to current node's next
+optional(-Set previous node of current(last node) 
+     pointing next to null as a last node in linked list)
+-Stop 
+-Set previous node's next to current node's next
+==============================================
+==============================================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,109 @@
+SESSION 10
+==================
+How to Share a file with your friend?
+
+1)Internet = time taken is depend on size of file.
+size directly proportional to time in case of internet
+
+2)physical medium courier and self
+
+=====================
+Asymptotic Tie Complexity:
+
+0(1) - constant time
+time taken is independent of dara set/input
+=======
+0(n) - linear time 
+=======
+To find min and max of N numbers
+int element [.....]
+int min,max;
+min = max = element[0]
+for (i = 1 to n - 1) ----loop works until n- 1 times
+if( elem[i] < min)
+min= elem[i];
+if(elem[j] > max)
+max = elem[j];
+
+
+=================
+
+Searching 
+==========
+1)linear search
+i]Find a paper in group of rando papers
+ii]we inspect each paper one by one starting 
+from first until eighter dound or not found
+iii]can be done on data that in either 
+arranged(sorted) or unarranged(unsorted)
+============
+2)binary search
+i]find word meaning in dictionary book
+ii]requires data to be arranged or sorted
+===============
+Find(element) : linear search
+for i = 0 to n - 1
+if( elem = arr[i] )......suppose arr[i] contains 5 element 5 9 1 3 2 find(3) 
+  return found 
+return not found
+====
+n -1 -0 + 1
+n * 2 + 1
+ 2n- 1 -> O(n)
+Time Complexity of linear search O(n)
+============
+Binary Search 
+suppose elements in array are sorted.. 
+1 2 5 9 15(N=5)
+arr[0]=1
+arr[1]=2
+arr[2]=5
+arr[3]=9
+arr[4]=15
+
+binarysearch(elem)
+Find(15)
+-left  = 0
+-right = n-1
+-while(left > right)
+  -mid = (left + right)/2
+  -if(elem = arr[mid])
+  -return found
+  -if(elem < arr[mid])
+  -right = mid + 1;
+   else 
+  -left = mid - 1;
+-return not found
+
+(left > right) then loop should end
+!(left > right) then loop should run
+========
+find mid got mid = 5
+then element is greater than 5 so 
+right = 9 now bt 9 is not the elem we want 
+now again find  mid of index 3 & 4 
+we got index 3 as mid= 9
+now our element is not = mid but it is greater than mid
+so mid + 1 15 is our element we need
+============================
+Time Complexity of Binary search 
+N elements start
+n/2 -> elements after 1st iteration
+n/4 -> after 2nd iteration
+n/8 -> afetrr 3rd iteration
+..
+N -> N/2 -> N/4 -> N/8 -> N/16
+log base 2 n
+suppose 
+log base 2 16 
+then
+16/2
+8/4
+4/2
+2/2
+4 times we divide by 2
+==========
+Time Complexity of binary search log n
+o(log n)
+========================
+

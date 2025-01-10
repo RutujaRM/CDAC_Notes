@@ -1,0 +1,9 @@
+**CIRCULAR DOUBLY LINKED LIST**
+=======================================
+Circular List Traversal(Forward)
+
+-Set current to first node
+-While current's next node is not first node do
+-process current node
+-Set current to current node's next.
+-If List is empty then

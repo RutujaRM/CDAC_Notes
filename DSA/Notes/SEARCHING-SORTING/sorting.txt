@@ -1,0 +1,88 @@
+SESSION 10
+BUbble Sort
+========
+3 1 5 2
+to sort in  increasing order
+bring samllest element to front in Each iteration 
+of the element left
+OR
+bring largest at rear in each iteration 
+of the element left
+=====
+Bubble Sort
+for put element -> 0 to n- 2
+for right -> n-1 to (put element  at -1)
+if !(elem[left]  < elem[right])
+->swap left and right elem
+If(elem[right] < elem[left])
+====
+Bubble sort of (elements,n)//'n' number of values in 'elements'
+/*Start by putting correct element at 1st position , 
+  then 2nd position then 3rd position ,until(n-1)st position.Once we 
+  put(n-1) elements at current position, 
+  nth element will be at correct position automatically
+*/
+-for putElementAtPos -> 0 to ( n- 2) 
+  //Start with last element until before the putElementAtPos  
+  -for right -> (n -1) to (putElementAtPos -1)
+  //Compare right and left element
+  -left = right -1
+  //If right element is smaller than left then swap them.
+  -If element[right] < elementt[left] then
+  -Swap left and right elements.
+-Stop
+===============
+time complexity of bubble sort
+O(n sq)
+
+why should we use bubble sort?
+stable sort that's why prefered .
+bubble sort always garenty the order is maintained
+
+=========================================
+SESSION 11
+============
+Selection Sort
+
+for put element -> 0 to n- 2
+->Assume last elem is smallest
+smallest elements = n-1
+for i ->(n-2) down to 
+  putElementAt
+  ->if elem[i] < elem[smallest elem]
+   =smallest elm=i
+->Swap smallest element position and 
+  putElementAt element
+==============
+time complexity of selection sort
+O(n sq)
+========================================
+Insertion sort
+=============
+we have some elements in sorted order
+insert the new element so that all elements remains sorted
+initial sorted array
+5 8 9 -> sorted elements
+new elm -> 3
+ 5 8 9
+new element 3 ro insert
+5 8 - 9
+5 - 8 9
+- 5 8 9
+3 5 8 9
+==============
+initial unsorted array 
+3 5 1 2
+
+
+insert 1 in [3] so that element 5 remain sorted
+element to insert will be -> 1
+1 3 5 2 p notes
+element to insert -> 5
+1 3 5 2 p notes
+element to insert is 2
+1 2 3 5 p notes
+================
+sudo code for insertion sort
+coppaste later
+===================================
