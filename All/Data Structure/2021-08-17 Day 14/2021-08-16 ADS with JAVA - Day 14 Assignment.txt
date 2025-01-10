@@ -1,0 +1,4 @@
+Assignment:
+1. Implement Graph class for undirected, unweighted graph. The class should store the graph using adjacency list.
+   Also implement BFS traversal in the same Graph class.
+Recommended: Practice TDD while doing the implementation.

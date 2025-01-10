@@ -1,0 +1,22 @@
+Assignment:
+1. Design algorithm to solve any one of the following problems:
+   a) Sudoku
+      The objective is to fill a 9×9 grid with digits so that each column, each row, and each of the nine 3×3 subgrids that compose the grid contains all of the digits from 1 to 9.
+      As an input, algorithm will be provides a partially completed grid.
+      Result of the algorithm should be the solution of the puzzle.
+
+   b) Maze
+      A maze is defined as a grid on an XY-plane, and the coordinates of each grid square are (x, y).
+      We are given a maze of size N x N, we start at the source = [sx, sy] square and want to reach the target = [tx, ty] square.
+      Each grid square of the N x N maze will contain either 0 (path) or 1 (blocked).
+      In each move, we can walk one square north, east, south, or west if the square is not a blocked square.
+      We are also not allowed to walk outside of the grid.
+      The algorithm should return true if and only if it is possible to reach the target square from the source square through a sequence of valid moves.
+
+   c) Knight Tour
+      Given a 8 x 8 chess board, knight's tour is a sequence of moves of a knight on a chessboard such that the knight visits every square exactly once.
+      The algorithm will be given the starting position of the Knight.
+      The algorithm should return the positions visited by Knight in correct order.
+
+Mention the type of algorithm (for example, Divide and Conquer, Backtracking, etc) used.
+Also, state the time and space complexity of the solution.

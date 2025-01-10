@@ -1,0 +1,693 @@
+	
+					
+								DAY 12
+							MONGODB : NOSQL
+							
+	=================================================================
+	
+		TOPIC : 
+				MONGODB 
+				BASIC THEORY 
+				
+					NOSQL : 
+						CAP 
+						PRACTICALLY : CAP 
+							CA / CP / AP 
+						
+					* NO SCHEMA 
+					* NO SQL 
+					
+					** DE-NORMALIZED THE DATA 
+						** KEPT IN A FILES CALLED AS A DOCUMENT 
+							** EMBEDED DOCUMENT 
+							** SO THAT END USER OR THE USER 
+								DO NOT PERFORM JOINS TO RETRIVE THE DATA 
+					** MONGODB : 
+							DOCUMENT ORIENTED DATABASE 
+							OWN QUERY LANGUAGE 
+							ACCEPTS DATA OR HANDLE THE DATA IN JSON 
+							
+							JSON : 
+							
+								{
+									KEY : VALUE....
+									KEY : VALUE
+								}
+							STORE IN THE DATABASE : 
+								BSON : BINARY OF THE JSON ...
+								
+							DOCUMENT IS BYFAULT ASSIGNED WITH ONE FIELDS NAMED AS _ID 
+							WHICH IS TREATED AS A PRIMARY KEY 
+							THIS BECOMES A SEARCH CRITERIA TO FIND THE DOCUMENT FROM THE SYSTEM 
+							
+							MAIN OBJECT OF DEALING WITH MONGODB 
+								"db"
+							every query need to executed with the help of main object db 
+							
+					----------------------------
+						*insert the data insert()
+						* select the data find(query, projection)
+						* comparision operators 
+							$gt,$gte,$lt,$lte,$ne
+							
+			HOW TO IMPORT THE CSV FILE INTO THE MONGODB 
+					
+========================================================================
+							
+Comparison Operators : 
+					
+	** returns all the employees belongs to department 10 
+	** returns all the employees having salary > 2000 
+	** returns all the employees having salary > 2000 and salary < 10000
+	
+**return all the employees belongs to department 10, 20, 30 ..
+	
+		select * from employees where department_id in (10,20,30);
+		
+	* $in : return documents that the field value equals any value in the specified array...
+	
+	syntax : 
+		db.employees.find({department_id : {$in : [10,20,30]}});
+		
+	return all the employees where department_in either 10,20 or 30 
+	
+	** if the field holds an array then $in returns documents whose fields holds an array that contains at least one elemment that matched a value 
+	
+			phone : [343433,3434,3434343]
+			
+		db.employees.find({phone : {$in:[7620987578,7620987867]}});
+	
+	* $nin  : return documents where field is not in specific array or does not exist 
+	
+		db.employees.find({department_id : {$nin : [20,30,40,80,50,110]}});
+		
+		returns all the employees those are not belongs to department 20,30,40,80
+		and all the document which doesn't have department key
+	
+		rdbms : select * from employees where department_id not in (20,30,40,50,110,80);
+		
+-----------------------------------------------------------------------
+
+Element Operators : 
+		
+		* $mod : will select the documents where the field value divided by the divisor has a specified reminder
+		
+		{field : {$mod :[devisor,reminder]}}
+
+			* it divide with the help of divisor and comapare the reminder value ... 
+			
+			{salary " {$mod :[20,2]}}
+		
+				4004 / 20  = 4 
+					start 4 = 2 
+						false - skip that document 
+						true - retun that document 
+						
+			
+		* $exists : return documents that contain the field if boolean is true or not if boolean value is false 
+		
+		
+		find all the documents contains field Phone :
+		
+			db.employees.find({Phone : {$exists : true}});
+			
+		
+	------------------------------------------------------------
+		db.employees.find({department_id : {$nin : [20,30,40,80,50,110]}});
+		
+	* find all the document which doesn't belongs to department 20,30,40,80,50,110 and doesn't have that key 
+	
+	db.employees.find({department_id : {$exists : true,$nin : [20,30,40,80,50,110]}});
+	returns all the document where department_id exists and not in 20,30,40,80,50,110
+		
+****Logical Operator  - $and / $or 
+		
+* $and and operation on an array of two or more expression
+			
+		Need to find all the employees whose salary = 2800 and department_id = 80
+		
+		syntax : 
+			
+			standarization : code which need to read by other people 
+			
+			db.employees.find({$and : 
+								[
+								{salary : 2800},
+								{department_id : 30}
+								]}); 
+		
+		
+			db.employees.find({salary : 2800,department_id : 30});
+			
+			
+	** find all the employees whose salary > 3000 and department_id = 80
+	
+	
+		select * from employees where salary > 3000 and department_id = 80;
+		
+		
+		db.employees.find({$and : 
+								[
+								{salary : {$gt : 3000}},
+								{department_id : 40},
+								{department_id : {$exists : true}}
+								]});
+	
+	
+		and operator : array of expression
+		
+	
+* $or Performs a logical OR operation on an array of the expression and reutns the documents that satisfied at least one of the expression....
+
+
+ * Find all the employees whose salary > 15000 or belongs to department_id = 20 
+	
+			
+		db.employees.find({
+						$or :
+							[
+							{salary : {$gt : 15000}},
+							{department_id : 20}
+							]
+						}
+						).pretty();
+							
+							
+* 						
+	Find all the employees whose salary > 15000 or belongs to department_id = 20 and first_name = Michael						
+							
+		combination of and and or togeather : 
+		
+			db.employees.find(
+						{
+						first_name : "Micael",
+						$or :
+							[
+							{salary : {$gt : 15000}},
+							{department_id : 20}
+							]
+						}
+						).pretty();				
+							
+			select * from employees where first_name = 'Micael' and (salary > 15000 or department_id = 20);			
+	
+*******************************************************************
+
+and what about order ? 
+
+* in order to control order you query will return matching documents, 
+	just need to append the sort() method to a cursor 
+	
+* For each field in the sort document, it treated with two values 
+			positive and negative 
+			
+			Positive  : will return the documents in assending order 
+			Negative  : will return the documents in descending order 
+			
+	db.employees.find({salary : {$gt : 13000}}).sort({salary : 1});
+	
+
+	db.employees.find({salary : {$gt : 13000}}).sort({first_name : -1});
+
+---------------------------------------------------------------------
+
+method : limit 
+		is the method which squese the output based on the number passed 
+			
+		db.employees.find().limit(2);	
+
+	returns the first 2 documents from the collection employees .....
+	
+		
+		db.employees.find({salary : {$gt : 3000}}).sort({first_name: 1}).limit(2);
+	
+							
+--------------------------------------------------------------------
+
+embedded documents 
+	
+		like : 
+		
+			{
+			name : "rahul",
+			salary  : 40000,
+			address : 
+					{
+					hno : 123,
+					street : "chandan nagar",
+					city : "pune",
+					state : "maharastra",
+					zipcode : 411014
+					}
+			}
+
+			mainkey.subjey 
+			
+			find all the documents who belongs to city = pune 
+			
+		** db.employees.find({"address.city" : "pune"});
+		
+========================================================================
+
+BASIC AGGREGATED OPERATIONS : 
+
+	* count : returns the count of the documents that would match a find() query 
+		just append the count() methond to a find() query to reutn the number of matching documents
+		
+			syntax :
+				
+				db.collection.find(<query>).count();
+				
+		
+* Total number of document in the collection : employees 
+
+			rdbms : select count(*) from employees;
+			
+			mongo : db.employees.find().count();
+	
+* Total number of documents where department_id = 80
+
+		db.employees.find({department_id : 80}).count();
+
+
+*** distinct function in sql 
+	* distinct method : 
+			find the distinct values for a specific field within a single collection and returns the result in array 
+			
+		find all the department_id which has employees 
+		
+			select distinct department_id from employees;
+			
+			syntax : 
+					db.collection.distinct("key");
+					
+			db.employees.distinct("department_id");		
+
+BASIC : SELECTION OF THE RECORDS FROM THE COLLECTION
+
+
+----------------------------------------------------------------------
+							
+		* INSERT THE VALUES
+		* SELECT THE VALUES FROM THE COLLECTION 
+		
+UPDATE OPERATION : 
+
+			DENSE_RANK(), RANK()  -- FUNCTION 
+						- PROVIDES A NUMBER TO THE ROW BASED ON THE COLUMN 
+						
+-----------------------------------------------------------------------]]		
+					: UPDATE OPERATIONS : 
+					
+ * UPDATE OPERATION TO MODIFY EXISTING REPORDS OR DOCUMENTS IN A COLLECTION 
+ 
+		SYNTAX : 
+			db.collection.update(query,update,option);
+			
+			where 
+			
+			query corresponds to where statement in sql 
+			update : corresponds to your set in sql statement 
+			
+			update tablename 
+			set salary = 4000  -------   <update> parameter of update f 
+			where employee_id = 101; ----<query> paramter of update f
+			
+		* by default update() method update a single record or document, 
+		just like you update in sql with limit 1 
+		
+		** restriction internally - it will only update single record
+
+		if still we required to update more then one record in mongodb , we have use third parameter <option>
+		
+		updating more then one result can be done with a key : multi
+		
+		
+		Parameter : update() 
+		
+		query : selection criteria 
+		update : modification to apply 
+		option : specifies wheather to perform an update on multiple documents 
+			
+		* modify the existing document , we have to set the expression inside the update parameter with $set operator 
+
+		
+	* to update the value of the field like salary , use $set 
+
+		db.employees.update(
+							{employee_id : 101},
+							{$set : {salary : 5000}}
+							);
+		
+	* update more then one fields of the document then : 
+		like i need to update salary = 20000 and departmentid = 90
+		
+		update employees set salary = 20000,department_id = 90 where 
+			condition....
+			
+		db.employees.update(
+							{employee_id : 101},
+							{$set : {salary : 20000,department_id : 90}}
+							);
+				
+		
+	* update the salary to 20000 for all the employees belongs to department = 20 
+	
+		db.employees.update(
+							{department_id : 20},
+							{$set : {salary : 20000}}
+							);
+		* only update single records as default nature of update method 
+		
+	* update all the records return from the selection criteria ...
+			multi 
+		db.employees.update(
+							{department_id : 20},
+							{$set : {salary : 20000}},
+							{multi:true}
+							);	
+		
+							
+	* need to update the fields which is a part of your embedded documents ...
+
+		
+		db.employees.update(
+							{department_id : 20},
+							{$set : {"address.hno" : 1034}},
+							{multi:true}
+							);						
+							
+		OPEN SOURCE : 
+				FETURE EXISTING 
+				PROVIDES STANDARIZATION 
+						FUNCTION 
+							INSERT() - SINGLE RECORDS , INSERT MULTIPLE RECORD 
+							
+							INSERTMANY() : 
+								
+						db.employees.insert({},{},{});
+						==========
+						db.employees.insertmany([{},{},{}]);
+							
+						
+						Similarly : 
+							update / updatemany
+						
+ REMOVE A FIELD FROM A DOCUMENT : 
+
+	* WHILE $SET OPERATOR, ADD A FIELD OR UPDATE ITS VALUE , 
+			$UNSET OPERATOR REMOVED THE FIELD FROM THE DOCUMENT 
+			
+			
+		db.employees.update(
+						{employee_id : 101},
+						{$unset : {salary : 1}}
+						);
+						
+		delete the field salary from document where employee_id = 101 
+		
+		
+		** value of the field in the $unset statement has no impact i.e we will have the same result in the above example if we do 
+			{$unset : {salary : ""}}
+			
+		** in case document beging updated matches the initial query 
+			employee_id : 101 
+			but the field specified in the $unset command does not exist
+
+				there is no impact on thedocument ...
+				
+	--------------------------------------------------------------
+
+** Upsert : 
+	
+	* instead of having to query for existince of a record before performing update or insert , you can use upsert
+	
+	* update() operation can accept <upsert> as an option 
+		
+			db.collection.update(query, update,{upsert:true});
+			
+		* if the query matches an existing document(s), the upsert performs an update 
+		*if the query matched no document in the collection, the upsert insert a single document in the collection ...
+		
+			if(query matches document)
+				update 
+			else 
+				insert 
+			end if 
+			
+		db.employees.update(
+							{employee_id : 2000},
+							{$set : 
+								{first_name : "Rahul",salary : 45678,age : 35}},
+							{upsert:true});
+			
+		if there is no document where employee_id = 2000
+		
+			then it created on document with the specifies key values..
+			
+	==================================================================
+	
+	REMOVING DOCUMENT FROM A COLLECTION : 
+	
+	* REMOVE METHOD 
+			remove() method is used to remove the document from the collection
+			
+			remove(<query>);
+			
+		delete from employees where employees_id = 101;
+		
+		db.employees.remove({employee_id : 101});
+		
+	* if you don;t specify which documents need to remove i.e <query>
+	is empty, 
+	then all the documents will be removed from the collection .....
+	
+		** truncate in sql 
+		
+		delete from employees;
+		
+		db.employees.remove();
+		
+----------------------------------------------------------------------
+
+	SQL : like search operator 
+	
+		mongodb also provide like search in terms regular expression 
+		
+		* find all the employees starting with letter R 
+		
+			^ - check the starting point 
+			$ - check the ending point 
+			. - any charecters 
+			* - zero or many 
+		db.employees.find({first_name:/ens/});
+		
+	operator : regex 
+
+	find all the employees starting with R and ending with L 
+	
+	regex : 
+	
+		'^'+'R'+'.*'+'L$'
+		
+		db.employees.find({first_name: {"$regex" : '^'+'R'+'.*'+'l$'}});
+		
+------------------------------------------------------------------------
+
+*************** select / insert / update /delete / alter ($set,$unset)
+
+Rename the columns  : Rename the fields 
+
+	Alter table tablename rename oldname to newname;
+	
+	db.collectionname.update(
+							{query},
+							{$rename : {oldname : newname}}
+							);
+							
+	db.employees.update(
+						{employee_id = 102},
+						{$rename : {"department_id" : "deptid"}}
+					);
+					
+	db.employees.update(
+						{},
+						{$rename : {"department_id" : "deptid"}}
+					);				
+					
+----------------------------------------------------------------------
+
+Rename the complete collection itself 
+
+	function : renameCollection 
+	
+	
+	db.emplyees.renameCollection(emp);
+	
+	-- 
+	Alter table employees rename to emp;
+	
+=====================================================================
+
+Aggregate Methods :
+			count / distinct
+			
+	This method is use to perform aggregation on the columns like :-  
+			* group by clause
+			-- sum
+			-- avg
+			-- min
+			-- max 
+			....
+			
+			..
+			
+	
+	syntax : 
+		
+			db.collection.aggregate(
+				[
+				{$group :
+				{"_id" : "$department_id", group on this department_id
+				"sal" : {$sum : "$salary"}  -- aggregate in salary
+					}
+				}
+				]
+				);
+
+			db.emp.aggregate(
+				[
+				{$group :
+				{"_id" : "$department_id",
+				"sal" : {$sum : "$salary"}
+				}
+				}
+				]
+				);
+
+------------ now if need to have a group by on multiple columns -----
+
+			db.emp.aggregate(
+				[
+				{
+					$group :
+						{
+							"_id" :
+								{
+								 "dept" : "$department_id",
+								 "jobid" : "$job_id"
+								},
+							"sal" : {$sum : "$salary"}
+						}
+					}
+					]
+					);
+
+------------- operator which works with aggregate method 
+			project 
+			
+		find all the employees with their emplyee id and old salary 
+			and incremented salary with 15% 
+			
+			
+MYSQL : Select employee_id,salary , salary * 1.15 from employees;
+
+mongodb : 
+
+			db.emp.aggregate(
+				[
+					{$project :
+						{employee_id : 1,salary : 1,_id:0,sumsal : {$multiply : ["$salary" , 1.15]}}
+					}
+				]
+				);
+
+	---------------------------------------------------------------
+	
+						End of the Basic Mongo 
+						
+							1) create database 
+							2) create collection
+							3) insert docments
+							4) modify document - data and keys 
+							5) delete document 
+							6) select the data from the database 
+							7) drop collection 
+							
+		------------------- drop database  : 
+						this is not the simple feture
+								database  : miltiple things 
+								
+					drop database directly.....
+		-----------------------------------------------------------
+					
+			facebook : 
+
+					username / password 
+						username  ------- _id 
+						
+						_id - indexes 
+						
+		document 
+					: _id and its location where it store 
+					_id : 3434433434
+					
+					sigle document : 
+							{
+							
+							}
+			
+	-----------------------------------------------------------------
+
+		Sql on top of NoSQl 
+			to make it simpler 
+			
+					nosql --- > wraper --- > sql 
+	
+	
+	
+	
+	
+
+
+
+
+
+
+
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+	
+			
+		
+		
+		
+		
+
+
+
+
+
+
+
+
+
+	
+			
+			
+			
+			
+			
+			
+			
+						
+						
+						

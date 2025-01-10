@@ -1,0 +1,7 @@
+Assignment:
+1. Implement following three HashTable classes that implement Add, Search, Delete functions of HashTableIntf interface.
+a) Modify the hash table implementation done in class to implement linear probing for collision handling.
+b) Implement folding hash function and compare it with mod n hash function.
+c) Implement mid square hash function and compare it with mod n hash function.
+Recommended: Practice TDD while doing the implementation.
+

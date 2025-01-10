@@ -1,0 +1,11 @@
+Assignment:
+1. Modify Delete() algorithm for singly linked list to work with tail pointer, along with head pointer.
+   Implement a Delete() function for singly linked list class using the above algorithm.
+Recommended: Practice TDD while doing the implementation and can add more test cases to SinglyLinkedListTest.
+
+2. Implement AddAtRear() function in doubly linked list class DoublyLinkedList.
+Recommended: Practice TDD while doing the implementation and can add more test cases to DoublyLinkedListTest.
+
+3. Implement GetAllElementsInReverseOrder() function in doubly linked list class DoublyLinkedList.
+   The function performs reverse traversal and return the elements stored in the doubly linkedlist, in reverse order.
+Recommended: Practice TDD while doing the implementation and can add more test cases to DoublyLinkedListTest.

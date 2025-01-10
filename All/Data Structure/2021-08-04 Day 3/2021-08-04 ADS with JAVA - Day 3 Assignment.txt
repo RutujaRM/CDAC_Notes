@@ -1,0 +1,6 @@
+Assignment:
+1. Complete the implementation of LinkedListIntf interface in SinglyLinkedList class.
+Recommended: Practice TDD while doing the implementation and can add more test cases to SinglyLinkedListTest.
+
+2. Implement a singly linked list class to implement SortedLinkedListIntf interface.
+Recommended: Practice TDD while doing the implementation.

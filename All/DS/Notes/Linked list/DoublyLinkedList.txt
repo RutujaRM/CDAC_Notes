@@ -1,0 +1,137 @@
+DOUBLY LINKED LIST(SORTED)
+========================
+
+insert(1) (before first node)
+tail & prev -> 5 -> next & tail
+
+=============================
+result o/p
+head -> 1 -> <- 5 <- tail
+
+insert(10) after last node  i.e when we insert largest element
+
+while is current is not empty
+(current's node data < element we insert)
+//Adding after last node ? ( adding largest element)
+-if current is empty then
+-Set tail's next to newNode . ///after last node comes newNode
+-Set newNode's previous to tail . //before newNode comes to last node
+-Set tail to newNode
+-Stop
+
+result o/p
+head -> 1 -> <- 5 -> <- 10 <- tail
+========================
+initially
+head -> 1 -> <- 5 -> <- 10 <- tail
+
+insert(7) element is not smallest and largest (insert element in between )
+after traverse we comes to current node's first then
+-Set current node's previous node's next to newNode
+5(current node prev) -> 7(newNode) <- 10(current node)
+  
+-Set newNode's previos to current node's previous
+ 5(current node prev) <-  7(newNode) <- 10(current node)
+ 
+-Set newNode's next to current
+7(newNode) -> 10(current node)
+ 
+-Set current's previous to newNode
+7(newNode) <- 10(current node)
+
+
+result o/p
+head -> 1 -> <- 5 -> <-  7 -><- 10  <- tail
+======================
+======================
+Delete(element) 
+
+-Set current to first node of list
+-While current is not empty) do
+ -If current node's data is element then
+ -end the loop
+-set current to current node's next
+ 
+-If current node is empty then
+//no node to be deleted as element not found or 
+//list is empty
+-Stop
+
+-If current node is the first node then   
+//deleting the first node of linked list
+-set head to current node's next
+
+-If head is empty then
+-//List had only one node and that we are to delete  => List
+//will be empty
+  -Set tail to empty
+ Else
+ //List is not empty
+-Set head node's previous to empty
+-stop
+-If current node is last node then
+//deleting last nodd in the list
+ -set (current node's previous) node's next to empty
+ -set tail to (current node's previous) 
+ -stop
+-Set (current node's previous) node's next to (current node's next)
+-Set (current node's next) node's previous to (current node's previous).
+=================
+initially
+head -> 1 -> <- 3 -> <-  5 -><- 10  <- tail
+
+Delete(1)  --(delete first node)
+
+-Head is moved to the current next 
+ 1 deleted (head -> 3 -> <-  5 -><- 10  <- tail)
+ 
+ result o/p
+  head -> 3 -> <-  5 -><- 10  <- tail
+
+========================
+initially
+head -> 3 -> <-  5 -><- 10  <- tail
+
+Delete(5)
+
+head -> 3 -> <-  5(current node to deleted) -><- 10  <- tail
+
+-Set current node's previous node's(3) 
+next to 
+current node's next(10)
+head -> 3 -> 10  <- tail
+
+
+-Set current node's next(10) node's 
+previous to 
+current node's previous(3) 
+head -> 3 <- 10  <- tail
+
+
+Result o/p
+
+head -> 3 -><- 10  <- tail
+
+=========================
+Initially
+head -> 3 -><- 10  <- tail
+
+Delete(10) (delete last node of List)
+
+-Set current node's previous node's 
+next to
+empty
+head -> 3 -> empty(last node)
+
+ 
+-Set tail to current node's previous
+head -> 3 <- tail
+===========================
+
+
+
+
+
+
+
+

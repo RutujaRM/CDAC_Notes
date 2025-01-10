@@ -1,0 +1,4 @@
+1. Implement the Stack and Queue interfaces defined in StackIntf.java and QueueIntf.java, using arrays.
+
+2. Implement functions that accept reference to interface, to demonstrate the use of implemented Stack and Queue classes.
+Hint: Refer to RevUsingStack() function covered in class.

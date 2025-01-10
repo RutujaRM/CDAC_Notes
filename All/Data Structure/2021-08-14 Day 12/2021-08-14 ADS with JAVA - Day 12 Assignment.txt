@@ -1,0 +1,14 @@
+Assignment:
+1. Implement function to sort an unsorted array, using Heap Sort algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+
+
+Exercises: Solve them if you are comfortable in creating min and max heaps.
+There are different ways to solve them, using heap is one of the ways.
+- Easy ones
+https://leetcode.com/problems/kth-largest-element-in-a-stream/
+https://leetcode.com/problems/last-stone-weight/
+
+- This is hard. Do not try to write code directly, without coming up with an algorithm first.
+https://leetcode.com/problems/merge-k-sorted-lists/

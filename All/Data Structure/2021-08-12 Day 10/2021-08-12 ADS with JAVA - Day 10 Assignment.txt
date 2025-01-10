@@ -1,0 +1,9 @@
+Assignment:
+1. Implement function to search element in an unsorted array, using Linear Search algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+2. Implement function to sort an unsorted array, using Bubble Sort algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+3. Implement function to search element in a sorted array, using Binary Search algorithm.
+Recommended: Practice TDD while doing the implementation.

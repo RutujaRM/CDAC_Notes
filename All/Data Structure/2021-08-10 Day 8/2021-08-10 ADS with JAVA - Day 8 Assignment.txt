@@ -1,0 +1,11 @@
+Assignment:
+1. Implement the following interface (defined in BinarySearchTreeIntf.java) for binary search tree, in BinarySearchTree.java
+public interface BinarySearchTreeIntf {
+	public void Insert(int element);
+	public void Delete(int element);
+	public boolean Search(int element);
+
+	public int[] InOrder();
+}
+
+Recommended: Practice TDD while doing the implementation. Some tests are implemented in BinarySearchTreeTest.java

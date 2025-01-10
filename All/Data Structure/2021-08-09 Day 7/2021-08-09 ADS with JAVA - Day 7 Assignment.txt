@@ -1,0 +1,27 @@
+Assignment:
+1. Complete the implementation of pre order traversal in BinaryTree class, to return the elements as integer array,
+that will make unit test case pass.
+public int[] PreOrder();
+
+2. Implement following BinaryTree interface function for BinaryTree class.
+Recommended: Practice TDD while doing the implementation.
+// Perform PostOrder traversal and return the elements in the integer array.
+public int[] PostOrder();
+
+// Perform InOrder traversal and return the elements in the integer array.
+public int[] InOrder();
+
+// Count number of nodes in a binary tree.
+int GetNodesCount();
+
+// Find height of a binary tree.
+int Height();
+
+// Count frequency of an element in a binary tree
+int FindFrequency(int element);
+
+// Count number of leaf nodes in a binary tree
+int CountLeafNodes();
+
+// Convert tree into mirror image.
+int MakeMirror();

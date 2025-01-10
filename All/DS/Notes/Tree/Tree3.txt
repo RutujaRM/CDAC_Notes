@@ -1,0 +1,60 @@
+Day9
+==
+TREE
+==============================
+COMPLETE BINARY TREE
+Nodes should start filling from left 
+-Last node can have fewer number of nodes.
+
+FULL BINRAY TREE
+For Every Node is have eighter 2 childrens or 0.
+
+PERFECT BINARY TREE
+1)All leaf Node at Same Level
+2) Tree should be both Complete + Full Binary Tree
+
+==================================
+SKEWED TREE
+LEFT SKEWED :- Every node has only left child
+RIGHT SKEWED: Every node has only right child
+====================
+Balance BST
+InOrder traversal at BST we get elements in sorted order.
+========
+Balanec BST TREE'S
+AVL TREE:-Efficient Search
+It uses balance factor to determine if tree is unbalanced.
+If unbalanced uses rotation to balance tree.
+
+For a node BF(Balance factor=|HL-HR|)
+(Height of left sub tree - height of right sub tree)
+
+IF BF > 1 then tree is unbalnced
+
+AVL tree requires more space(Extra memory required) 
+than Red-BLack tree Because it stores int(height)
+
+AVL tree is faster than Red-black tree in case of searching
+======================
+RED BLACK:- Efficient insert and delete.
+
+Uses colours to determine unbalnced tree.
+If tree is unbalnced it first tries to recolour the tree.
+and then required performs rotations.
+
+Red-Black tree requires less space than AVL tree 
+Because it have to stores only colours(red & black)
+
+Red-black tree is faster than AVL tree in case of insertion and deletion of node.
+
+======================
+*Red-Black Tree Rules*
+1)Every node will be eighter red and black
+2)Root element must be black
+3)Parent and child nodes both can't be red.
+4)Both childrens of a red node must be black
+5)Every path from a node to it's leaf node has same number of black nodes
+6)New node inserted in red-black tree is always red.
+=====================
+
+ 

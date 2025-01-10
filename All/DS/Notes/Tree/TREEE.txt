@@ -1,0 +1,92 @@
+
+
+
+======================
+DAY-7
+
+>>>>TREE readme<<<<
+====================
+
+
+1)Linear Data Structure vs Hirarchical Data Structure
+
+2)Terminology-Root,Nodes,Leaf,Children,height,edges,,level etc
+
+3)*Types Of Trees*
+
+A]Bases on number of child nodes
+
+  1)Binary Tree :- Each node will have maximum of 2 children
+
+  2)Ternary Tree:- Each node will have max of 3 Children
+  
+  3)N-ary Tree :- Tree in which each node will ahve max of n children
+  N = 4
+
+B]Based On how data is stored/Organised
+
+  1)Expression Tree :-
+  a+b *c -d /e like that
+
+  Operands are stored at leaf nodes
+  and operators are non leaf nodes
+
+  2)Binary Search Tree:-
+  Each node satisfying following property
+  Data of nodes in left subtree < Node data(root) < Data of nodes in right subtree
+
+  3)Skewed Tree
+  -Left Skewed (Root have only left side nodes)
+  -Right Skewed(Root have only right side nodes)
+
+  4)AVL/Red-Black Tree
+  Height Balnace Tree
+  
+  Application:
+  Trie:- Dictionary
+  ab a abc bc
+  ab=root
+
+  5)B-Tree:-Self balancing tree N-ary Tree
+  Use of B-Tree-File Systems & data Base systems
+  Indexing
+  
+  
+==========
+*Transversal*
+
+BFS:-Level order Transversal 
+1 -> ( 2 -> (4 & 5) & 3->6)
+
+1 -> 2 -> 3 -> 4 -> 5 -> 6(0 level then 1 level then 2 level and above)
+transverse 0 at level 1 first 
+then travel 2 & 3 at level 1 and 
+then travel 4, 5 & 6 at level 2
+======
+DFS:-
+1 -> (2 ->(4 & 5) & 3 -> 6)
+
+travel from root first then 2 then 4 then 2 then again root thrn 3 and at last 6
+1->2->4->2->1->3->6
+======
+DFS - Done with Three Ways
+1)InOrder
+2)PreOrder
+3)PostOrder
+=====
+1)Inorder:-
+Process nodes in left subTree first and 
+then process nodes data
+then process nodes in right subTree 
+=======
+2)PreOrder:-
+process node's data
+then process nodes left subTree
+then process nodes right subTree
+=====
+3)PostOrder:-
+process nodes left subTree
+then process nodes right subTree
+then process nodes data
+===========================================================
+===========================================================

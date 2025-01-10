@@ -1,0 +1,9 @@
+Assignment:
+1. Implement Insert() function for doubly linked list in a class by implementing SortedLinkedListIntf interface.
+Recommended: Practice TDD while doing the implementation.
+
+2. Implement all methods of SortedLinkedListIntf interface (refer to today's class file as the interface defination is updated) for circular doubly linked list that uses a dummy node.
+Recommended: Practice TDD while doing the implementation.
+
+3. Implement Stack ADT (Refer to the StackIntf interface defined on Day 1) using linked list.
+Recommended: Practice TDD while doing the implementation.

@@ -1,0 +1,12 @@
+Assignment:
+1. Implement function to sort an unsorted array, using Selection Sort algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+2. Implement function to sort an unsorted array, using Insertion Sort algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+3. Implement function to sort an unsorted linked list, using Insertion Sort algorithm.
+Recommended: Practice TDD while doing the implementation.
+
+4. Implement function to sort an unsorted array, using Quick Sort algorithm.
+Recommended: Practice TDD while doing the implementation.

@@ -1,0 +1,673 @@
+							
+								DAY 5 
+								
+								
+TOPICS :
+		
+		SELECT , CREATE  , ALTER, DROP 
+					INSERT , UPDATE , DELETE 
+							COMMIT , ROLLBACK 
+							
+		OPERATORS 
+				
+				RATIONAL 
+				LOGICAL 
+				AIRTHEMETIC 
+							
+	
+		SELECT 
+			* 
+				FROM 
+					TABLE NAME 
+						WHERE 
+							CONDITION 
+							AND 
+							CONDITION 
+									ORDER BY COLUMN NAME 
+					
+			
+			** WHERE CLAUSE EXECUTED FIRST
+			** ORDER BY ALWAYS BE THE LAST CLAUSE 
+			
+=======================================================================
+
+
+INBUILD FUNCTIONS : 
+
+			1) NUMERIC FUNCTION 
+			2) STRING FUNCTION 
+			3) DATE FUNCTION
+			4) AGGREGATED FUNCTION OR GROUP FUNCTION
+			
+		
+1) NUMERIC FUNCTION : 
+			
+				* ROUND() :
+						WHICH RETURN THE ROUND OFF VALUE PROVIDED 
+						
+					>= 5 UPPER VALUE 
+					< 5  LOWER VALUE 
+					
+				36.45  ::: ROUND(36.45)  :: 36
+				36.56  ::: ROUND(36.56)  :: 37
+				
+				ROUND FUNCTION COMES WITH 2 PARAMENTERS 
+				
+				ROUND(VALUE,PLACE TILL WHICH WE NEED TO ROUND OFF)
+				
+				2ND PARAMTER :
+					+ : SHIFT TOWARDS RIGHT OF THE DECIMAL AND THEN PERFORM ROUND OFF 
+					- : SHIFT TOWARDS LEFT OF THE DECIMAL AND PERFORM ROUND OFF 
+				
+		ROUND(34.5676,2) : 
+				* SKIP TWO PLACES FROM THE DECIMAL AND THEN PERFORM ROUND 
+				
+			ROUND(34.5676,2) :	34.57
+		
+		ROUND(345.345,-2) : 
+					* SKIP 2 PLACES LEFT OF THE DECIMAL 
+					
+				
+			ROUND(345.345,-2) :	300
+				
+		
+		* CEIL
+			RETURNS THE UPPER INTEGER VALUES BASED ON THE DECIMAL PROVIDED 			
+			
+			345.34  : 346
+			
+			34.23  : 35
+			
+		* FLOOR 
+			RETURNS THE NEAREST LOWER VALUE 
+			
+				34.78  : 34 
+				35.23  : 35
+				
+		* TRUNCATE 
+			TRUNCATE FUNCTION HAS 2 PARAMETERS 
+				BASED ON THE 2ND PARAMETER IT REMOVES THE VALUES AFTER THE NUMBER PROVIDED IN THE 2ND PARAMETER 
+				
+				
+				TRUNCATE(345.567,1) : 345.5
+				TRUNCATE(345.567,2) : 345.56
+				TRUNCATE(345.567,0) : 345
+				TRUNCATE(345.567,-2) : 300
+			
+			
+		* / , DIV 
+
+			SELECT 34 DIV 3; 11  : RETUNS VALUE WITHOUT DECIMALS 
+			SELECT 34/3 :  11.333
+			
+		
+		* MOD : MODULUS 
+			
+				5 MOD 2 
+					: 	RETURNS REMINDER 
+					
+				MOD(5,2) : 1 AS REMINDER 
+
+		* SQRT : 
+			SQUARE ROOT OF 4 : 2
+			
+			SQRT(16) : 4 
+			SQRT(9)  : 3
+			
+			
+THESE VALUES EITHER PASSED MANUALLY BY THE END USER OR THEY MAY COMES FROM THE TABLE COLUMN ALSO 
+
+
+2) STRING FUNCTIONS : 
+	
+		1) LENGTH OF THE STRING : RETUNS THE LENGTH 
+		
+			SELECT LENGTH('RAHUL BANSAL');
+
+			
+		2) UPPER :
+				STRINGS IN TO UPPER CASE 
+
+		3) LOWER : 
+				STRING TO LOWER CASE 
+				
+		4) COMBINE TWO STRING 
+			MOST OF THE CASES REQUIRED FOR NAMES 
+			
+			PRINT ON MOBILES BILL OR ELECTRICITY BILLS 
+			
+			RAHUL BANSAL 
+			RAHUL, BANSAL 
+			BANSAL, RAHUL 
+			
+			CONCAT(ACCEPT STRINGS WHICH NEED TO CONCAT);
+			
+			SELECT CONCAT('NAME OF THE PERSON IS :', 'RAHUL',', ','BANSAL');
+			
+		5) SUBSTRING : RETURNS THE SUBSTRING FROM THE MAIN STRING 
+
+			3 PARAMTERS 
+				1ST PARAM : ORINAL STRING 
+				2ND PARAM : START OF THE STRING 
+				3RD PARAM : LENGHT AFTER 2ND PARAM
+				
+				
+			SUBSTR('RAHUL',3,2);
+		
+		6)TRIM : 
+				HAVE SPACES STORED IN THE BASES 
+					
+				TRIM(STRINGS) : REMOVES THE SPACES FROM THE FRONT N BACK OF THE STRING 
+
+					'    RAHUL  BANSAL   ' : RAHUL  BANSAL
+					
+		7) LPAD : 
+			LEFT PADDING 
+
+			TO MAKE THE COMPETE STRING OF THE SAME LENGTH 
+			
+			3 PARAM 
+				1ST PARAM : VALUE  5
+				2ND PARAM : LENGTH REQUIRED FOR THE COMPLETE STRING  10
+				3RD PARAM : REST 5 POSITION REPLACED WITH THE 3RD PARAMETER STRING 
+				
+				LPAD('RAHUL',10,'*');
+					*****RAHUL
+			
+
+		8) RPAD
+			RIGHT PADDING 
+					
+				RPAD('RAHUL',10,'*');	
+					
+					RAHUL*****
+					
+					
+					
+		9) REPLACE 
+			: TO REPLACE THE CERTAIN STRING WITH THE SPECIFIED VALUE IN THE ORIGINAL STRING 
+			
+			
+				SELECT REPLACE('RAHUL,BANSAL',',','');	
+					
+3) DATE FUNCTION 
+					
+			1) NOW() 
+				RETURNS TODAYS DATETIME
+				
+			2) CURDATE() 
+					RETUNRS DATE WITHOUT TIME 
+					
+			3) CURTIME() 
+					RETURNS TIME WITHOUT DATE 
+					
+			4) DATE_FORMAT 
+					
+					DATE INTO SPECIFIC FORMAT BASED ON THE REQUIREMENTS 
+					
+				KEYWORDS : 
+				
+					%d  : day of the month
+					%D  : day with english sufix 
+							28th
+							3rd
+							9th
+							2nd 
+					%m : month 
+					
+					%M : full month name 
+					
+					%y : 2 digit from year 
+					
+					%Y : full year 
+					
+					%h : hours in 12 
+					
+					%H : hours with 24 
+					
+					%i : minutes 
+					
+					%s : seconds 
+					
+					%b retuns three characters of the month
+				
+				
+				
+				2 parameters 
+					1st parameter  : always be the date 
+					2nd param : pattern needed
+					
+					
+					
+				date_format(hire_date,'%d/%m/%Y %h:%i:%s')
+
+					string 
+				select date_format(hire_date,'%D %M, %y %h:%i:%s') from employees limit 10;	
+				
+				+---------------------------------------------+
+				| date_format(hire_date,'%D %M, %y %h:%i:%s') |
+				+---------------------------------------------+
+				| 17th June, 87 12:00:00                      |
+				| 21st September, 89 12:00:00                 |
+				| 13th January, 93 12:00:00                   |
+				| 3rd January, 90 12:00:00                    |
+				| 21st May, 91 12:00:00                       |
+				| 25th June, 97 12:00:00                      |
+				| 5th February, 98 12:00:00                   |
+				| 7th February, 99 12:00:00                   |
+				| 17th August, 94 12:00:00                    |
+				| 16th August, 94 12:00:00                    |
+				+---------------------------------------------+
+			
+			
+	SYSTEM ALLOWS TO PERFORM AIRTHMETIC OPERATION ON THE DATES 
+
+		AFTER ONE MONTH WHAT COULD BE MY DATE 
+		
+			ORACLE : 
+				
+					SELECT NOW() + 30;
+					
+			MYSQL : 
+				
+					SELECT NOW() + INTERVAL 30 DAY;
+					
+					DAYS, MONTH , YEAR , WEEK 
+					HOUR
+					
+			5) DAY_ADD()
+
+			6) DAY_SUB()
+			
+			7) YEAR, MONTH, DAY 
+				EXTRACT YEAR , MONTH AND DAY FROM THE DATE 
+				
+			SELECT EMPLOYEE_ID,YEAR(HIRE_DATE) AS "JOINED YEAR" FROM EMPLOYEES LIMIT 10;
+					
+			8) STRING TO DATE 
+
+				STR_TO_DATE(STRING,PATTERNS);
+				
+				Select str_to_date('30-01-1987','%d-%m-%Y')
+				
+			9) DATEDIFF()
+					TWO DATES 
+					DATEDIFF(NOW(),HIRE_DATE)
+				
+			mysql> SELECT TRUNCATE(DATEDIFF(NOW(),HIRE_DATE)/365,0) "EXPERIENCE" FROM EMPLOYEES LIMIT 10;
+			+------------+
+			| EXPERIENCE |
+			+------------+
+			|         34 |
+			|         31 |
+			|         28 |
+			|         31 |
+			|         30 |
+			|         24 |
+			|         23 |
+			|         22 |
+			|         26 |
+			|         26 |
+			+------------+
+			10 rows in set (0.00 sec)				
+SOME MORE FUCNTION 
+
+	** CASE 
+			
+		USED FOR COMPARISON WITH MULTIPLE VALUE AND RETURN STRING BASED ON THE CONDITION SATISFIED 
+		
+		SYNTAX : 
+		
+			CASE 
+			WHEN CONDITION THEN RETURN VALUE
+			WHEN CONDITION THEN RETURN VALUE
+			WHEN CONDITION THEN RETURN VALUE
+			.
+			.
+			ELSE
+			
+			END 
+					
+		EXAMPLE 
+			NEED TO PRESENT A REPORT 
+				
+				SALARY > 15000 THEN DISPLAY GRADE A 
+				SALARY > 8000 AND SALARY < 15000 THEN DISPLAY GRADE B 
+				SALARY < 8000 THEN DISPLAY GRADE C 
+				
+				
+				
+				SELECT EMPLOYEE_ID AS EMPID,CONCAT(FIRST_NAME,', ',LAST_NAME) AS NAME,SALARY, 	
+					CASE 
+						WHEN SALARY > 15000 THEN 'GRADE A'
+						WHEN SALARY > 8000 AND SALARY <= 15000 THEN 'GRADE B' 
+						ELSE 'GRADE C'
+					END
+					AS GRADE
+				FROM EMPLOYEES 
+					LIMIT 10;
+				
+	-------------------------------------------------------------			
+				
+		IFNULL : 
+		
+		
+AGGREGATED FUNCTIONS : ALWAYS RETUN SINGLE VALUE 
+
+			GROUP FUNCTIONS 
+				ARE THE FUNCTIONS WORK ON THE SET OF VALUES 
+				
+					
+			* FIND NO OF EMPLOYEES IN THE ORGANIZATION 
+
+				COUNT(*) 
+					: RETUNS TOTAL NUMBER OF ROWS PRESENT IN THE TABLE 
+					
+					
+				COUNT(COMMISSION_PCT) 
+					: RETUNRS TOTAL NUMBER ROWS EXCEPT NULL VALUE 
+						SKIP NULL VALUE 
+						
+			* SUM(COLUMN NAME)	
+				: SUBMISSION OF ALL THE INTERGER VALUES 
+				
+				EXACT EXPENDITURE FOR THE ORGANIZATION IN TERM OF SALARY 
+
+					SELECT SUM(SALARY) FROM EMPLOYEES;
+				
+			* MAX VALUE FROM THE SET OF VALUES 
+				
+				
+			* MIN VALUE FROM THE SET OF VALUES 
+			
+			
+	-------------- 20 MINUTE BREAK ------------------
+
+		TOPICS :
+			GROUP BY CLAUSE 
+				HAVING 
+					
+	------------------------------------------------------------------
+
+
+	FUNCTION : AGGREGATED FUNCTION / GROUP FUNCTION 
+	
+	1) FIND THE CONSOLIDATE SALARY FOR ALL EMPLOYEES 
+		SUM(SALARY) 
+		
+	
+	*** 
+		PROVIDE SALARIES BASED ON THE DEPARTMENTS 
+		
+			FIND CONSOLIDATE SALAYE GIVING TO EACH DEPARTMENT 
+			
+		
+		DEPARTMENT ID : 20,30,40,80 
+		
+			SELECT SUM(SALARY) FROM EMPLOYEES 
+				WHERE DEPARTMENT_ID = 80;
+				
+			SELECT SUM(SALARY) FROM EMPLOYEES 
+				WHERE DEPARTMENT_ID = 40;
+
+			SELECT SUM(SALARY) FROM EMPLOYEES 
+				WHERE DEPARTMENT_ID = 20;
+		
+		
+				OR 
+				
+			HUGE DATA TO PERFORM SUCH ACTION, ITS LITTLE DIFFICULT TO DO MANUAL STUFF 
+			
+			SO THEY INTRODUCE 
+				CLASUE : GROUP BY 
+				
+			GROUP BY : 
+					GROUPING OF CERTAIN DATA
+				
+			SYNTAX : 
+				
+					GROUP BY COLUMN NAME 
+					
+						1 GROUPING 
+						2 GROUP BASED ON THE COLUMN NAME PROVIDED 
+						
+			
+		SELECT DEPARTMENT_ID,SUM(SALARY)
+
+				FROM 
+					EMPLOYEES 
+						GROUP BY DEPARTMENT_ID
+		
+		
+		mysql> SELECT EMPLOYEE_ID, FIRST_NAME,SALARY,DEPARTMENT_ID FROM EMPLOYEES WHERE DEPARTMENT_ID IN (20,60);
+		+-------------+------------+----------+---------------+
+		| EMPLOYEE_ID | FIRST_NAME | SALARY   | DEPARTMENT_ID |
+		+-------------+------------+----------+---------------+
+		|         201 | Michael    | 13000.00 |            20 |
+		|         202 | Pat        |  6000.00 |            20 |
+		|         103 | Alexander  |  9000.00 |            60 |
+		|         104 | Bruce      |  6000.00 |            60 |
+		|         105 | David      |  4800.00 |            60 |
+		|         106 | Valli      |  4800.00 |            60 |
+		|         107 | Diana      |  4200.00 |            60 |
+		+-------------+------------+----------+---------------+
+		
+		
+		
+		GROUP BY CLASE EXECUTED IN 4 STEPS :-
+		
+		1) BRINGS ALL THE COLUMNS REQUIRED FOR CALCULATION OR OPERATION IN TO TEMP MEMORY 
+		+-------------+------------+----------+---------------+
+		| EMPLOYEE_ID | FIRST_NAME | SALARY   | DEPARTMENT_ID |
+		+-------------+------------+----------+---------------+
+		|         201 | Michael    | 13000.00 |            20 |
+		|         202 | Pat        |  6000.00 |            20 |
+		|         103 | Alexander  |  9000.00 |            60 |
+		|         104 | Bruce      |  6000.00 |            60 |
+		|         105 | David      |  4800.00 |            60 |
+		|         106 | Valli      |  4800.00 |            60 |
+		|         107 | Diana      |  4200.00 |            60 |
+		+-------------+------------+----------+---------------+
+				
+		2) SORTING BASED ON THE COLUMN PROVIDED IN THE GROUP BY CLAUSE 
+		+-------------+------------+----------+---------------+
+		| EMPLOYEE_ID | FIRST_NAME | SALARY   | DEPARTMENT_ID |
+		+-------------+------------+----------+---------------+
+		|         201 | Michael    | 13000.00 |            20 |
+		|         202 | Pat        |  6000.00 |            20 |
+		|         103 | Alexander  |  9000.00 |            60 |
+		|         104 | Bruce      |  6000.00 |            60 |
+		|         105 | David      |  4800.00 |            60 |
+		|         106 | Valli      |  4800.00 |            60 |
+		|         107 | Diana      |  4200.00 |            60 |
+		+-------------+------------+----------+---------------+
+		
+		3) CREATES GROUPS BASED ON THE COLUMN PROVIDED IN THE GROUP BY CLAUSE 
+		
+		G1
+		+-------------+------------+----------+---------------+
+		| EMPLOYEE_ID | FIRST_NAME | SALARY   | DEPARTMENT_ID |
+		+-------------+------------+----------+---------------+
+		|         201 | Michael    | 13000.00 |            20 |
+		|         202 | Pat        |  6000.00 |            20 |
+		+-------------+------------+----------+---------------+
+		
+		G2
+		+-------------+------------+----------+---------------+
+		| EMPLOYEE_ID | FIRST_NAME | SALARY   | DEPARTMENT_ID |
+		+-------------+------------+----------+---------------+		
+		|         103 | Alexander  |  9000.00 |            60 |
+		|         104 | Bruce      |  6000.00 |            60 |
+		|         105 | David      |  4800.00 |            60 |
+		|         106 | Valli      |  4800.00 |            60 |
+		|         107 | Diana      |  4200.00 |            60 |
+		+-------------+------------+----------+---------------+
+			
+					
+		4) EXECUTE THE GROUP OR AGGREGATE FUNCTION ON THE GROUPS 
+			
+			
+			G1 : 19000
+			
+			G2 : 28800
+			
+		5) CREATE A TABLE WITH REQUIRED DATA FOR OUTPUT AND SENT 
+
+			DEPARTMENT_ID 		SUM(SALARY)
+			20					19000
+			60					28800
+			
+			
+		CERTAINS RULES FOR GROUP BY :-
+
+			1) ALL THE COLUMNS INCLUDED IN THE SELECT ELSE THEN THE GROUP FUNCTION COLUMN , NEED TO BE A PART OF GROUP BY CLAUSE 
+			
+			SELECT JOB_ID,DEPARTMENT_ID, SUM(SALARY) 
+					FROM  
+						EMPLOYEES 
+							GROUP BY JOB_ID,DEPARTMENT_ID
+				
+				
+			** SMALL CATCH :
+					MYSQL DOESN'T FORCE THE ABOVE RULES 
+					
+					
+				SELECT JOB_ID,DEPARTMENT_ID, SUM(SALARY) 
+					FROM  
+						EMPLOYEES 
+							GROUP BY DEPARTMENT_ID
+
+
+					WHAT HAPPEN IN THIS CASE 
+						
+	
+				SELECT FIRST_NAME,DEPARTMENT_ID, SUM(SALARY) 
+					FROM EMPLOYEES 
+						GROUP BY DEPARTMENT_ID;
+
+
+			ORACLE,POSTGRESS DOESN'T ALLOW TO EXECUTE THE ABOVE QUERY ....
+
+
+			2) ALL THE COLUMNS PART OF THE GROUP BY CLAUSE, MAY OR MAY NOT BE THE PART OF SELECT 
+				
+				SELECT SUM(SALARY) 
+					FROM EMPLOYEES 
+						GROUP BY DEPARTMENT_ID;	
+
+--------------------------------------------------------------------------
+
+SEQUEANCE OF THE SELECT STATEMENT : 
+
+
+	SELECT ------MANDATORY
+		* 
+			FROM  ------MANDATORY
+				TABLENAME 
+					WHERE  ------ NOT MANDATORY
+						GROUP BY CLAUSE  ------ NOT MANDATORY 
+							ORDER BY   ------ NOT MANDATORY
+
+---------------------------------------------------------------------
+
+* IF WE WANT FILTERS ON TOP OF THE OUTPUT FROM THE SELECT QUERY 
+	
+				HAVING CLAUSE 
+					: CLAUSE IS USED TO PROVIDE FILTER ON THE OUTPUT 
+					
+				
+			
+	** NEED ALL THOSE DEPARTMENT WHO ARE GETTING CONSOLIDATE SALARY GREATER THEN 12000.....
+
+		* DEPARTMENT WISE SALARY 
+			SUM(SALARY) BASED ON DEPARTMENT 
+				GROUP BY DEPARTMENT_ID 
+				
+		* OUTPUT : FILTER ON SUM(SALARY) > 12000 
+		
+		
+		
+		SELECT DEPARTMENT_ID, SUM(SALARY) AS CSAL
+			FROM 
+				EMPLOYEES   
+					GROUP BY DEPARTMENT_ID
+						HAVING SUM(SALARY) > 12000;
+						
+--------------------------------------------------------------------------
+
+			ALL THESE AGGREGATED / GROUP FUNCTION 
+				CAN NOT BE A PART OF YOUR WHERE CLAUSE 
+				
+					* AS WE ALREADY SAID WHERE IS THE FIRST CLAUSE NEED TO BE EXECUTED 
+						
+		
+FOR ME : 
+
+		SELECT 				------------------------MANDATORY
+			COLUMN SEPERATED BY COMMA 
+				FROM 		------------------------MANDATORY
+					TABLE NAME 
+						WHERE-----------------------NOT MANDATORY
+							** FILTER ON THE PHYSICAL LOCATION OF THE TABLES AND BRINGS DATA IN THE TEP MEM FOR FURTHER EXECUTION
+							CONDITION 
+								GROUP BY ------------NOT MANDATORY
+								** CREATES GROUP FOR EXECUTION OF GROUP FUNCTIONS
+									COLUMNS 
+										HAVING -----NOT MANDATORY
+										** FILTER ON THE OUTPUT 
+											CONDITION 
+												ORDER BY----NOT MANDATORY
+													** SORTING OF THE DATA
+													COLUMN 
+
+
+
+	mysql> SELECT DEPARTMENT_ID, SUM(SALARY) AS CSAL
+			-> FROM
+				-> EMPLOYEES
+					-> WHERE SALARY > 2000
+						-> GROUP BY DEPARTMENT_ID
+							-> HAVING CSAL > 15000
+									-> ORDER BY CSAL DESC;
+									
+									
+					+---------------+-------------+
+					| DEPARTMENT_ID | SUM(SALARY) |
+					+---------------+-------------+
+					|            80 |   304500.00 |
+					|            50 |   156400.00 |
+					|            90 |    58000.00 |
+					|           100 |    51600.00 |
+					|            60 |    28800.00 |
+					|            30 |    24900.00 |
+					|           110 |    20300.00 |
+					|            20 |    19000.00 |
+					+---------------+-------------+
+					8 rows in set (0.01 sec)
+
+
+		* ORACLE : ALIAS ONLY ALLOWED IN THE ORDER BY CLAUSE 
+						
+
+====================================================================
+
+	SELECT COUNT(*) FROM (
+		SELECT DEPARTMENT_ID, SUM(SALARY) AS CSAL
+		    FROM
+				EMPLOYEES
+				WHERE SALARY > 5000
+				GROUP BY DEPARTMENT_ID
+				HAVING CSAL > 15000
+					)T ;
+					ORDER BY CSAL DESC;
+
+
+
+
+
+
+
+
+
+
+								
