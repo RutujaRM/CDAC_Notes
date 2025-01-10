@@ -1,0 +1,40 @@
+
+1. What is JDK? ...
+2. What is the difference between JDK, JRE, and JVM? ...
+3. What is a JIT compiler? ...
+4. What are Brief Access Specifiers and Types of Access Specifiers? ...
+5. How many types of constructors are used in Java? ...
+6. Can a constructor return a value? ...
+7. Explain 'this' keyword in Java.
+8. What are the differences between C++ and Java?
+9. List the features of the Java Programming language?
+10. What do you get in the Java download file? How do they differ from one another?
+11. What are the Memory Allocations available in Java.
+    Java has five significant types of memory allocations.
+Ans.
+Class Memory
+Heap Memory
+Stack Memory
+Program Counter-Memory
+Native Method Stack Memory
+12. Define Wrapper Classes in Java.
+13. Define package in Java.
+14. Differentiate between instance and local variables.
+15.  What is an Exception?
+16. What is the final keyword in Java?
+17.What is the difference between JDK, JRE, and JVM?
+18. Explain ‘super’ keyword in Java.
+19.  What is JDBC?
+20.  What is the difference between System.out, System.err, and System.in?
+Ans.
+System.out and System.err represent the monitor by default and thus can be used to send data or results to the monitor. System.out is used to display normal messages and results. System.eerr is used to display error messages. System.in represents InputStream object which by default represents standard input device, i.e., keyboard.
+21. List the features of Java Programming language.
+22. What is the Inheritance?
+23.Why is Inheritance used in Java?
+24. Why is multiple inheritance not supported in java?
+25.Difference between method Overloading and Overriding.
+26. Explain interface in java.
+27.Why is Java a platform independent language?
+28.  What do you mean by data encapsulation?
+29. Can you tell the difference between equals() method and equality operator (==) in Java?
+30. Explain the use of final keyword in variable, method and class.

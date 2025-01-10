@@ -1,0 +1,65 @@
+Coupa Software
+
+	1st Round :  Technical
+1. Introduce yourself
+2. How you rate yourself in coding?
+3. Tell me something about your project and what technologies you have used?
+4. Why you have used MySQL in project?
+5. Have you worked on any Linux OS? Do you know the concepts of Operating System?
+6. Where did you deploy your project?
+7. Suppose, while deploying your application is not working, how will you tackle this?
+8. Explain annotations 
+9. While deploying if tomcat is not working, how will you resolve that?
+10. Tell me about binary tree.
+11. Write a program to reverse a number. Explain each step.
+12. Do you have experience of using Cloud (AWS or any other)?
+13. Which project you have deployed on AWS?
+14. How did you access AWS? 
+15. Do you know S3?  (It is Amazon Simple Storage Service)
+16. Program to count the wovels in a given string.
+17. How to check running processes in machine?
+Checked my Resume at last
+18. Do you want to ask anything?
+
+	2nd Round : Technical
+1. Can you recall the questions asked in test?
+2. Do you know anything about Cloud Computing?
+3. Purpose of using Cloud Computing?
+4. How do you access cloud services?
+5. What is SSH?
+6. Have you used Linux?
+7. What is Bash shell?
+8. What is shell scripting?
+9. Programs you have done in shell scripting
+10. Different commands in linux.
+11. Explain each OOP concept with real life example.
+12. Explain in detail different blocks used in exception handling 
+13. Write a program to get the count of occurence of unique word from a given string. (after giving solution, told me to use different logic)
+14. Given an array, rotate the array to the right by the k steps, where k is non-negative.
+	example:
+	Input: nums = [1,2,3,4,5,6,7], k = 3
+	Output: [5,6,7,1,2,3,4]
+	Not to use array, shift/unshift, delete/pop etc methods
+	No extra separate array 
+Need to share screen, write program on notepad, and explain each step while writing code.		
+
+15. What do you know about Databases?
+16. Explain the properties of RDBMS
+17. What is System Data and System architecture?
+18. Suppose I want to build a Library Management System, how will you design it? 
+(Need to explain the whole process, from requirement gathering, wireframe design, making SRS, Use-case diagrams, Databsse design, normalizing tables, process of configuring database connection with back-end, what layers and classes will be used in backend, annotations, data flow, connecting to front-end and all remaining)
+19. Do you have any question for me?
+
+
+	3rd Round : 
+Technical:
+1. Introduce yourself
+2. Why did you choose CDAC as your background is non-IT?
+3. Is CDAC your first exposure to programming ?
+4. Tell me the progam to access the text file and count the occurences of each unique word present in the file.
+5. Write a program to find the missing from array with length 10 thousand having elements ranging from -3000 to 7000. Explain time complexity for each possible situation.
+6. How to implement Queue data structure using stack? (After telling my logic, told me to use another approach as my approach had many iterations which were time consuming)
+
+Puzzles: 
+1. You have given 3 boxes, one contains Red balls, one contains Yellow and the remaining one contains mixture of both Red and Yellow. Each box has label of colour but none of them is correct. You have to pick only one ball from any box and guess what should be the correct label for each box
+2. You have two containers, first one with 3L capacity and second with 5L. You need to measure exact 4L of water using these two containers. (You can not make any kind of marking on containers)

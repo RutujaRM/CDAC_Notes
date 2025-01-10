@@ -1,0 +1,1235 @@
+Project Preparation Questionnaire
+-------------------------------------
+
+1.Describe the problem statement of your Project briefly.
+2.Describe your Role in Project.
+3.Mention the Technology used in Project.
+4.What are the objectives of your project?
+5.Who are the target beneficiary of your project?
+6.How you all done the project module distribution?
+7.As a leader which are the project leader qualities are?
+8.As a Team members what should be the role towards Project leader?
+9.Any issue or discrepancy in the project where you disagree?
+10.Have you used any Software Life cycle Model in your project?
+11.Is it possible to convert your project from Java to .NET or vice versa?
+12.If you make use of Angular technology in your UI designing, what possible changes are required to be done?
+13.Have you used any OOPs concepts in your Project?
+14.Have you used any APIs in your project?
+15.Have you used any Payment Gateway in your Project?
+16.Any errors that you face during project?
+17.What are the plus point of your team?
+18.What is the minus point of your team?
+19.Have you use any Business Model in Project?
+20.Draw the architecture of your project.
+21.Design flow diagram for your project.
+22.What is the Front end used in Project.
+23.What is the Back end used in Project.
+24.Which UML Diagrams you have designed and why?
+25.Describe your Project schema.
+26.Explain the ER diagram of your project.
+27.Explain Tables with its relationship.
+28.Normalization is applicable to your project? (Yes/no). If so up to what level.
+29.Describe database connection of your project?
+30.Differentiate between .NET and JAVA Project database connections?
+31.Already so many applications are in market, how your application is different from market applications?
+32.What all concepts of PG-DAC courses are applied to your Project?
+33.What all testing you all have done?
+34.Can you mention any test case from the project?
+35.Explain your testing methodology with its type?
+36.Give example for Unit testing done your project?
+37.Give example for System testing done your project?
+38.Give example for Data driven testing done your project?
+39.Give example for Load testing done your project?
+40.Is there any feature you have planned but not able to complete it?
+
+
+
+
+============================================
+1)
+
+OOps concept 
+-Overloading overriding 
+-dependency injection in java in angular 
+-comparator vs comparable
+-tag vs element
+-can we override main method
+-inheritance with example
+-types of inheritance 
+-annotations used
+-polymorphism
+================================================================
+2)
+What is MVC ?
+Have you implemented MVC n if yes explain your MVC flow 
+What mappings you used
+How request flow is happening
+How have you implemented Security 
+Different between @ controller & @restcontroller
+How have you incorparated database in your project 
+Difference between hashmap and table
+Array list and linked list
+Purpose for choice of set and 4-5 Ques specific to my projecT
+
+================================================================
+3)
+
+Project details
+Technology used
+Modules implemented
+Rest controller
+Path variable
+Autowired,autowiring
+Spring bean and its scope
+Application server vs web server
+Session , default session timeout and to set timeout for session
+Hashtable vs hashmap
+Exception with example
+Error pages how to log errors
+Dispatcher Servlet and how it works
+Object
+
+
+Trigger types when to use
+Procedure vs function
+Can we use procedure in function and vice-versa
+Joins types and query on joins
+Acid property and examples
+Normalisation types and need for normalisation
+============================================================
+4)
+
+C/Cpp and Java
+Explain your project
+Difference between c and cpp
+In which scenario will you use c and cpp with example
+Does cpp or c support multithreading? 
+Difference between structures and classes
+What is dynamic memory allocation? Need of dma? 
+What is calloc and malloc
+How do calloc and malloc work in memory 
+Difference between stack and heap
+Why do we need classes if we have structures?
+What is pointer? 
+How is pointer variable different from normal variable?
+What happens when we increment pointer variable? 
+(they asked what will happen in pointer++) 
+What is difference between pointer and reference. 
+How does a pointer work in memory?
+Early binding late binding 
+Can we override static function? 
+How does a C program work in memory? How many files are created when we compile a code? 
+Explain which architecture you used in project? 
+(I said client server architecture) 
+What is dependency injection? 
+Types of DI?
+Why did you use spring boot? 
+What is a MVC? 
+What is JPA?
+What does @autowire do? 
+What does @request mapping do? 
+Since you know Java why did you choose C/Cpp? 
+(personal preference)
+
+===========================================================
+5)
+
+Q.Tell me about yourself
+
+Q.Elaborate about your project 
+
+Q.how was the work divided and what was your contribution in project
+
+Q.more questions about implementation of project explain with example
+
+Q.how will you count number of visitors that visited your site
+
+Q.Is it possible to write multiple processess inside a single file
+
+Q.what is static, explain 
+
+Q.what is difference between mvc and spring boot and why have you used spring boot as project technology
+
+Q.how will you count number of visitors that visited your site
+
+Q.explain mvc in spring boot
+
+Q.what is calloc?
+
+Q.what is finally ,final and finalized?
+
+Q.what is @modify and @Transaction and where it is used 
+
+Q.what is dependancy injection and where have you used it
+=============================================================
+6)
+
+Introduction
+About project engineering+ cdac
+Your Role in project
+Oops concepts in project
+Web services
+Controller restcontroller
+Database views
+Cdac journey
+==================================
+7)
+
+1.Tell me about your self ?
+2.Why switch civil to CDAC ?
+3.What typs of difficulties u faced in CDAC ??
+4.tell me something about cybage ? 
+5.do u want to work on automation ?
+6. presentation attend kiya tha kya ? If yes to some points batao jo btaye the
+-
+
+2nd HR...
+How was ur lock down..
+How will you control ppl outing now ..like you heard that there is many cases happened now...
+So u thing 2nd lockdown to be declared??
+All should shut again??
+U said u like craft work? Wht particular in that??
+Wht u know abt cybage? Oh u done ur homework well😅..
+How was ur technical round? 
+Where do u stay ? Tell me abt family ?
+===================================================
+8)
+
+Routing in angular how you used
+Write component which you used in project
+Oops
+Mysql
+Swap without using third variable
+Keys 
+Primary vs unique
+What is rest api
+Put vs post
+Synchronization
+Final
+Finally
+Final with code
+How to make variable constant write code
+Finally
+==============================================
+
+9)
+
+1.Tell me about yourself
+2.Tell me about your project
+3.Have u know cloud computing how it works 
+4.Have u implement more than one primary key in your project .
+5.have u tried to implement multiple  primery keys in one table
+6.Teach me database in 5 min 
+7.Have u implement fuctions or procedure in database 
+8.If u have to explain cloud to u r family member how will u explain that
+9.
+Why should we hire u
+10.
+How security is  implement in u r project 
+11.http vs https
+12.ask any ques if u have
+
+
+tell. me about  urself and ur family? 
+what u like, ol cdac or face to face learning? 
+ one example  or experience  of team work? 
+first interaction  with cdac team?
+
+goal? 
+why cdac
+===============================================
+10)
+
+Where are you from?
+Tell me something about yourself.
+What programming languages are you familiar with.
+What have you done in Python?
+Why move to programming from Instrumentation and Control Engg?
+Tell me something about your project.
+What technologies have you used in your project?
+What was your role in your project?
+Have you used Bootstrap?
+What is Tailwind framework?
+Why .net? Why not PHP, Java Spring?
+Explain me the flow of your project.
+(Switched to Marathi) I see you are from Jamner (Jalgaon), so must be liking Baingan ka Bharta? 🤣
+(Again in English) What happens when a user orders something.
+So you have used any third party service for UPI, Online Banking payments?
+Where have you completed your Instrumentation Engg from? Tell me the full form of the college's name.
+How would you know if a users payment is reached your account?
+What if a user has purchased a book and now s/he wants cancel the order and want refund?
+How exactly you did implement the social media side?
+That's all.
+
+=====================================================
+11)
+
+Hiw was ur lockdown??What you do in lockdown ?? 
+..lets start with intro..
+.hav you heard about cloud computing??
+If you want to explain cloud to ur granny ? Wht it?? 
+Also database explain to granny...
+Will she get wht is db by ur answer??
+Why springboot in project?? 
+What application you develop other than project??
+What is ur approach to learn something new?? 
+What is your technical aspect??
+R u enjoying coding, programming or testing??
+R u not getting bored by code only?
+Do you use any regular expression in ur project?? Tell me ...
+Hav a nice day ahead 😊
+
+===========================================================
+12)
+
+diff bw.procedures functions 
+oops 
+compile time binding...
+why use polymorphism
+what is interface
+why use interface 
+civil  brach ohooo kaise coding mei 
+database index
+triggers 
+final and finally 
+can we have nested exception block 
+project details 
+multiple inheritance where possible and where not ?
+your role in project
+
+========================================================
+13)
+
+Infibeam Avenues Interview Questions
+
+----------------------------------
+Round 1 
+
+Project Architecture
+What is API ?
+What is REST api ?
+Difference between HTTP and HTTPS ?
+What is Microservice ?
+Difference between Microservice and Monolithic Application Architecture ? Which one we should follow and Why ?
+Why Microservices are lightweight ?
+Problems with Monolithic Architecture ?
+What is SQL Injection ?
+What is Concurrent HashMap ?
+How to set priority of thread ?
+Difference between Drop, Truncate & Delete in SQL ?
+Which are thread safe collections ?
+How can we achieve thread safety for thread unsafe collection like ArrayList ?
+Purpose of wait() method of Thread ?
+What is Serializable ?
+
+----------------------------------
+Round 2
+
+Explain all OOPS concept ?
+Detail explanation of Project
+What is the need of Session Management ? How can we achieve it ?
+What is JWT ? Which three things any JWT token has ?
+Ways to create Thread ?
+Difference in creating thread using Thread class & Runnable interface. Which one we should use ?
+What is Anonymous Inner Class ? Explain this with Thread & Runnable
+Min, Max & Default Priority of Thread ?
+wait(), notify() methods of Thread
+Types of Joins in SQL
+Difference between Spring and Spring Boot
+What is Dependency Injection ? How can we achieve that ?
+What happens behind the seen when we use @AutoWired ?
+Explain @SpringBootApplication annotation
+Which annotation is use to tell Spring IoC container to auto configure the spring beans ?
+Explain @EnableAutoConfiguration annotation 
+How can we manage transaction in Hibernate ? How can we achieve tx commit on success & tx rollback on failure ?
+What is Marker Interface ? What is the significance of it ?
+Significance of L1 cache in Hibernate ?
+While developing our application in which scenario we should implement L1 cache ?
+Difference between StringBuilder and StringBuffer ? Which one should we use ?
+Which coding best practices we should follow while developing our application ?
+
+====================================================================
+14)
+
+tell about yourself
+sql basics
+plsql
+write a procedure to fetch a data for a condition
+
+if department id > 50
+
+java
+oops
+project role
+project technology 
+how will you generate id in your call project
+how will you Store it in database at runtime
+
+Why you not used payment getway in project 
+
+What is JavaMailsender
+
+Interface vs Class
+
+Write a program to validate that inputted string is valid date 
+
+in format 2011/Aug/02
+
+Mini project in clg which you done explain in brief 
+
+Questions regarding company if any
+============================================================
+
+15)
+
+How many abstract method are there in Abstract class and Interface.
+
+is String is a class or not?
+
+Difference b/w Hashset and HashTable.
+
+Join in Mysql: explain left outer join
+
+Difference b/w candidate key and primary key also b/w foriegn key and primary key.
+
+============================================================
+16)
+
+Project Architecture
+What is API ?
+What is REST api ?
+Difference between HTTP and HTTPS ?
+What is Microservice ?
+Difference between Microservice and Monolithic Application Architecture ? Which one we should follow and Why ?
+Why Microservices are lightweight ?
+Problems with Monolithic Architecture ?
+What is SQL Injection ?
+===================================================
+17)
+
+How to set priority of thread ?
+Difference between Drop, Truncate & Delete in SQL ?
+Which are thread safe collections ?
+How can we achieve thread safety for thread unsafe collection like ArrayList ?
+Purpose of wait() method of Thread ?
+What is Serializable ?
+
+
+=========================================================
+18)
+
+Difference between Spring and Spring Boot
+What is Dependency Injection ? How can we achieve that ?
+What happens behind the seen when we use @AutoWired ?
+Explain @SpringBootApplication annotation
+Which annotation is use to tell Spring IoC container to auto configure the spring beans ?
+
+==================================================
+19)
+
+What is Spring framework?
+
+advantages of using hibernate. explain the benefits of L1 cache
+
+linux basic cat/grep command.
+
+About thread: various stages (life cycle).
+
+wait, notify,notifyAll
+
+========================================
+20)
+
+Project se related questions
+Abstract class
+Difference between abstract class and interface
+Oops concept
+Object and class
+Normalization
+Primary , foreign key
+Types of Joins  with examples
+Compile time run time polymorphism
+Why we use java script
+Parent tag in HTML
+String related questions
+Architecture of spring
+
+=====================================================
+21)
+
+Panel: 24
+Name: Akhil Darge
+
+1.Introduction
+2. Class and Object — in deep
+3. Inheritance
+4. Polymorphism
+5. Encapsulation
+6. Base class, Super class, Derived Class
+7. Abstract Class vs Interface
+8. Different types of Encapsulation
+9. Left join
+10. Unique key
+11. Union vs union all
+12. Database and data warehouse
+13. Query- which department has maximum employees
+14. Truncate and delete and drop
+15. Where and  having clause
+16. Can we apply having clause without group by
+17. Linear Data structure and non linear Data structure
+18. Traversal
+19. Fastest Sorting algorithm & why
+20. Which Data structure is used for recursion
+21. Reverse an integer
+22. Swap without third number
+23. 3 bulbs in the room and 3 switches outside the room - You can enter only once, find out which switch for which bulb
+24. 8 similar balls, one is heavier in them - in how many try you will find out which one is heavier.
+25. Square shaped cake- cut it into 8 pieces with only 3 strikes of knife.
+
+============================================================
+25)
+
+Panel: 41
+
+1. Introduce and tell which technologies you want me to interview you on
+2. Diff betn rdbms dbms
+3. Query to get employees and their managers without using join
+4. 2 more basic queries
+5. Normalisation, have you implemented it? what are total levels of normalisation
+6. Virtual keyword in java
+7. Polymorphism types and is it used in other object oriented language and in which way
+8. Which is parent class of all java classes. 
+9. What is the total number of methods of object class
+10. Is java compilation platform dependent or independent.
+11. Is jvm platform dependent or independent
+12. Are interpreted languages faster than compiled languages
+13. Why java went for compiled approach
+14. Life cycle of thread
+15. Use of start(),wait(),sleep() methods do?
+16. What is ORM and disadvantages of hibernate
+17. What are your hobbies
+18. Which is default method of form
+19. Why get is default method and not any other
+
+================================================
+26)
+
+ell me about yourself?
+What is class and object?give example
+What is Polymorphism?
+Types of polymorphism.
+Overriding and overloading
+Code of Runtime polymorphism
+
+================================================
+27)
+
+Main OOPs concepts: Explanation with example
+
+Difference b/w Method Overloading and Overriding. Can you overload Main Method?
+
+Difference b/w Abstract class and Interface.
+
+How many abstract method are there in Abstract class and Interface.
+
+is String is a class or not?
+
+Difference b/w Hashset and HashTable.
+
+Project related Question : Cdac + Graduation/Post Graduation
+
+==================================================
+28)
+
+Project Architecture
+What is API ?
+What is REST api ?
+Difference between HTTP and HTTPS ?
+
+===================================================
+29)
+
+1 Encapsulation
+2 Encapulation explain through a code
+
+3 explain Inheritance In same code by extending the base class and make necessary changes to code
+
+4 what is operator overloading is it possible in java
+
+5 Overriding 
+
+6 Hibernate and methods in Hibernate
+
+7 JSON response
+
+8 Springboot Annotations and why they are used
+
+9 hashcode vs equals and override this methods in your code
+
+10 Initialize ArrayList of the class you created
+
+11 HashSet
+
+12 Hashmap internal working
+
+13 How to get Data from Post method in your spring application 
+
+14 Hibernate Get vs Load
+=================================================
+30)
+
+Access modifiers 
+Spring tool architecture
+Swap two number reverse a string compare two string pallindrome 
+what is java hibernate oops concepts sql joins jdbc
+
+===================================================
+31)
+
+Nuvolo 
+Panel3 
+Intro
+Opps pillers
+Can we use static in abstract
+Rdbms
+Give me a senerio variable and methods in class and in main have constructor how it stored in stack 
+ Take a array 1 to 101 elements and find  Prime no. store in other other array that prime no. And print them
+One more coding question 
+One hr question in company if team member and manager not accepted your idea then how u convenience the
+m
+==========================================================
+32)
+
+In which technology you are comfortable
+What is infinite loop
+Different types of loops
+What is array
+What is serialization
+Main method in java
+What is constructor
+Tell me about yourself
+========================================================
+33)
+
+1. Tell me about yourself?
+2. Your background 
+3. Your education
+4. Your hobbies
+5. Explain your project.
+6. Problems faced in project.
+7. How would handle a project if you are stuck during the implementation. 
+How would you approach a work given to you when you have less knowledge about it (It was a general question not technical)
+8. Is there any question for me?
+ Ans: I asked two genral questions.
+
+PANEL 36
+=====================================================
+34)
+
+Seagate Technology
+
+Round 1
+OS concepts, Deadlock, Concurrency Management, Semaphores,
+Multi threading,
+
+
+DS : Complexities, Tree in depth, graph overview. 
+
+Advantages and drawbacks of all data structures
+
+coding : Binary search tree with traversals
+
+Puzzle: 3 blue, 4 brown and 5 black socks.
+how many socks do one need to pick to get a pair of socks.
+--------------
+Round 2: 
+Scenario based coding. need to cover all the test cases and Boundry conditions. 
+
+Puzzle : all couples in a country want Baby boy only.
+ they will keep on having babies till they get baby boy. 
+What will be the proportion of baby boys to baby girls .. in entire  country
+---------
+
+Round 3: Techno managerial 
+
+pseudo codes for scenario and interviewer tried to check my technical proficiency, 
+domains i explored, internship experiences, projects till date.. functionalities in project.
+
+----------
+
+All the best.
+=========================================================
+35)
+
+
+View
+Partial View
+Action methods
+LinkQ
+view Bag
+MVC architechture
+
+==================================
+36)
+
+Cdac Project
+Method overloading and overriding with real time example
+Sdlc life cycle
+Oops concepts with real time ex
+Why multiple inheritance not supported in java ?
+Is there any way to achieve multiple inheritance in java?
+What are the database tables you used in project?
+What are the features of java?
+Why is java platform independent? 
+What is the role of bytecode in java?
+
+=========================================
+37)
+
+Project details
+Technology used
+Modules implemented
+Rest controller
+Path variable
+Autowired,autowiring
+Spring bean and its scope
+Application server vs web server
+Session , default session timeout and to set timeout for session
+Hashtable vs hashmap
+Exception with example
+Error pages how to log errors
+Dispatcher Servlet and how it works
+Object
+Trigger types when to use
+Procedure vs function
+Can we use procedure in function and vice-versa
+Joins types and query on joins
+Acid property and examples
+Normalisation types and need for normalisation
+
+
+======================================
+38)
+
+Indexnine Final round  interview questions:- Hard
+
+1. Hash Collison
+2.rehashing 
+3. Java8  design pattern all :- lymda etc ..
+4.  Classnotfound exception How to Handle Explain in details .
+5.  Write Code for Final Class with possibilities
+6. 5 ltr 3 ltr  water can . Make 4 Ltr can how?        Possible ways.
+7. inheritance Where Not used ? And why ?
+Many More.....
+
+
+Interviewer Bol raha tha Class not found Exception Occure at  compile time .
+ But Maine Bola Its checked exception  Exception occure  runtime only .
+Interviewer said  compile time only 😂😂.
+....
+Most of Questions relted what happend How happend And How to Handle 
+
+
+==========================================
+39)
+
+First round indexnine 
+All code Answer Done ✅
+Code
+1. Swap Two number 
+2.Sort array in ascending order
+3. get post
+4 Overloading Overriding 
+5. Inheritance  
+1 Query 
+Update Age =31 in table having column whose name is meera
+ name , age:-      ?
+Core java Basics....
+
+====================================
+40)
+
+what is your project.
+which technology is used for it.
+why used springboot and what are advantages of springboot over spring and jsp.
+what is role in your project . explain in details.
+Explain the flow of your project .
+write any controller .
+how many table are in your project . explain it .
+Then how you mapping with each other..
+what is rdbms. explain well.
+then can we define two entity in one table .
+what is internate.
+how you can convert code jsp into react or angular.
+in which scenario we can use rect js , angular and jsp. and explain advantages of each.
+why react is fast.
+Explain ip address and tell the difference between ip4 vs ip6.
+what is object oriented language. explain well.
+what is inheritance..give real time example.
+brief explanation about jvm jre..
+explain platform independent .
+program execution.
+ can you  make html dyanamic..if yes then how.
+and some scenario based questions.
+
+
+===========================================
+41)
+
+Hr questions on why you joined cdac 
+About previous experience 
+How operating system works 
+Kernel
+User threads 
+Difference between user system and kernel system 
+Jre internal working 
+Interpreter and compiler difference 
+Garabage collector 
+How it initializes
+Jvm memory 
+Which memory does the class objects are stored 
+Datastructure real example of tree and graph
+Binary tree
+Linear search and binary search 
+Postorder, preorder
+Database entity relationships
+Joins
+Spring boot components
+Life cycle
+Autowired
+Program of spring boot from user controller to userservice
+Bean class
+How you deploy any project from frontend
+Class component and functional component 
+What is the lifecycle for functional component
+Routing 
+Linked list 
+Find middle element of linked list
+Singleton class
+How to create it
+
+================================================
+42)
+
+1. What is hashmap? Explain internal working of hashmap? 
+2. Scenario based questions on hashmap 
+3. What is linkedlist?  
+4 . Scenario based questions on linkedlist ? 
+5 . What is interface?
+6 . What is Singleton class ? 
+7. Doubly linkedlist? Operation?
+8 . Questions on resume ?
+9 . Why C-DAC ?
+10. Questions on previous experience?
+11. What is hashtable? Internal working and scenario base questions on hashtable? 
+12. Cdac project 
+13. Difference between comparable and comparator 
+14. Difference between abstract class and interface? 
+15. Questions related to main method ? All possible combinations
+
+-========================================================
+43)
+
+ntroduction
+Oops
+Encapsulation related questions 
+Example
+Multi threading
+Spring
+Spring boot
+Annotations
+Maven
+Flow of sping project
+Is a relationship
+Example
+Life cycle of thread
+Why are your skills?
+Why should I hire you?
+Project related questions
+Interface
+
+=================================================
+44)
+
+
+1.) What is difference between jre, jdk and jvm.
+2.) What is process? What is thread and life cycle of thread?
+3.) What is garabage collector? How to call garabge collector?
+4.) What are the ways to make an object eligible for garbage collector?
+5.) What is deadlock? How deadlock occurs and how it can be prevented?
+6.) There is an entity class of hibernate and its data member. If i dont want any data member to be column of my table, what i need to do?
+7.) How you will map one table with another table having one to one or one to many or many to many relationships in hibernate?
+8.) What is dependency injection?
+9.) How @Autowired works?
+10.) How you will iterate over a map?
+11.) What is difference between string, string builder and string buffer.
+12.) Can we overload and override static methods in java?
+13.) Why main is public static and void in java?
+14.) Is java pure object oriented programming? If yes then why and if no then why not?
+15.) What is difference between abstract and interface class?
+16.) If two threads are running simultaneously then how you will stop one and let the other one first finish that then start that one?
+17.) What is the difference between comparable and comparator?
+18.) What is the difference between iterator and iterable?
+19.) How you can iterate over a list? Different types of ways?
+20.) Is java platform dependent or independent language? Why?
+
+
+=====================================================
+45)
+
+ Komal
+Panel 2
+Questions :
+1 what are the  java8 features?
+2.method refernces(java8) 
+3.stream api 
+4.what is war file
+5.what is web.xml
+6.hashmap internal working
+7.equals and hascode 
+8.spring boot features
+9.abstract interface difference
+10.what is abstraction?
+11.what is use of default methods in interface
+12.drop delete difference
+13.types of joins
+14.dml ddl commnads
+15.hashset and hashmap difference
+16.which websites you  refere for troubleshooting(in project)?
+17.directory of war file.
+
+=====================================
+46)
+
+
+ Mayuri
+panel 2:
+-what are yours skillset
+-previous experience n technology worked on
+-Cdac Project
+-java basics
+-oops with real time eg
+-Database Views
+-which application server you used in project
+-how search functionality achieved in project
+
+
+==============================================
+47)
+
+Snehal 
+Panel 4
+Questions:
+-Brief about project, -difference between array and arraylist
+-difference between list and set
+-difference between stringbuffer and stringbuilder
+-database queries
+
+
+=============================
+48)
+
+ Nakshatra
+Panel 2
+-What are your skill sets
+-@controller
+-difference between JSP and Servlet
+-what is bootstraps
+-difference between -jQuery and javascript
+-session management
+-@component
+-Requestmapping
+-try , catch, finally, throw, throws
+-final, finally, finalize
+
+======================================
+49)
+Mrunali Deshmukh
+Panel 2 
+1 Java 8 features?
+2 exaption 
+3 project
+4 spring boot
+5 annotations spring
+6 database ddl,dml 
+7 what is your role in project?
+=====================================
+50)
+
+Roshani 
+Panel 3
+1. Can we execute a program without main method? 
+2.can we write a program to print "Hello" Without main method? 
+3.what is difference between drop, truncate and delete? 
+4. What is trigger? Where it is used?
+5.Write a query  to select name of students start with letter a from table student? 
+6.What is need of collection? 
+7.What is Spring boot? Explain the flow how it works? 
+8. What is REST API? 
+9.Explain array and arraylist using real time example?
+10. Why we use DISTINCT in query? 
+11. What is your role in project?
+===========================================
+51)
+
+
+Swapnali chavan
+Panel4                  
+1.Introduction
+2Explain Project
+3Anotations of Hibernate?
+4.What is serialization ?Have you use it in your project?
+5.What is Synchronization?Have you use it in your project?
+6.Write a query To display salary with increment 10%?
+7Write a query to display emp working on IT dept?
+8.Write a query to display 2nd highest salary ?
+9.Write a pgm to display duplicate elements in array?
+10.How to set not null colum in table?
+==================================================
+
+52)
+
+Vikram Bhausaheb Mandge
+
+difference between SET and LIST
+difference between ArrayList and list
+second largest employess salary
+Project
+ietration program
+[23/04, 11:41 pm] Amit Walunj CDAC Sept-2020: Panel 3
+Duplicate char in string
+Inheritance vs  polymorphism
+Inheritance
+Foreign key related to primary key can be present n same table
+What is foreign key
+String vs string buffer
+What is Trigger
+Annotation in spring
+==================================================
+53)
+
+Hoonertek questions 
+1 tell me about your self 
+2 react let life cycles 
+3 how fatch API from react 
+4 wite a code for stack using linklist 
+5 duplicate element in db 
+6 find date diff in c 
+7 small demo of how to fatch data in spring rest API
+
+========================================================
+54)
+
+nfiBeam Avenues Ltd Interview Question Round 1 
+1. What is String in java?
+ 2. How can you create String object?
+ 3. What is String pool? 
+4. What is method overloading? What will be the output if there are two methods like add(int a , float b) and add(float a, int b) ??? 
+5. What is upcasting? What is autoboxing? 
+6. About project 
+7. Spring boot version and how to create a spring boot project from scratch in STS? 
+8. How Maven works? '
+9. Java version.??
+ 10. @Entity annotation
+ 11. What is list and map? 
+12. What is arraylist?
+
+ Round 2 
+1. How to check if username exists or not , when user enters it in the form ? 
+2. Whole request response flow of the given scenario with backend annotations. 
+3. How to validate a form in Javascript for given form data
+ 4. given a comma separated string as input , 
+display the count of duplicates in given format input: String s = { 1,2 ,3 ,4,2,3,1,3,3} ouptut: 1 - 2 2 - 2 3 - 
+
+========================================================
+55)
+
+ Amit 
+Pannel 1
+-Project intro
+-Annotations used in projects
+-JPA 
+-HashMap internal working
+ -HashMap and hashtable ,hashset and HashMap ,  difference
+-Exception handing 
+-Multithreading
+-Relation in tables 
+-ER diagram
+ -Write program on linear search algo.
+-why reactjs ,not angular
+-Library's used in react
+============================================================
+56)
+
+ Brief about project, 
+-difference between array and arraylist
+-difference between list and set
+-difference between stringbuffer and stringbuilder
+-database queries
+ Equals method serialization, abstract, 
+interface,join query,
+ basic array programming,static keyword
+========================================================
+57)
+
+ Shital patil
+Panel 3                 
+1.Introduction
+2Explain Project
+3Anotations of Hibernate?
+4.What is serialization ?Have you use it in your project?
+5.What is Synchronization?Have you use it in your project?
+6.Write a query To display salary with increment 10%?
+7Write a query to display emp working on I…
+[00:56, 19/09/2021] Lokesh Jawale: 1) what is data abstraction 
+2)explain your project in brief
+3) explain how you design  your database of cdac project
+4) explain your diploma project and used technology in it
+5) explain your BE project and used technology in it
+6) abstract class and interface diff
+7) implement hashmap on ide
+8) implement arraylist on ide
+9)  write immutable class on ide
+10) write factorial code in normal and recursion way
+11) what you know about recursion
+12) what is normalisation and its rules
+13)stored procedure and stored function
+14) cursor and while loop difference
+15)explain joins
+Hr 
+1) introduction
+2) family background
+3) strength and weakness
+4) greatest achievement
+5) are you interested in higher education
+6) why amdocs
+========================================================
+
+58)
+
+: Introduce yourself 
+Explain SpringBoot
+Why You usef SpringBoot over spring
+Is SpringBoot the only way to do your project
+
+Your contribution in your project 
+
+In backend what exactly is flow of your project
+
+what is jpa
+
+JPA vs JDBC
+
+How have u implemented Spring security 
+
+Spring Data APIs if any 
+
+Views in SQL
+
+what is PLSQL 
+
+Any other databases do you know other than SQL
+
+Any Java Version else than 1.8 
+
+What is Lambda Function in java
+
+Any obstacles you faced in your project, how do you dealed with it
+========================================================
+59)
+
+ 1.Tell me about your project?
+2.What are the technologies used?
+3.oops concept?
+4. Explain encapsulation 
+5.how to access private members of class
+6. Abstract class in java
+7. Interface in java
+8. Interface vs abstract class
+9. Overloading vs overriding 
+10. Explain polymorphism in java with code with real time example 
+11. Exception handling and different types of errors you faced in your project 
+12. Sql clause in the order of execution. Explain each with syntax
+13. Diff btw primary and foreign key
+14. Do you want to ask any que : 
+Me:What will be our joining date
+Interviewer: that will be tell you in next round of hr
+========================================================
+60)
+
+ Finastra Role 1
+Pannel-
+ketan  kulkarni
+
+1.Introduction
+2.Explain Project
+3.flow of project
+4.your role
+5.how you connect database to your application
+5.What is Rest 
+6.What is autowired ,if we have to inject dependency without autowired then what to do?
+7.working of REST
+8.what is spring,servelet,jsp
+9.why we use spring
+10.which anotation use to start spring boot application
+11.how to right query in spring boot
+12.oops concept
+13.explain all
+14.example of polymorphism
+Compile time run time
+15.how achive abstractions
+16. In case we don't have to declare method in interface than how to implement
+17.design pattern in java
+18.why java not support multiple inheritance
+19.how to map database data come from database to object
+20.what doing @SpringBootApplication a…
+========================================================
+61)
+
+ Finastra interview questions
+1. Tell me about yourself
+2. ORM
+3. Project flow
+4. Sql query
+5. Duplicates rows in sql query
+6.Exception Handling
+7. Exception handled in project with example.
+8. Reverse the string program
+9. Spring Boot REST API
+10. Database connection with your application
+11. Any where problem during project how handled and what the problem is?
+12. Why string is immutable and how to make is mutable
+13.Mvc architecture with practical example eg.Login page
+========================================================
+62)
+
+ Verifone Interview Questions 
+
+How is garbage collection and exception handling similar to each other? Do you find them similar?
+
+How can you make garbage collection more effective ?
+
+How would you design a Static method? what keypoints will you take care of?
+
+what transformation have you noticed in yourself in this pandemic?
+
+what was the most haste decision taken by you?
+
+Do you feel you're a team player ? what qualities justify the same?
+========================================================
+63)
+
+ Infibeam 2round 
+iq what is differnece between spring and springboot
+how is servlet use as filter
+threads -deadlock,deadlock avoiding, how to prioritize thread,wait and resume methods.
+which are thread safe (Collection framework)
+which are thread unsafe
+method overloading
+explain web services
+restful web services
+preparedstatement and normalstatement difference
+project
+difference between hashmap and hashset
+
+=======================================================

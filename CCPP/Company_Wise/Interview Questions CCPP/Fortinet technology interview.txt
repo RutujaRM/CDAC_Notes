@@ -1,0 +1,31 @@
+Fortinet technology interview
+Round 1 
+1)Find the sum of 3 max number from array
+2) puzzle 
+There is one man having 3000 bananas,  he have 1 camel 🐫
+* Camel can carry 1000 banana max at a time
+*He eats 1 banana for 1 km 
+
+Man has to travel 1000km 
+Ho many maximum banana will be remaining after the journey
+
+Round 2 
+1) Robbers problem 
+
+given an 1d array
+Which consists of money in that house 🏠
+Index is the position of house.
+Robber has to rob max amount, but he cannot rob two adjacent house .
+Find max Robbing amount.
+(I could not solve this code but I had explained what I was thinking to solve 
+Interviewer said that u r going in right direction 
+So my plan was right but I could not do coding part)
+
+2)
+There is array having 0 and 1 only
+We have to count no. Of 1 in that array 
+It is sorted array
+Need optimized solutions
+
+O(n) will be very easy solution
+Try for  O(log n)

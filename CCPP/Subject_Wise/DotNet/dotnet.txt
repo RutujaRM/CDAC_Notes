@@ -1,0 +1,17 @@
+1. DotNet basics (c#, framework, CLR, CTS, JIT)
+
+2. c#.Net (OOPS concepts, Interface, etc)
+
+3. Console Programming
+
+4. Windows Application (Forms)
+
+5. ADO.Net
+
+6. Entity Framework (.edmx file, & used Lambda queries)
+
+7. ASP.Net (Web Forms, .aspx extension files)
+
+8. ASP.Net MVC Architecture (.cshtml extension files)
+
+9. Web API (or Web Services)

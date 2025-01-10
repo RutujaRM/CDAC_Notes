@@ -1,0 +1,36 @@
+Name : Pramod shinde 
+Comp: amodocs
+
+Techinical Round
+I ) introduce 
+II ) Project explain 
+III) Rate Any two Tech.
+
+1)What is data abstraction? 
+2)How is Object Oriented Programming different from Procedure Oriented Programming?
+3)Discuss different types of errors that generally occur while programming.
+4)Define type casting 
+5)Explain Exception and exception handling
+6)Is java is 100% oop and why?
+7) Difference between throw and throws
+8) Ask 4 algorithum 
+9) singleton class program
+10) what polymorphism 
+11) runtime vs compiletime polymorphism
+12)inheritace with Example
+13)encapsulation with example
+14)Checked v/s unChecked Exception
+15)define class 
+16) Jvm , Jdk, Jre when which one is used
+17) what is JIT compiler what is its benifits
+
+
+ **NOTE :: Most of quetion they will say its wrong ans to check your confidance 
+
+HR round
+
+1)Introduce yourself.
+2)Where do you see yourself in 5 years?
+3)Marks and passing years
+4)family background
+5)willing to reallocate 

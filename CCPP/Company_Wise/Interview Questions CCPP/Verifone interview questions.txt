@@ -1,0 +1,35 @@
+Verifone interview
+
+All about project
+N-tier architecture of project
+ATM machine scenario based question: what all conditions will you test 
+Which database used for project
+How to create database and table
+Default port of MySQL
+Fetch data from table of specific date
+Can we declare interface as final
+Can we write abstract method without abstract class
+Why do we create packages
+Explain polymorphism
+2-3 code snippets based on expection handling
+Swap 2 numbers with and without using third variable
+Write a program to count no of particular word in string using hashmap
+Significance of local inner class
+Why object is immutable in java
+Ways to write string
+Significance of final class
+Agile methodology
+Garbage collection in java
+How to make write only class in java
+
+
+Intro
+Why mech to it
+Project
+Technologies used
+Spring and MVC flow
+Which database used
+Difference between inner join and outer join
+Find 3rd highest salary with and without limit
+Why only java? Are you ready to learn new lang?
+If I give you a problem what will be your approach

@@ -1,0 +1,673 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang16393{\fonttbl{\f0\fnil\fcharset0 Calibri;}}
+{\*\generator Msftedit 5.41.21.2510;}\viewkind4\uc1\pard\sa200\sl276\slmult1\lang9\f0\fs22\par
+ \par
+Placement papers on Java - Set 1\par
+04-17-2014 03:37 AM \par
+\par
+Placement papers on Java - Set 1\par
+\par
+\par
+1. What will happen when you attempt to compile and run this code?\par
+\par
+public class MyMain\par
+\{\par
+public static void main(String argv)\par
+\{\par
+System.out.println("Hello world");\par
+\}\par
+\}\par
+\par
+The compiler will complain that main is a reserved word and cannot be used for a class\par
+The code will compile and when run will print out "Hello world"\par
+The code will compile but will complain at run time that no constructor is defined\par
+The code will compile but will complain at run time that main is not correctly defined\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The code will compile but will complain at run time that main is not correctly defined\par
+\par
+\par
+\par
+\par
+2. Which of the following are not Java modifiers?\par
+\par
+public\par
+private\par
+friendly\par
+transient\par
+View Answer / Hide Answer\par
+\par
+ANSWER: friendly\par
+\par
+\par
+\par
+\par
+3. Why might you define a method as native?\par
+\par
+To get to access hardware and language (c/c++) that Java does not know about\par
+To define a new data type such as an unsigned integer\par
+To write local method which can not be executed remotely\par
+To overcome the limitation of the private scope of a method\par
+View Answer / Hide Answer\par
+\par
+ANSWER: To get to access hardware and language (c/c++) that Java does not know about\par
+\par
+\par
+\par
+\par
+4. You want to loop through an array and stop when you come to the last element. Being a good java programmer and forgetting everything you ever knew about C/C++ you know that arrays contain information about their size. Which of the following can you use?\par
+\par
+myarray.length();\par
+myarray.length;\par
+myarray.size\par
+myarray.size();\par
+View Answer / Hide Answer\par
+\par
+ANSWER: myarray.length;\par
+\par
+\par
+\par
+\par
+5. How do you indicate where a component will be positioned using Flowlayout?\par
+\par
+North, South,East,West\par
+Assign a row/column grid reference\par
+Pass a X/Y percentage parameter to the add method\par
+Do nothing, the FlowLayout will position the component\par
+View Answer / Hide Answer\par
+\par
+ANSWER: Do nothing, the FlowLayout will position the component\par
+\par
+\par
+\par
+\par
+6. How do you change the current layout manager for a container\par
+\par
+Use the setLayout method\par
+Once created you cannot change the current layout manager of a component\par
+Use the setLayoutManager method\par
+Use the updateLayout method\par
+View Answer / Hide Answer\par
+\par
+ANSWER: Use the setLayout method\par
+\par
+\par
+\par
+\par
+7. Which of the following are not fields of the GridBagConstraints class?\par
+\par
+ipadx\par
+fill\par
+insets\par
+width\par
+View Answer / Hide Answer\par
+\par
+ANSWER: width\par
+\par
+\par
+\par
+\par
+8. Which statements are correct about the anchor field?\par
+\par
+It is a field of the GridBagLayout manager for controlling component placement\par
+It is a field of the GridBagConstraints class for controlling component placement\par
+A valid setting for the anchor field is GridBagConstraints.SOUTH\par
+The anchor field controls the height of components added to a container\par
+View Answer / Hide Answer\par
+\par
+ANSWER: It is a field of the GridBagConstraints class for controlling component placement\par
+\par
+\par
+\par
+\par
+9. Is the following statement true or false? When using the GridBagLayout manager, each new component requires a new instance of the GridBagConstraints class.\par
+\par
+TRUE\par
+FALSE\par
+View Answer / Hide Answer\par
+\par
+ANSWER: FALSE\par
+\par
+\par
+\par
+\par
+10. Which most closely matches a description of a Java Map?\par
+\par
+A vector of arrays for a 2D geographic representation\par
+A class for containing unique array elements\par
+A class for containing unique vector elements\par
+An interface that ensures that implementing classes cannot contain duplicate keys\par
+View Answer / Hide Answer\par
+\par
+ANSWER: An interface that ensures that implementing classes cannot contain duplicate keys\par
+\par
+1. How does the set collection deal with duplicate elements?\par
+\par
+An exception is thrown if you attempt to add an element with a duplicate value\par
+The add method returns false if you attempt to add an element with a duplicate value\par
+A set may contain elements that return duplicate values from a call to the equals method\par
+Duplicate values will cause an error at compile time\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The add method returns false if you attempt to add an element with a duplicate value\par
+\par
+\par
+\par
+\par
+2. What can cause a thread to stop executing?\par
+\par
+The program exits via a call to System.exit(0);\par
+Another thread is given a higher priority\par
+A call to the thread's stop method\par
+All of the above\par
+View Answer / Hide Answer\par
+\par
+ANSWER: All of the above\par
+\par
+\par
+\par
+\par
+3. For a class defined inside a method, what rule governs access to the variables of the enclosing method?\par
+\par
+The class can access any variable\par
+The class can only access static variables\par
+The class can only access transient variables\par
+The class can only access final variables\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The class can only access final variables\par
+\par
+\par
+\par
+\par
+4. Under what circumstances might you use the yield method of the Thread class\par
+\par
+To call from the currently running thread to allow another thread of the same or higher priority to run\par
+To call on a waiting thread to allow it to run\par
+To allow a thread of higher priority to run\par
+To call from the currently running thread with a parameter designating which thread should be allowed to run\par
+View Answer / Hide Answer\par
+\par
+ANSWER: To call from the currently running thread to allow another thread of the same or higher priority to run\par
+\par
+\par
+\par
+\par
+5. Which of the following is the correct syntax for suggesting that the JVM performs garbage collection\par
+\par
+System.free();\par
+System.setGarbageCollection();\par
+) System.out.gc();\par
+System.gc();\par
+View Answer / Hide Answer\par
+\par
+ANSWER: System.gc();\par
+\par
+\par
+\par
+\par
+6. Which of the following will compile correctly\par
+\par
+short myshort = 99S;\par
+String name = 'Excellent tutorial Mr Green';\par
+char c = 17c;\par
+int z = 015; \par
+View Answer / Hide Answer\par
+\par
+ANSWER: int z = 015;\par
+\par
+\par
+\par
+\par
+7. Which of the following are not Java key words\par
+\par
+double\par
+switch\par
+then\par
+instanceof\par
+View Answer / Hide Answer\par
+\par
+ANSWER: then\par
+\par
+\par
+\par
+\par
+8. Which of the following statements are true?\par
+\par
+At the root of the collection hierarchy is a class called Collection\par
+The collection interface contains a method called enumerator\par
+The interator method returns an instance of the Vector class\par
+The Set interface is designed for unique elements\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The Set interface is designed for unique elements\par
+\par
+\par
+\par
+\par
+9. Which of the following statements are correct?\par
+\par
+If multiple listeners are added to a component only events for the last listener added will be processed\par
+If multiple listeners are added to a component the events will be processed for all but with no guarantee in the order\par
+Adding multiple listeners to a comnponent will cause a compile time error\par
+You can not remove or add listeners to a component.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: If multiple listeners are added to a component the events will be processed for all but with no guarantee in the order\par
+\par
+\par
+\par
+\par
+10. What will be output by the following line of code? System.out.println(010|4);\par
+\par
+14\par
+0\par
+6\par
+12\par
+View Answer / Hide Answer\par
+\par
+ANSWER: 12\par
+1. Which of the following are not the methods of the Collection interface?\par
+\par
+iterator\par
+isEmpty\par
+toArray\par
+setText\par
+View Answer / Hide Answer\par
+\par
+ANSWER: setText\par
+\par
+\par
+\par
+\par
+2. Which of the following best describes the use of the synchronized keyword?\par
+\par
+Allows two process to run in paralell but to communicate with each other\par
+Ensures only one thread at a time may access a method or object\par
+Ensures that two or more processes will start and end at the same time\par
+Ensures that two or more Threads will start and end at the same time\par
+View Answer / Hide Answer\par
+\par
+ANSWER: Ensures only one thread at a time may access a method or object\par
+\par
+\par
+\par
+\par
+3. Which of the following methods are members of the Vector class and allow you to input a new element\par
+\par
+addElement\par
+insert\par
+append\par
+addItem\par
+View Answer / Hide Answer\par
+\par
+ANSWER: addElement\par
+\par
+\par
+\par
+\par
+4. Which of the following statements are true\par
+\par
+An inner class may be defined as static\par
+There are NO circumstances where an inner class may be defined as private\par
+An inner class may extend another class\par
+1 and 3\par
+View Answer / Hide Answer\par
+\par
+ANSWER: 1 and 3\par
+\par
+\par
+\par
+\par
+5. Which of the following statements about threading are true\par
+\par
+You can obtain a mutually exclusive lock on any object\par
+A thread can obtain a mutually exclusive lock on an object by calling a synchronized method on that object.\par
+Thread scheduling algorithms are platform dependent\par
+All of the above\par
+View Answer / Hide Answer\par
+\par
+ANSWER: All of the above\par
+\par
+\par
+\par
+\par
+6. Which of the following are not the methods of the Thread class?\par
+\par
+yield()\par
+sleep(long msec)\par
+go()\par
+stop()\par
+View Answer / Hide Answer\par
+\par
+ANSWER: go()\par
+\par
+\par
+\par
+\par
+7. Which of the following will give compile time error?\par
+\par
+File f = new File("/","autoexec.bat");\par
+DataInputStream d = new DataInputStream(System.in);\par
+OutputStreamWriter o = new OutputStreamWriter(System.out);\par
+RandomAccessFile r = new RandomAccessFile("OutFile");\par
+View Answer / Hide Answer\par
+\par
+ANSWER: RandomAccessFile r = new RandomAccessFile("OutFile");\par
+\par
+\par
+\par
+\par
+8. Which of the following is TRUE?\par
+\par
+In java, an instance field declared public generates a compilation error.\par
+int is the name of a class available in the package java.lang\par
+Instance variable names may only contain letters and digits.\par
+A class has always a constructor (possibly automatically supplied by the java compiler).\par
+View Answer / Hide Answer\par
+\par
+ANSWER: A class has always a constructor (possibly automatically supplied by the java compiler).\par
+\par
+\par
+\par
+\par
+9. Consider the following code snippet\par
+\par
+String river = new String(Columbia);\par
+System.out.println(river.length());\par
+\par
+What is printed?\par
+\par
+6\par
+7\par
+8\par
+Columbia\par
+View Answer / Hide Answer\par
+\par
+ANSWER: 8\par
+\par
+\par
+\par
+\par
+10. A constructor\par
+\par
+must have the same name as the class it is declared within.\par
+is used to create objects.\par
+may be declared private\par
+All of the above\par
+View Answer / Hide Answer\par
+\par
+ANSWER: All of the above\par
+\par
+1. Which of the following may be part of a class definition?\par
+\par
+instance variables\par
+instance methods\par
+constructors\par
+All of the above\par
+View Answer / Hide Answer\par
+\par
+ANSWER: All of the above\par
+\par
+\par
+\par
+\par
+2. What is different between a Java applet and a Java application?\par
+\par
+An application can in general be trusted whereas an applet can't.\par
+An applet must be executed in a browser environment.\par
+An applet is not able to access the files of the computer it runs on\par
+All of the above\par
+View Answer / Hide Answer\par
+\par
+ANSWER: All of the above\par
+\par
+\par
+\par
+\par
+3. What is byte code in the context of Java?\par
+\par
+The type of code generated by a Java compiler\par
+The type of code generated by a Java Virtual Machine\par
+It is another name for a Java source file\par
+It is the code written within the instance methods of a class.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The type of code generated by a Java compiler\par
+\par
+\par
+\par
+\par
+4. What is garbage collection in the context of Java?\par
+\par
+The operating system periodically deletes all of the java files available on the system.\par
+Any package imported in a program and not used is automatically deleted.\par
+When all references to an object are gone, the memory used by the object is automatically reclaimed.\par
+The JVM checks the output of any Java program and deletes anything that doesn't make sense.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: When all references to an object are gone, the memory used by the object is automatically reclaimed.\par
+\par
+\par
+\par
+\par
+5. You read the following statement in a Java program that compiles and executes.\par
+\par
+submarine.dive(depth);\par
+\par
+What can you say for sure?\par
+\par
+depth must be an int\par
+dive must be a method.\par
+dive must be the name of an instance field.\par
+submarine must be the name of a class\par
+View Answer / Hide Answer\par
+\par
+ANSWER: dive must be a method.\par
+\par
+\par
+\par
+\par
+6. sleep(50); The above statement of a thread implies that the thread will get the processor-time\par
+\par
+any moment after 50 milliseconds\par
+exactly after 50 milliseconds\par
+even before 50 milliseconds if the processor is idle\par
+none\par
+View Answer / Hide Answer\par
+\par
+ANSWER: exactly after 50 milliseconds\par
+\par
+\par
+\par
+\par
+7. If a thread is to be declared as a daemon thread, it must be declared before\par
+\par
+start method\par
+run method\par
+stop method\par
+none\par
+View Answer / Hide Answer\par
+\par
+ANSWER: start method\par
+\par
+\par
+\par
+\par
+8. What is the optput of this code fragment.\par
+\par
+int X=3; int Y =10;\par
+System.out.println(y%x);\par
+\par
+0\par
+1\par
+2\par
+3\par
+View Answer / Hide Answer\par
+\par
+ANSWER: 1\par
+\par
+\par
+\par
+\par
+9. A monitor called mon has 5 threads in its waiting pool; all these waiting threads have the same priority. One of the threads is thread1. How can you notify thread1 so that it alone moves from Waiting state to Ready State?\par
+\par
+Execute notify(thread1); from within synchronized code of mon.\par
+Execute mon.notify(thread1); from synchronized code of any object.\par
+Execute thread1.notify(); from synchronized code of any object.\par
+You cannot specify which thread will get notified.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: You cannot specify which thread will get notified.\par
+\par
+\par
+\par
+\par
+10. TreeMap class is used to implement which collection interface. Select the one correct answer\par
+\par
+SortedSet\par
+List\par
+Tree\par
+SortedMap\par
+View Answer / Hide Answer\par
+\par
+ANSWER: SortedMap\par
+\par
+\par
+Placement papers on Java - Set 5\par
+04-17-2014 03:38 AM \par
+\par
+Placement papers on Java - Set 5\par
+\par
+\par
+1. In Java, an abstract class cannot be sub-classed.\par
+\par
+TRUE\par
+FALSE\par
+View Answer / Hide Answer\par
+\par
+ANSWER: FALSE\par
+\par
+\par
+\par
+\par
+2. Which of these statements are not legal. Select the correct answers.\par
+\par
+int arr[][] = new int[5][5];\par
+int[]arr[] = new int[5][5];\par
+int[] arr = new int[5][];\par
+int[] arr = new int[][5];\par
+View Answer / Hide Answer\par
+\par
+ANSWER: int[] arr = new int[][5];\par
+\par
+\par
+\par
+\par
+3. What happens when the following code is compiled and run. Select the one correct answer.\par
+\par
+for(int i = 1; i < 3; i++)\par
+for(int j = 3; j >= 1; j--)\par
+assert i!=j : i;"\par
+\par
+The class compiles and runs, but does not print anything.\par
+The number 1 gets printed with AssertionError\par
+The number 2 gets printed with AssertionError\par
+The number 3 gets printed with AssertionError\par
+View Answer / Hide Answer\par
+\par
+ANSWER: The number 1 gets printed with AssertionError\par
+\par
+\par
+\par
+\par
+4. Which is true about an anonymous inner class?\par
+\par
+It can extend exactly one class and implement exactly one interface.\par
+It can extend exactly one class and can implement multiple interfaces.\par
+It can implement multiple interfaces regardless of whether it also extends a class.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: It can extend exactly one class and can implement multiple interfaces.\par
+\par
+\par
+\par
+\par
+5. Which is true about a method-local inner class?\par
+\par
+It must be marked final.\par
+It can be marked abstract.\par
+It can be marked public.\par
+It can be marked static.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: It can be marked abstract.\par
+\par
+\par
+\par
+\par
+6. Which statement is true about a static nested class?\par
+\par
+You must have a reference to an instance of the enclosing class in order to instantiate it.\par
+It does not have access to nonstatic members of the enclosing class.\par
+It's variables and methods must be static.\par
+It must extend the enclosing class.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: It does not have access to nonstatic members of the enclosing class.\par
+\par
+\par
+\par
+\par
+7. Which constructs an anonymous inner class instance?\par
+\par
+Runnable r = new Runnable() \{ \};\par
+Runnable r = new Runnable(public void run() \{ \});\par
+Runnable r = new Runnable \{ public void run()\{\}\};\par
+System.out.println(new Runnable() \{public void run() \{ \}\});\par
+View Answer / Hide Answer\par
+\par
+ANSWER: System.out.println(new Runnable() \{public void run() \{ \}\});\par
+\par
+\par
+\par
+\par
+8. What is the value of "d" after this line of code has been executed?\par
+double d = Math.round ( 2.5 + Math.random() );\par
+\par
+2\par
+3\par
+4\par
+2.5\par
+View Answer / Hide Answer\par
+\par
+ANSWER: 3\par
+\par
+\par
+\par
+\par
+9. Which of the following would compile without error?\par
+\par
+int a = Math.abs(-5);\par
+int b = Math.abs(5.0);\par
+int c = Math.abs(5.5F);\par
+int d = Math.abs(5L);\par
+View Answer / Hide Answer\par
+\par
+ANSWER: int a = Math.abs(-5);\par
+\par
+\par
+\par
+\par
+10. What allows the programmer to destroy an object x?\par
+\par
+x.delete()\par
+x.finalize()\par
+Runtime.getRuntime().gc()\par
+Only the garbage collection system can destroy an object.\par
+View Answer / Hide Answer\par
+\par
+ANSWER: Only the garbage collection system can destroy an object.\par
+\par
+\par
+}
+ 

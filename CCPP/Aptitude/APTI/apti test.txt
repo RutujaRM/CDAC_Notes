@@ -1,0 +1,184 @@
+
+
+In a colony, there are 55 members. Every member posts a greeting card to all the members. How many greeting cards were posted by them?
+1 point
+990
+890
+2970
+1980
+Find the number of ways of arranging the letters of the words DANGER, so that no vowel occupies odd place.
+1 point
+144
+36
+87
+90
+Find the number of rectangles and squares in an 8 by 8 chess board respectively.
+1 point
+1092, 204
+304, 1296
+204, 1296
+296, 204
+There are 20 points in a plane, how many triangles can be formed by these points if 5 are colinear?
+1 point
+1140
+1126
+1130
+550
+There are 30 people in a group. If all shake hands with one another , how many handshakes are possible?
+1 point
+29! + 1
+987
+430
+435
+In Cricket League, in first round every team plays a match with every other team. 9 teams participated in the Cricket league. How many matches were played in the first round?
+1 point
+98
+36
+9! + 1
+9! - 1
+In a room there are 2 green chairs, 3 yellow chairs and 4 blue chairs. In how many ways can Raj choose 3 chairs so that at least one yellow chair is included?
+1 point
+12
+36
+64
+56
+In Daya’s bag there are 3 books of History, 4 books of Science and 2 books of Maths. In how many ways can Daya arrange the books so that all the books of same subject are together?
+1 point
+1729
+1728
+8640
+None
+A briefcase has a number-lock system containing a combination of 3 digits (Each digit can be of numbers 0 to 8). If the correct combination is unknown, how much maximum time would be required to open the bag if each “trial” of combination takes 3 seconds?
+1 point
+36.45 minutes
+45.23 minutes
+50.9 minutes
+40.9 minutes
+A person can go from place “P” to “Q” by 7 different modes of transport, but is allowed to return back to “P” by any mode other than the one used earlier. In how many different ways can he complete the entire journey?
+1 point
+12
+56
+42
+34
+How many words can be formed by using all letters of word ALIVE.
+1 point
+86
+54
+120
+110
+How many 3-letter words can be formed out of the letters of the word ‘CORPORATION’, if repetition of letters is not allowed?
+1 point
+336
+667
+900
+504
+In a group containing 6 cows and 4 buffalos, 4 livestock are to be selected in such a way that at least 1 cow should always be present. How many way of doing that are possible?
+1 point
+204
+205
+209
+113
+In how many ways can the letters of the word ENCYCLOPAEDIA be arranged such that vowels only occupy the even positions?
+1 point
+453600
+213124
+636590
+344356
+In how many ways can the letters of the word INDIA be arranged, such that all vowels are never together?
+1 point
+42
+78
+48
+45
+Statements: Some actors are singers. All the singers are dancers.
+Conclusions: Some actors are dancers. No singer is actor.
+1 point
+Only (1) conclusion follows
+Only (2) conclusion follows
+Either (1) or (2) follows
+Neither (1) nor (2) follows
+Statements: All the harmoniums are instruments. All the instruments are flutes.
+Conclusions: All the flutes are instruments. All the harmoniums are flutes.
+1 point
+Only (1) conclusion follows
+Only (2) conclusion follows
+Either (1) or (2) follows
+Neither (1) nor (2) follows
+A walks from points Jammu to Delhi and at the same time B starts walking from Delhi to Jammu. After passing each other, they complete their journeys in 361 hours and 289 hours, respectively. Find the ratio of speed of A to that of B?
+1 point
+21:34
+34:67
+17:19
+19:17
+Pratik travels 96 km at a speed of 16 km/hr using a bike, 124 km at 31 km/h by car and another 105 km at 7 km/h in horse cart. Then, find his average speed for the entire distance travelled?
+1 point
+13 km/hr
+8 km/hr
+18 km/hr
+16.75 km/hr
+Surendra covers a distance by cycle at 18 km/h. He returns to the starting point in a bus at a speed of 45 km/h. Find the average speed for the entire journey.
+1 point
+25.71 km/hr
+27.39 km/hr
+17.39 km/hr
+27.29 km/hr
+A cab on its way to Bangalore overtakes an auto also going in the same direction at 11 am. The cab reaches Bangalore at 1.30 pm and starts the return journey after taking a break of 1 hour. On its way back it meets the auto at 3 pm. At what time will the auto reach Bangalore?
+1 point
+4:00 PM
+5:00 PM
+3:30 PM
+2:45 PM
+A man travels from A to B at a speed of 30 kmph and returns with a speed of 60 kmph. What is the average speed of the man?
+1 point
+56
+40
+21
+22
+If Ajay completes a certain work in 8 days and Vijay can complete the same work in 24 days, find the time in which the work will be completed if both Ajay and Vijay work together.
+1 point
+6 days
+12 days
+4 days
+8 days
+A boat running downstream covers a distance of 20 km in 2 hours while for covering the same distance upstream, it takes 5 hours. What is the speed of the boat in still water?
+1 point
+7 KM/HR
+8 KM/HR
+4 KM/HR
+None
+If a boat is rowed downstream for 50 km in 5 hours and upstream for 24 km in 6 hours, what is the speed of the boat and the river?
+1 point
+(6 , 4) km/hr
+(10 , 4) km/hr
+(10 , 14) km/hr
+(7 , 3) km/hr
+A boat has a speed of 14kmph in standing water. The stream has a speed of 1.2kmph. What time does the boat take to go to a distance of 4864 km and come back? (hours)
+1 point
+700
+350
+671
+900
+Raj swims for 6 ½ hours while going 24 km downstream and 36 km upstream. But he takes just 6 hours to swim 36 km downstream and 24 km upstream. At what rate is the river flowing?
+1 point
+6 km/hr
+3 km/hr
+4 km/hr
+2 km/hr
+What is speed of Ram in still water and speed of river, if Ram covers 20 km in 1 hour swimming downstream and covers the same distance in 2 h swimming upstream?
+1 point
+River = 5 km/hr ; Ram = 15 km/hr
+River = 4 km/hr ; Ram = 16 km/hr
+River = 4 km/hr ; Ram = 13 km/hr
+River = 13 km/hr ; Ram = 4 km/hr
+An ocean current flows at a rate of 1.5 km/hr. A shark can swim in still water at the rate 4.5 km/hr. What is the average speed for the entire distance travelled, if the shark swims from India to Australia and comes back?
+1 point
+4 km/hr
+3 km/hr
+2 km/hr
+8 km/hr
+Simran takes twice as long to swim up as to swim down the river and has a speed of 12 km/hr in still water. What is river’s speed?
+1 point
+4 km/hr
+6 km/hr
+8 km/hr
+12 km/hr
