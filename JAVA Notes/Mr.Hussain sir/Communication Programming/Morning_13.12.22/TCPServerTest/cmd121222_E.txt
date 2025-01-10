@@ -1,0 +1,66 @@
+    1  cd Java/Platform/
+    2  mkdir Communication
+    3  cd Communication/
+    4  mkdir SocketTest
+    5  cd SocketTest/
+    6  cp ../../Basics/FileStreamTest/Transformer.java .
+    7  vi Transformer.java 
+    8  vi Server.java
+    9  vi Transformer.java 
+   10  vi Server.java
+   11  javac Server.java
+   12  vi Server.java
+   13  javac Server.java
+   14  vi Server.java
+   15  javac Server.java
+   16  vi Program.java
+   17  javac Program.java 
+   18  java Program 
+   19  ls
+   20  ll
+   21  java Program 
+   22  vi Program.java
+   23  vi Server.java 
+   24  javac Server.java 
+   25  vi Program.java
+   26  java Program 
+   27  ls
+   28  java Program 
+   29  vi Program.java
+   30  vi Server.java 
+   31  history >> cmd121222_m.txt
+   32  java Program &
+   33  vi Client.java
+   34  javac Client.java
+   35  vi Program.java 
+   36  javac Program.java 
+   37  java Program monday
+   38  java Program NLMGBZ
+   39  java Program Hello
+   40  java Program Kfool
+   41  ps
+   42  kill 359
+   43  java Program monday
+   44  java Program &
+   45  java Program friday
+   46  pkill -ef Program
+   47  cd ..
+   48  mkdir TCPServerTest
+   49  cd TCPServerTest/
+   50  wget cdaclab.bkc.met.edu/shared/java/CitiTek.xml
+   51  wget cdaclab.bkc.met.edu/shared/java/legacy.h
+   52  rm legacy.h 
+   53  ls
+   54  vi CitiTek.xml 
+   55  vi Shop.java
+   56  javac Shop.java 
+   57  vi Program1.java
+   58  netstat -pnlt
+   59  vi Program1.java
+   60  javac Program1.java 
+   61  java Program &
+   62  java Program 
+   63  telnet localhost 5000
+   64  telnet cdaclab-31 5000
+   65  telnet localhost 5000
+   66  history >> cmd121222_E.txt
