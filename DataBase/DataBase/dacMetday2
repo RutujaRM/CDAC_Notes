@@ -1,0 +1,239 @@
+IS NULL---
+select first_name, manager_id from employees where manager_id is null;
+
+
+LOGICAL OPERATOR --
+
+AND  --> select LAST_NAME, SALARY from employees where SALARY > 10000 and last_name like 'A%';
+OR   --> select LAST_NAME, SALARY from employees where SALARY > 10000 or last_name like 'A%';
+NOT  --> select LAST_NAME, SALARY from employees where last_name not like 'H%';
+     --> select last_name, salary from employees where  not salary >= 10000;
+
+
+PRECEDENCE LEVEL --
+
+ARITH OPERATOR
+LIKE 
+NOT 
+AND 
+OR
+
+select LAST_NAME, SALARY from employees where SALARY > 10000 or last_name like 'A%' 
+and last_name like '%o';
+
+
+
+select LAST_NAME, SALARY from employees where SALARY > 10000 and last_name like 'A%' 
+or last_name like '%o';
+
+SORTING --
+OREDR BY
+
+1. select last_name from employees order by last_name;
+2. select last_name, hire_date from employees order by hire_date;
+3. select last_name, hire_date from employees order by hire_date desc;
+4. select last_name, hire_date from employees order by 2;
+5. select last_name, hire_date, salary from employees order by salary, last_name;
+
+
+
+SINGLE ROW FUNCTIONS ---
+
+
+case conversion functions
+lower()
+upper()
+initcap()
+
+
+char manipulation functions 
+concate() -> select concat('Hello', 'Pune') from dual;
+substr()  -> select substr('HelloPune', 6, 9) from dual;
+length()  -> select length('HelloPune') from dual;
+replace() ->  select replace('HelloPune', 'Hello', 'Hola') from dual;
+
+
+Number functions --> 
+round() -->
+      select round(45.12) from dual;
+	  select round(45.62) from dual;
+	  select round(11.42, -1) from dual;
+	  select round(11.42, -2) from dual;
+	  select round(14.42, -1) from dual;
+	  
+trunc() -->
+      select trunc(45.12) from dual;
+
+mod()  -->
+      select mod(10, 3) from dual; 
+
+
+
+Date Functions
+
+1. select sysdate from dual;
+2. select hire_date + 2 from employees;   --> Date + - Number = Date 
+3. select sysdate - hire_date from employees;  --> Date - Date = Days(Number)
+4. select (sysdate - hire_date) / 365 from employees;
+
+
+
+Type Conversion functions
+
+date --> char
+number --> char
+char --> date
+
+to_char(date, 'format')
+1. select last_name, to_char(hire_date, 'fmDD month yyyy') from employees;
+2. select last_name, to_char(hire_date, 'fmDD month year') from employees;
+3. select last_name, to_char(hire_date, 'fmDD mm yyyy') from employees;
+4. select last_name, to_char(hire_date, 'DD mm yyyy') from employees;
+5. select last_name, to_char(hire_date, 'DD mm yy') from employees;
+
+
+
+1. select last_name, to_char(salary, '99999') from employees;
+2. select last_name, to_char(salary, '$99999') from employees;
+3. select last_name, to_char(salary, '099999') from employees;
+
+
+1.  select to_date('01-jan-22', 'dd mm yyyy') from dual;
+
+
+
+
+nested functions
+
+1. select length(concat('Hello', 'Vibrant')) from dual;
+
+
+general functions
+
+1. select nvl(COMMISSION_PCT, 0) from employees;
+2. select last_name, salary, COMMISSION_PCT, nvl2(COMMISSION_PCT, 'replacevalue', 'replacenull') from employees;
+
+
+EXPRESSION MULTI CONDITIONS---
+
+SELECT last_name, salary, 
+CASE last_name WHEN 'King' THEN salary - 100
+               WHEN 'Fay'  THEN salary + 100			   
+ELSE salary  END as newsal
+from employees;
+
+
+DECODE FUNCTION ---
+
+SELECT last_name, salary,
+  DECODE(last_name, 'King', salary - 100, 
+                  'Fay', salary + 100,
+  salary) newsal
+  FROM employees;
+  
+  
+  
+MULTI ROW FUNCTIONS --
+
+ select max(salary), min(salary), sum(salary), avg(salary), count(*) from employees;
+ select count(*) from employees where salary > 10000;
+ select count(distinct salary) from employees;
+
+
+
+GROUP BY -- 
+ SELECT avg(salary) from employees group by department_id;
+ SELECT last_name, avg(salary) from employees group by department_id, last_name;
+ SELECT avg(salary) from employees group by department_id, last_name;
+ SELECT last_name, first_name, avg(salary) from employees group by first_name, last_name;
+ 
+// JOINS ---->
+
+select eid,ename,city
+from tableone
+natural join tabletwo;
+
+
+select eid,ename,city
+from tableone
+join tabletwo
+using(ename);
+
+select eid,ename,city
+from tableone
+join tabletwo
+using(ename);
+
+
+select t1.eid, t1.ename,t2.city
+from tableone t1
+join tabletwo t2
+on(t1.ename = t2.ename);
+
+
+--------------------------------------------
+
+OUTER JOIN 
+
+
+select t1.eid, t1.ename,t2.city
+from tableone t1
+left outer join tabletwo t2
+on(t1.ename = t2.ename);
+
+
+
+select *
+from tableone t1
+left outer join tabletwo t2
+on(t1.ename = t2.ename);
+
+
+
+
+select *
+from tableone t1
+right outer join tabletwo t2
+on(t1.ename = t2.ename);
+
+
+
+select *
+from tableone t1
+full outer join tabletwo t2
+on(t1.ename = t2.ename);
+
+select e.last_name as "emp_name" , m.last_name as "mng_name"
+from employees e 
+join employees m 
+on(m.EMPLOYEE_ID = e.MANAGER_ID);
+
+
+
+select * from tableone cross join tabletwo;
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

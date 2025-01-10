@@ -1,0 +1,5229 @@
+MySQL
+
+computare (Latin word) -> to compute/calculate
+
+Charles Babbage
+
+Job of Computer
+
+(input)             (processing)
+Data  ->           Computer ->                 (output)
+(raw facts)                                       Information
+(meaningless)                                (meaningful data)
+22021984                                   (data on whose basis the management can take some decision or you can take some action)
+
+processing -> work done by the computer to convert data into information
+
+Database -> Database is a collection of LARGE amounts of data
+
+DBMS -> Database Management System
+DBMS ->readymade s/w that helps you to mannage your data
+ANSI defination (American National Standards Institute)
+collection of programs that allows you to Insert ,Update,Delete and Process.
+
+e.g. MS Excel, dBase,Foxbase,Numbers,Google Spreadsheets,Foxpro,Dataease,Dataflex,DB vista Advanced Revelation etc.
+
+Mysql -> RDBMS (Relational Database Managment System)
+
+DBMS vs RDBMS 
+DBMS (e.g  MS Excel, Foxpro,etc.)
+--------
+a. Field
+b. Record
+c. File
+     1. Naming conventions(Nomenclature)
+     2. Relationship between 2 files is maintained programatically
+     3. More Programming
+     4. More time is required for s/w development
+     5.High Network traffic
+     6. Processing is on Client machine
+     7. Processing is on Client machine
+     8. Client-Server architecture is not supported. 
+     9. File level looking
+    10. Not suitable for multi-user
+    11. Distributed Database are not supported 
+    12. No security of Data 
+DBMS allows acess to the file through the OS
+==============================================================================================
+RDBMS (e.g  Mysql, Oracle etc.)
+----------
+a. Column, Attribute
+b. Row, Tuple, Entity
+c. Table, Relation, Entity class
+     2.Relationship between 2 tables can be specified at the time of table creation (e.g Foreign key constraint)
+     3. Less programming
+     4. Less time is required for s/w development
+     5.Low network traffic
+     6.Faster (in terms of network speed) and cheaper(in terms of hardware coste, network cost, infrastructure cost)
+     7.Processing is on Server machine (known client server architecture)
+     8. Most of the RDBMS support Client-Server architecture (eg. MySQL and Oracle support , ) 
+     9. Row level locking (Table is not a file ; internally every row is a file)
+    10. suitable for multiuser
+     11. Most of the RDBMS support Distributed Databases
+     12.Multiple levels of security
+           a. Logging in security
+     (MySQL username and password)
+           b. Command level security
+      (to issue MySQL commands)
+     e.g. create table, create function, create procedure, create view, create user etc.
+           c. Object level security
+      (to access the tables and other objects of other users)
+
+ RDBMS DOES NOT allow acess to the table through the OS
+                   
+various RDBMS available:-
+#Informix (fastest interms of processing speed)
+
+#Oracle (slowest interms of processing speed)
+ * most popular because theprogramming is very easy
+ * product of Oracle Corporation
+ * largest s/w company in the world
+ * largest overall s/w company in the world 
+ * 63% of world commertial database market in the client server environment
+ * 86% of world commertial database market in the internet environment
+ *more than 90% of Fortune 500 companies in the world use Oracle
+ * 10/10 of the largest companies in the world use Oracle     
+ * available on 113 OS
+# Sybase
+ * going down
+ * Sybase has recently acquired by SAP
+
+# MS SQL Server
+ * good RDBMS from Microsoft
+ * 16% commertial database market share
+ * It only works with windows OS
+
+Ingres
+Postgres
+Unify
+
+# Server has to be a mainframe (super computer):
+DB2 
+ * good RDBMS from IBM
+CICS
+TELON
+IDMS
+
+#Single user RDBMS
+MS Access
+Paradox
+Vatcom SQL
+* Personal Oracle (single use version of Oracle) //Free RDBMS
+
+#MySQL
+ * MySQL was launched by a Swedish company in 1995
+ * its name is a combination of "My", the name of co-founder Michel  Widenius 'daughter',
+ * Widenius'daughter, and "SQL" 
+ * MySQL is an open source RDBMS
+ * most widely used open-source RDBMS
+ * part of the widely used LAMP open source web application software stack(and other "AMP" stacks)
+       L -> Linux
+      A ->Apache
+      M -> Mysql
+      p -> perl or python or PHP
+ * Facebook,Joomla,WordPress, Twitter ,Flicker , Instagram ,Google( though not for searches), Youtube etc.
+ * free software open source projects that require a full-featured RDBMS often use MySQL
+ * MySQL occupies 42 of world open-source database market
+ * sun Microsystems acquired MySQL in 2008
+ * Oracle acquired sun Microsystems in 2010
+ 
+               DEPT
+DEPTNO   DNAME     LOC
+10               TRN         Bombay
+20               EXP         Delhi
+
+                     
+                          EMP
+EMPNO    ENAME   SAL    DEPTNO
+1              POOJA    4000      10
+2              OJAS      3000     20
+
+* Facebook is currently in process of migratin from  MySQL to mangoDB
+
+# Various s/w development tools from MySQL:
+MySQL database
+ * database server s/w
+ * store table data, retrieve table data , secure table data etc.
+ 
+SQL
+*Structured Query Language
+* Create, Drop ,Alter
+   Insert,Update,Delete
+   Grant, Revoke , Select
+* conforms to ANSI standards (e.g 1 character = 1 Byte, ANSI datatypes, char ,int ,etc.)
+* conforms to ISO standards (for quality Assurance)
+* common for all RDBMS
+* initially founded by IBM (1975-77)
+* earlier known as RQBE (Relational Query by Example) old name of SQL
+* IBM gave RQBE to ANSI
+* now controlled by ANSI (hence common for all RDBMS)
+* ANSI renamed RQBE to SQL
+
+DR. Codd founder of database.
+
+SQL source code:
+90% in C C++
+10% in assembly
+*wrote the source code of SQL
+1.Larry
+2.Thomos
+3.Scott
+4.Chris
+5.Huma
+6.Gavin
+this 6 person started Oracle after SQL source code (Greek word) some one will knows future
+
+MySQL PL
+  * MySQL Programming Language
+  * programming languge from MySQL
+  * used for database programming
+     eg. HRA_CALC, TAX_CALC ,ATTENDANCE_CALC, etc.
+
+MySQL Command Line Client
+* MySQL Client s/w
+* character based(text based)
+* used for running SQL commands , MySQL PL programs and MySQL commands  
+* interface with database
+
+MySQL Workbench
+* MySQL Client s/w
+*GUI based(Graphical User Interface )
+*used for running SQL commands, MySQL PL programs , and MySQL commands interface with database
+
+
+MySQL Connectors
+* for MySQL database connectivity
+*JDBC drivers for JAVA,ODBC drivers for Python C,C++ etc.
+
+MySQL for Excel
+* import , export and edit MySQL data using Microsoft Excel.
+
+MySQL Notifier
+* Stratup and Shutdown Database
+
+MySQL Enterprise Backup
+* used to backup table data
+
+MySQL Enterprise High Availability
+* for Replication (for standby database)
+
+MySQL Enterprise Encryption
+*to encrypt the table data
+
+MySQL Enterprise Monitor
+*  for Performance Tuning (fo Performance Managment)
+
+MySQL Query Analyzer
+* to analyze and speed up the queries
+
+etc.
+
+# 4 sub divisions of SQL :-
+DDL (Data Defination Language) ( Create , Drop , Alter )
+DML (Data Manupulation Language) ( Insert , Update , Delete )
+DCL ( Data Control Language ) ( Grant , Revoke )
+DQL( Data Query Language ) ( Select )
+
+5th Component of SQL :-
+Not an ANSI standard ;-
+Extra in MySQL RDBMS and Oracle RDBMS :-
+
+DTL/TCL (Data Transaction Language) /(Transaction Control Language) 
+    ( Commit , Rollback , Savepoint )
+DDL( Rename ,Truncate )
+
+
+Extra in Oracle RDBMS ONLY :-
+DML ( Merge ,Upsert )
+
+
+ # RULES FOR tablenames , columnname ,variablenames  : -
+ 
+ *  max 30 characters
+ * A - Z , a - z , 0 - 9 allowed 
+ * has to begain with an alphabet
+           EMP2021
+          2021EMP    <- Error
+
+ * Special characters $ , # , _allowed
+ * in MySQL if you want to use reserved character # in tablename and coloumnname , then enclose it in 
+   back quotes
+* ` ` back quotes
+     eg. `EMP#`
+*134 reserved words not allowed in tablename
+
+# MySQL Documentation
+http://docs.oracle.com
+ 
+# Datatypes
+ 
+ Char
+*             allows any character
+*             could be alpha-numeric also
+*             max upto 225 characters
+*             e.g PANNO , ROLL_NO
+*             fixed length character string
+*             wastage of HD space
+*             searching and retrival  is Fast
+     eg  ADHAR_NO 
+ 
+ Varchar
+*             variable character
+*             allows any character
+*             could be alpha - numeric also
+*             max upto 65,535 characters ( 64 Kb -1 )
+*             no default width ( width has to be specified )
+*             variable length character string
+*             conserve on HD space
+*             searching and retrival is slow
+      eg. ADDRESS
+
+Text
+*             stored outside the table
+*             stored away from the table row
+*             MySQL maintains a LOCATOR ( HD address from the table row to the text column data)
+*             used only for those coloumns that will are to be used in searching
+*             Benefit is that the processing speed and performance in the table is not affected
+*             e.g REMARKS , COMMENTS , EXPERIENCE , RESUME , FEEDBACK , PRODUCT_DTLS etc.
+width dows not have to be specified for this datatype
+
+Tinytext
+*             max 225 characters
+
+Text
+*               max 65, 535  characters  
+
+Mediumtext 
+*              max 16 , 777 , 215 characters ( 16 Mb  - 1 )
+Longtext
+*             max 4 ,294 .967 ,295 characters ( 4 Gb - 1 )
+
+Binary
+* fixed length binary string (e.g '10101010000011')
+* max 255 Bytes of binary data
+* width need not be specified
+* e.g. small images ,barcodes ,picture codes ,QR codes , thumbnails, signatures , fingerprints etc.
+
+Varbinary
+* variable length  binary string
+* max 65,535 Bytes of binary data
+* no default width (width has to be specified)
+*e.g small images  , thumbnails ,icons etc.
+* both of the above (Binary and Varbinary) are stored as character strings of 1's and 0's
+
+Blob ->
+   * Binary Large Object
+   * stored outside the table
+   * stored away from the table row
+   * MySQL maintains a LOCATOR from the table row to the Blob data 
+   * width does not have to be specified.
+
+Tinyblob
+* max upto 255 Bytes of Binary Data
+
+Blob 
+*max upto 65,535 Bytes of binary data
+
+Mediumblob
+* upto 16,777,215 Bytes of binary  data (16 Mb - 1)
+
+Longblob
+* upto 4,294,967,295 Bytes of binary data
+
+e.g photoshop
+
+# Integer Types (Exact value) :
+* Signed or Unsigned
+* by default it is Signed
+
+Tinyint (-128 to 127) or (0 to 255)
+* 1 Byte
+* e.g age int unsigned
+
+Smallint
+* 2 Bytes
+
+Mediumint
+* 3 Bytes
+
+Int 
+* 4 Bytes
+
+Bigint
+* 8Bytes
+
+#Floating -Point Types (Approximate value) :
+
+Float
+* single precision
+* upto 7 decimals
+
+Double
+* upto 15 decimals
+------------------------------------------------------------------------------------
+# Fixed-Points Types (Exact value) :
+
+Decimal
+* stores double as a string
+  e.g "653.7"
+* max number of digits is 65
+* used when it is important to preserve exact precisions.
+
+Boolean
+* logical datatype
+*True and False evaluate to 1 and 0 respectively
+*e.g maraital _status boolean
+
+# Date and Time Datatypes
+
+Date
+*1st Jn 1000 AD to 31st Dec 9999AD
+* 'YYYY-MM-DD' is the default date format in MySQL
+*e.g
+   '2021-09-24'
+    '21-09-24'
+* year values in the range 70-99 are converted to 1970-1999
+* year values in the range 00-69 are converted to 2000-2069
+   ( 1970 is the cut-off year)
+* date1 - date2 -> returns the number of days between the 2 dates.
+* how MySQL reads dates
+1st Jan 1000AD -> 1
+2nd Jan 1000AD -> 2
+.
+24th Sept 2021 AD -> 2147593 (number of days sence 1st Jan 1000AD)
+
+* internally date is stored as a fixed length number.
+  7 Bytes of storage
+
+# Time
+*  'hh:mm:ss' or 'HHH:MM:SS'
+*   time values may range from '-838;59;59'to'838:59:59'
+
+Datetime
+
+        * date and time is stored together 
+        * 'YYYY-MM-DD hh:mm:ss'
+        * '1000-01-01 00:00:00' to '9999:12:31 23:59:59'
+        * datetime1 - datetime -> returns number of days between the two and the remainder hours , minutes and seconds
+
+Year
+* YYYY
+*1901 to 2155
+
+#   In MySQL 
+      * max 4,096 columns per table provided the row size <= 65,535 Bytes
+      * no limit on number for rows per table provided the table size<+64 Terabytes
+
+
+#CREATE TABLE
+
+create table Emp
+(
+Empno char(4),
+Ename varchar(25),
+Sal float,
+City varchar(15),
+Dob date
+);
+
+ *              ; is known as delimiter. it indicates end of command
+ *              SQL commands are case-insensitive.
+
+#INSERT
+
+insert into emp
+values('1','Amit','5000','Mumbai','1995-10-15');
+
+*   data is case-sensitive
+*   for char , varchar , date , time , datetime , use '   '
+*   '1995-10-15' -> 'YY-MM-DD' is default date format in MySQL.
+*   '15-OCT-95' -> 'DD-MON-YY' is default date format in Oracle.
+
+insert into emp (empno , sal , ename , city , dob )
+values('2' , 'Kaushal ', 'Delhi ', '1990-11-17');    <- Recommended
+                                                                            1. Readable
+                                                                            2. Flexible (can specify column values in any order )
+                                                                            3. In future if you alter the table ,if you add a colomn , the INSERT statement will continue to work
+
+insert into emp (empno , sal )
+values('3' , 7000 ); 
+
+# Null value
+
+*    null means nothing
+*    null value is having ASCII value 0
+*    special treatmenbt given to null value in all RDBMS
+*    null value is independent of datatype
+*    null value occupies only 1 Byte of storage
+*    if the row is ending with null values, then all those columns will no occupy any space.
+*    those columns that are likely to have a large number of null values ,its recommanded that they should be specified at the end of the table structure , to conserve on HD space.
+
+insert into emp 
+values('3' ,'shantiram' ); 
+insert into emp 
+values('3' ,'shantiram',null,null,null ); 
+insert into emp 
+values('3' ,null, 'shantiram' , null); 
+
+* To insert multiple rows in a table simultaneously :
+insert into emp values
+('1' , 'A' ,5000,'Mumbai','1990-10-01'),
+('2' , 'B' ,5000,'DELHI','1985-08-03'),
+('3' , 'C' ,5000,'Mumbai','1994-04-07'),
+('4' , 'D' ,5000,'Mumbai','1989-05-09') ;
+
+
+insert into emp(empno,sal) values
+('1',5000) ,
+('2',6000) ,
+('3',4000) ,
+('4',7000) ;
+
+*  above 2 commands will works only in MySQL.
+*  above 2 commands are not supported by Oracle. 
+
+ # SELECT 
+
+select * from emp;
+
+when you install MySQL, 2 users are automatically created
+root
+*  has DBA privileges
+*  create users ,assign privileges , take backups , performance monitering , performance tuning ,etc
+
+mysql.sys
+*   most important user in MySQL
+*  owner of database
+*  startup database , shutdown database , perform recovery
+
+To connect to MySQL database using MySQL command Line Client :
+* open MySQL Command Line Client
+* Specify the password for 'root' user
+
+To connect to MySQL database using MySQL Workbench :
+* open MySQL workbench
+* MySQL Connections (click on + sign to create a new connection)
+* Connection Name : Connection for root user
+* Connection method : standard TCP/IP
+* Host Name: localhost
+* Port no :3306
+     (for Oracle - > 1521)
+*  Username: root
+*  Password: (store in Vault.... Push button) -> click on the button the password 
+* Click on Ok
+* SCHEMA is a synonym for database
+* Default Schema : (leave it blank)
+* Test Connection (push button)
+* Click on Ok
+* Click in Ok
+
+To log in to the MySQL database :
+* Click on the connection you created.
+* you will see Object Nevigator on LHS
+* you will see query window at the top
+* you will also see output window below
+* you will see a Pull down menu at the top and a Horizontall toolbar at the top
+
+Some basic commands post logon :
+
+show databases;
+Ctrl+enter -> to execute
+
+to connect to database ;
+use <databasename>;
+use mysql;
+
+To view which all users are created :
+
+select*from user;
+* USER -> is a MySQL created system table
+* It is automatically created when you install MySQL.
+
+To create a new user and a Default database forr that user :
+
+create database<databasename>;
+or 
+create schema<schemaname>;
+create database metiitnashikpgdacsept2021;  <- this command creates a database/schema
+
+show databases;
+create user <username> identified by the <password>;
+
+create user pgdac1@'%' identified by 'welcome';
+
+use mysql;
+select * from user;
+
+To grant the permissions :
+Click on server (menu at the top) -> Users and Privileges -> Click on it.
+Select the username you created from the user account list on LHS
+Go to Administrative Roles (tab)
+
+DBA Role (checkbox) -> Click on it
+Click on Apply (push button)
+
+Go to the Schema privilages (tab)
+
+Add Entry ... (push button) -> Click on it
+
+Select Schema (Radio button) -> Click on it
+click on the Poplist and select cdacmetiitnshiksept2021
+
+ok(push button) -> Click on it
+
+Select "ALL" (push button) -> CLick on it
+
+Grant option(checkbox) -> click on it
+APPLY (push button) -> click on it
+
+File -> Exit
+Open MySQL workbench
+Create a new Connection for user pgdac1
+Default schema : metiitnashikpgdacsept2021
+
+to see which all tables you have created
+show tables;
+
+to see the structure of tables:
+desc <tablename>;
+desc emp;
+
+
+for putty -> grant dba to pgdac1;
+
+oracle v11G to download
+
+# SELECT
+select *from emp;
+select* from dept;
+             * known as metacharacter (all columns)
+To restrict columns :
+select empno, ename from emp;
+select deptno , job , ename , sal , hiredate from emp;
+
+* the position of columns in SELECT statement ,will determine the position of column in output
+ (you will write as per user requirements)
+
+To restrict the rows :
+
+WHERE clause
+
+select* from emp
+where deptno = 10;
+
+*  WHERE clause is used for searching
+*  searching takes place in DB server HD
+*  WHERE clause is used to restrict the rows 
+* where clause is used to retrive the rows from DB server HD to server RAM.
+
+select ename , sal from emp
+where sal > 2000;
+
+select * from emp
+where sal > 2000;
+
+Relational Operators :
+1. >
+2. >=
+3. <
+4. <=
+5. !=   or <>
+6. =
+
+select * from emp
+where sal > 2000 and sal > 3000;
+
+logical operators :-
+* NOT
+*AND
+* OR
+
+select*from emp
+where deptno = 10 or sal > 2000 and sal < 3000;
+
+select* from emp 
+where (deptno = 10 or sal > 2000 ) and sal> 3000;
+.................................................................................................................................................................................
+select *from emp
+where job ='MANAGER';
+
+select * from emp
+where job ='manager';
+
+* in MySQL, queries are case - insensitive
+   (more user-friendly,less secure) 
+* in Oracle, queries are case - sensitive
+   (less user-friendly,more secure)
+
+* select ename ,sal from emp;
+* select ename , sal , sal*12 from emp;
+
+sal*12 -> computed column (derived column) (Peseudo column ) (Fake column)
+
+# Arithmatic Operators :
+ 1.    ( )
+ 2.    /             2+3*4
+ 3.    *             (2+3)*4
+ 4.    +
+ 5.    -
+
+* select ename , sal , sal*12 from emp
+* select ename, sal , sal*12 as "ANNUAL" from emp;
+alias
+
+select ename, sal ,sal*12 "ANNUAL" from emp;
+as -> ANSI SQL
+as -> optional in MySQL and Oracle
+
+select ename, sal , sal*12  annual from emp;
+
+select ename, sal , sal*12  "annual" from emp;
+
+select ename, sal , sal*12  "Annual Salary" from emp;
+
+select ename, sal ,sal*12 "ANNUAL" from emp;
+
+-> select ename "EMPNAME",
+sal "SALARY",
+sal*12 "ANNUAL",
+sal*12*0.4 "HRA",
+sal*12*0.2 "DA",
+sal*12 + sal*12*0.4 + sal*12*0.2 "TOTAL"
+from emp;
+
+*          you can not use alias expression , because calculation is done first , alias is             generated afterwords
+*at the time performin calculation, the alias doesn't exist
+
+select ename "EMPNAME",
+sal "SALARY",
+sal*12 "ANNUAL"
+from emp
+where annual < 300000;      <- ERROR
+
+* you cannot use alias in WHERE clause
+* WHERE clause is used for searching in the DB server HD
+
+select ename "EMPNAME",
+sal "SALARY",
+sal*12 "ANNUAL"
+from emp
+where sal*12 < 300000;
+
+# duplicate jobs
+
+select job from emp;
+select distinct job from emp;
+
+* whenever you use DISTINCT , sorting takest place internally in the server ram.
+
+select distinct job from emp;
+select distinct job, ename from emp;
+* Distinct will operate combinely on all trhe columns which are present in SELECT statement
+
+select deptno,job ename ,sal,hiredate from emp;
+*  in DBMS data is stored in a file
+* in a file , rows are stored sequentially
+* concept of Row numbering is available in DBMS
+* hence in DBMS , it is possible to see the first 'N' rows in a file or the last'N' rows in in a file
+* table is not a file, every row is a file.
+* rows of a table are not sequentially
+* rows of a table are scatterd (fragmented ) all over DB server HD
+*when you INSERT into a table,whenever it finds the free space in the DB server  HD , it will store the row there
+* the reason why RDBMS does this,is to speed up the INSERT statement
+ especially considering a multi-user environment
+* when you SELECT from a table the searching will always be sequential when you SELECT from table , the order of rows in the output will always be in ascending order of row address
+* hence in a RDBMS, it is not possible to see the first'N' rows in a table or the last'N' rows in a table
+* If you UPDATE a row, if the row length is increasing ,then the row adress may change (its only in the case of VARCHAR that the row length may increase or decrease)
+
+     # ORDER BY Clause
+*  used for sorting(to make it more presentable)
+    (to view the output in a specific order)
+select deptno,job,ename,sal,hiredate from emp order by ename;
+
+#Acending and Descending
+select deptno, job, ename, sal, hiredate from emp order by ename desc;
+asc -> ascending (by default)
+desc -> descending
+
+* no upper limit on the number of coloumn in ORDER BY clause
+e.g.
+select ........................
+order by country ,state,district ,city , product ,customer ,region , area;
+*   sorting is one operation that always slow down your SELECT statement 
+* if you have a large number of column in Order BY clause , it will be slow becauyse tha much sorting has to take place
+
+BI -> Buisiness Intelligence
+
+* WHERE clause has to be specified BEFORE the ORDER By clause
+* SELECT statement executes from top to bottom , and left to right.
+select ename ,sal*12 from emp;
+* ORDER BY clause is the LAST clause in SELECT statement
+
+* select ename, sal*12 annual from emp order by annual;
+* select ename, sal*12 "annual salary" from emp order by ''annual salary';
+* select ename, sal*12 "Annual Salary" from emp order by 2;
+* select * from emp order by 2;
+  (where 2 is coloumn no.)
+
+* declare ename varchar(20)
+* select *from emp 
+where ename >'A'and ename < 'B' ;
+* select *from emp 
+where ename >='A'and ename < 'B' ;
+
+#Blank-padded comparision semantics:-
+whenever you compare 2 strings of different lengths, the shorter f the 2 strings is temporarily padded with blank spaces on RHS, such that their lengths become equal; then it will start the comparision , character by character, based on ASCII value
+
+# Special Operators (Like)
+wildcards(used for pattern matching)
+any character and any number of characters
+
+select * from emp
+where ename like'A%';    => starting with A
+
+select * from emp
+where ename like'%A';    => Ending with A
+
+select * from emp
+where ename like'%A%';   => starting with A or Ending with A and middle                                                 A
+
+select * from emp
+where ename like'A%A';   => starting ending with A
+
+select * from emp
+where ename like'_ _A';  => A is in third position
+
+select * from emp
+where ename like'_ _ _ _'; => word with 4 characters
+
+select * from emp
+where ename like 'A%';
+
+select * from emp
+where ename not like 'A%';
+
+
+
+In oracle , to make the query case -insensitive:-
+select * from emp
+where ename like'a%';
+
+# Special Operators (between)
+     Between -> inclusive 
+
+* select*from emp
+  where sal >= 2000 and sal <= 3000;
+
+select* from emp
+where sal between 2000 and 3000;         <- Recommended
+
+* whenever you are searching for data that lies within a range, use the between operator
+a. readymade method by the name of BETWEEN is already present in the database in the COMPILED FORMAT , the EXECUTION PLAN etc. is ready , and it directly executes
+b. easier to write (closer to everyday spoke English )
+
+* select * from emp   
+   where sal not between 2000 and 3000; 
+
+not between -> exclusive
+
+select* from emp
+where sal > 2000  or sal > 3000;
+
+* select* from emp
+  where hiredate >= '2020-01-01' and hiredate <= '2020-12-31;
+
+select* from emp
+where hiredate between '2020-01-01' and '2020-12-31;
+
+* select * from emp
+   where ename >= 'A' and ename <= 'F';
+
+select* from emp
+where ename between 'A' and 'F';
+
+# Special operator (any)
+
+* select * from emp
+   where deptno = 10 or deptno=20 deptno=30;
+
+   select * from emp
+   where deptno = any (10,20,30);       (FAST)  <- works in Oracle not in MySQL
+   
+   select * from emp
+   where deptno in(10,20,30);        (FASTEST)
+       
+      ANY <- logical OR
+       IN   <- logical OR
+
+select* from emp
+where deptno=any                          <- works in MySQL as well as Oracle
+(select deptno from dept);
+
+* IN operator is faster than ANY operator
+* ANY operator is more powerful than IN  operator
+* with IN operator , you can check for IN and NOT IN
+* with ANY operator , you can check for =ANY, !=ANY, > ANY, >=ANY, <ANY ,<=ANY
+* if you want to check for equality or inequality , then  use the ANY operator
+
+select*from emp
+where city in ('Mumbai,'Delhi');
+
+* ANY operator works in MySQL only provided if it used with sub-query
+
+DDL -> create 
+DML -> insert,update
+DQL -> select
+
+             # UPDATE
+
+update emp
+    set sal= 10000  
+        where emp no=1;
+
+update emp
+    set sal= sal + sal*0.4 
+        where emp no=1;
+
+update emp
+    set sal= 10000 ,city ='Nashik' 
+                where emp no=1;
+update emp
+    set sal= 10000  
+        where city = 'Mumbai';
+update emp
+    set sal= 10000 , city ='Nashik'  
+        where city = 'Mumbai';
+
+delete from emp;
+update emp set sal=10000;
+* UPDATE and DELETE commands without WHERE clause will not be allowed in MySQL workbench
+
+Totry out the above commands :
+In MySQL workbench:
+
+Click on Edit (menu at the Top) -> Preference -> SQL Editor -> "safe Updates" (checkbox at the bottom) -> uncheck it -> Click on Ok
+
+                     #TRANSACTION PROCESSING
+
+* commit will save all the DML changes since the last commited state.
+* When the user issues a commit , it is known as End of Transaction
+* Commit will make the Transaction permanent.
+* Transaction is a sub-unit of work.
+* Total work done = T1 + T2 + T3 +... + Tn ;
+* User/Client will decide when to issue the commit 
+* when to issue the Commit will depend upon the logical scope of work
+
+commit work;
+* WORK -> ANSI SQL
+* WORK -> optional in MySQL RDBMS and Oracle RDBMS
+
+commit;
+
+*Rollback will undo add the DML changes since the last commited state
+
+rollback work;
+   * WORK -> ANSI SQL
+   * WORK -> optional in MySQL RDBMS and Oracle RDBMS
+   * only the DML commands are affected by Rollback and Commit
+   * any DDl command, it automatically commits(not only will ist commits itself, but it will commit everything above it)
+   * when you exit from SQL*Plus (Oracle), it automatically commits any kind of Power failure , PC reboot, window close , improper exit, etc. in allsuch cases your last uncommited transaction Rolled back (in MySQL RDBMS and Oracle RDBMS) 
+
+ 
+
+
+
+
+* Transaction is a unit of work
+* Savepoint is point within a work
+* you can rollback to a savepoint
+* YOU CANNOT COMMIT TO A SAVEPOINT
+* Commit will save all the DML changes since the last Committed state
+* When you Rollback or Commit, the  intermediate savepoints are automatically  cleared(they no longer exist); if you want to use Savepoints again, then you will have to reissue them in a new transaction
+* Savepoint is a sub-unit of Work
+* you can only Rollback sequentially
+
+rollback work to pqr;
+* WORK -> ANSI SQL
+*WORK -> optional in MySQL RDBMS and Oracle RDBMS
+rollback to pqr;
+
+* within a Transaction , you can have 2 Savepoints with the same name; the latest Savepoints overwrites the older one; the older Savepoints no longer exists
+
+* To try out Rollback ,Commit and Savepoints in MySQL Workbench :-
+Click on Query (Menu at the top) -> Auto-Commit Transactions -> Uncheck it.
+
+# READ and WRITE Consistency
+* In a multiuser environment, when you SELECT from a table,
+you can view
+ONLY the commited data of all users
+plus 
+changes made by you
+
+#ROW LOCKING
+
+*when you update and delete a row that row is automatically locked fro other users
+* ROW LOCKING IS AUTOMATIC IN MySQL AND ORACLE
+* when you UPDATE or DELETE a row , that row becomes READ_ONLY for other users
+* other users can SELECT from that table; they will view the old data before changes
+* other users can INSERT rows into that table
+* other users can UPDATE or DELETE "other " rows from that table
+*no other user can UPDATE or DELETE your looked row till you have issued a Rollback or commit
+* LOCKS AUTOMATICALLY RELEASED WHEN YOU ROLLBACK OR COMMIT 
+
+OPTIMISTIC ROW LOCKING -> automatic row locking mechanism of MySQL and oracle
+
+PESSIMISTIC ROW LOCKING -> manually lock the rows in advance BEFORE issuing UPDATE or DELETE
+
+To lock the rows manually , you have to use SELECT statement eith a FOR UPDATE clause
+eg.
+  select*from emp for update;
+
+*LOCKS ARE AUTOMATICALLY RELEASED WHEN YOU ROLL BACK OR COMMIT
+
+select* from emp
+where deptno =10             <- seconds
+for update wait 60;
+
+select* from emp
+where deptno =10         
+for update no wait;
+
+# To try out row locking in MySQL :-
+- Open MySQL Workbench
+Click on Query (menu at the top) -> New tab to current server ->
+Click on it
+Now you have 2 query windows to try out row locking
+
+In MySQL to abort the operation :-
+Click on Query (menu at the top) -> Click on Stop
+
+Manual row locking in MySQL :-
+WAIT/NOWAIT options not available in MySQL
+
+                                                  #FUNCTIONS
+
+Function -> Routine that returns a value
+
+ Character Functions :-
+
+                EMP
+       FNAME   LNAME
+       Arun        Purun
+       Tarun      Arun
+       Sirun      Kirun
+      Nutan      Purun
+
+fname varchar(15)
+lname varchar(15)
+
+select fname,lname from emp;
+
+* concat(str1,str2)
+
+  select concat(fname,lname) from emp;
+
+ select concat(concat(fname,'_')lname) from emp;  <- Function within function
+
+ArunPurun
+TarunArun
+SirunKirun
+NutanPurun
+
+* max upto 255 levels for function within function
+
+select upper (fname) from emp;
+ARUN
+TARUN                                 <- only for Display purpose
+SIRUN 
+NUTAN
+
+*update emp set fname = upper(fname);             <- for update
+
+select * from emp where fname = 'ARUN';    <- works in MySQL , does not                                                                         work in Oracle RDBMS 
+
+Solution for Case-insensitive query in ORACLE RDBMS :-
+select * from emp where upper (fname) ='ARUN';
+
+select* from emp where lower (fname) ='arun';
+
+In Oracle(not avilable in MySQL) :-
+select initcap (fname) from emp;
+
+
+EMP
+ENAME
+Arun Purun
+Tarun Arun
+Sirun Kirun
+Nutan Purun
+
+select lpad(ename,25,' ')from emp;
+uses:-
+a. Right justified
+b. Cheque Printing
+
+select rpad(ename,25,' ')from emp;
+uses:- 
+a. Left justification of numeric data
+b. Cheque Printing
+c. Convert varchar to char(convert variable length to fix length)
+
+select ltrim(ename) from emp;
+
+uses :
+a.Left justification (remove blank space from left hand side)
+
+
+select ltrim(ename) from emp;
+
+uses :
+a.Left justification (remove blank space from left hand side)
+uses :
+a.Left justification (remove blank space from left hand side)
+
+uses :
+a.right justification (remove blank space from right hand side)
+
+* To convert char to varchar (convert fixed length to variable length)
+* Right justification of char data     (lpad(rtrim(ename...)...))
+
+select trim(ename) from emp;
+-> remove blank spaces from both the sides in MySQL
+
+select substr(ename,3) from emp;
+3-> starting position
+un Pururn
+run Arun
+run Kirun
+tan Purun
+
+select substr(ename,3,2)from emp;
+2 -> number of characters 
+un
+ru
+ru
+ta
+Uses:-
+a. to extract a part of the string
+
+select substr(ename,-3) from emp;
+run
+run
+run
+run
+
+select substr(ename,-3,2) from emp;
+ru
+ru
+ru
+ru
+
+substr('Nashik Road',1,6)
+Nashik
+
+substr('Nashik Road',8)
+Road
+
+select replace(ename,'un','xy') from emp;
+           un -> xy
+Arxy Purxy
+Tarxy Arxy
+etc.
+
+select replace(ename,'un','xyz') from emp;
+              un-> xyz
+Arxyz Purxyz
+Tarxyz Arxyz
+etc.
+
+select replace(ename,'un','x') from emp;
+            un ->  x
+Arx purx
+
+TRANSLATE function Works in Oracle ,  not supported in MySQL: -
+
+select translate(ename,'un','xy') from emp;
+                   u -> x
+                   n -> y
+Arxy Pxrxy
+etc.
+
+select instr(ename,'un') from emp;
+          ->returns a starting posion in a string
+             if string is not found then it returns 0
+3
+4
+4
+10
+
+uses:-
+a. check if one string exist in another one
+
+EMP
+ENAME
+Arun
+Bannerjee
+Charlie
+
+select length (ename) from emp;
+
+4
+9
+7
+
+select ascii(ename) from emp;
+65
+66
+67
+
+select ascii (substr(ename,2)) from emp;
+
+select ascii('z') from emp;
+
+122
+122
+122
+
+select distinct ascii('z') from emp;
+122
+
+use mysql;
+select distinct ascii('z') from user;
+122
+
+select ascii('z') from dual;    
+122
+
+*dual is a system table 
+* dual is a dummy table
+*always present in all RDBMS
+* it contains only 1 row and 1 column
+
+select substr('Nashik Road',1,6)from dual;
+select 'welcome to MET' "MESSAGE" from dual;
+select 3*12 from dual;
+
+
+select char(65 using utf8) from dual;
+
+A
+
+-> where utf* is the given character setfor u.s English else default is binary character set
+
+select* from emp where ename = 'Aroon'
+
+select* from emp where soundex (ename) = soundex('Aroon');
+
+Assorted:-
+
+1. In MySQL, implement INITCAP functionality (Initcap used in Oracle only)
+ PRANAV -> Pranav
+
+2. In MySQL,SELECT .... display the ENAMEs center-justified with'*' on both the sides
+Assume screen width is 80 characters
+37***Pranav37***
+37** AVINASH36***
+
+3.In Oracle, SELECT ....spell out the SALs
+    Two thousand Five hundread
+    Four thousand Seven hundread Twenty five
+
+              #Number Functions
+EMP  
+SAL
+1234.567
+1849.019
+1375.618
+1751.151
+select round(sal) from emp;
+1235
+1849
+1376
+1751
+
+select round(sal,1) from emp;
+
+1234.5
+1849
+1375.7
+1751.2
+
+select round(sal,2) from emp;
+1234.57
+1849.02
+1375.62
+1751.15
+
+select round(sal,-2) from emp;
+1200
+1800
+1400
+1800
+
+select round(sal,-3) from emp;
+1000
+2000
+1000
+2000
+
+select truncate(sal,0) from emp;
+1234
+1849
+1375
+1751
+
+Uses :- 
+Date and Time Calculation
+
+select truncate(sal,0) from emp;
+select truncate(sal,1) from emp;                                                                          1234.5
+1849
+1375.6
+1751.1
+select truncate(sal,2) from emp;     
+1234.5
+1849.01
+1375.61
+1751.15                                                            
+select truncate (sal,-2) from emp;
+1200
+1800
+1300
+1700
+ 
+ceil -> ceiling (if there is any value at all in decimal, then it will add one to the whole number)
+select ceil (sal) from emp;
+
+
+a. Bill, payments , Interest payments ,EMI payments wtc.
+
+select floor (sal) from emp;
+1234
+1849
+1375
+1751
+
+select truncate(3.6,0),floor(3.6), truncate(-3.6,0), floor (-3.6) from dual;
+                             3               3                           -3                     4
+
+select truncate(3.2,0),floor(3.2),truncate(-3.2,0),floor(-3.2) from dual;
+                            3                    3                     -3                   -4
+
+select sign (-15) from dual;
+-1
+uses:-
+a. to check if num is +ve or -ve
+b. sign(bloodgroup)
+c.sign(coronatest)
+d.
+
+if num > 0 then
+..............;
+elseif num < 0 then ;
+...........;
+else
+........;
+else if;
+
+select mod(9,5) from dual;
+4
+select mod (8.22,2.2) from dual;
+1.62
+select sqrt(81) from dual;
+9
+concat(sqrt(sign(x)*(x)),i)
+
+select power(10,3) from dual;
+1000
+select power(10,1/3) from dual;
+
+ select abs (-10) from dual;                 <- absolute value
+10
+             x  -> radians
+sin(x)
+cos(x)
+tan(x)
+
+ln(y)
+log(n,m)
+
+      #Date Functions
+
+EMP
+HIREDATE
+2019-10-15
+2019-12-31
+2020-01-15
+
+1. Date,Time,Datetime,Year
+2. 1st Jan 1000 AD to 31st Dec 9999AD
+3. 'YYYY-MM-DD' is the default date format in MySQL
+4. 'YY-MM-DD'
+5. date1-date2
+6. internally date is stored as a fixed-length number
+7. internally date is stored as number of days since 1st Jan 1000AD
+8. 7 Bytes of storage
+9. Datetime (time is stored as a fraction of day e.g 1.5 -> 1 day 12 hours)
+
+3.5123
+1 day =24 hours =24*60 mins =24*60*60 secs =24*3600
+
+3.5123
+3-> days
+.5123 -> .5123*24*3600 seconds
+
+select sysdate () from dual;
+'2021-10-04    17:25:48'
+* sysdate() is a function , it returns the current date and time
+* sysdate() returns the server date and time
+
+select addate(sysdate(),1) from dual;
+'2121-10-05  17:32:51'
+select addate(sysdate(),2) from dual;
+select addate(sysdate(),7) from dual;
+'2121-10-05  17:34:51'
+
+select addate(sysdate(),-1) from dual;
+
+select datediff(sysdate(),hiredate) from emp;
+715
+692
+668
+
+select date_add(hiredate,interval 2 month) from emp;
+select date_add(hiredate,interval -2 month) from emp;
+select date_add(hiredate,interval 1 month) from emp;
+select date_add(hiredate,interval -1 month) from emp;
+select last_day(hiredate) from emp;
+
+
+select dayname(sysdate()) from dual
+Monday
+
+select upper(dayname(sysdate())) from dual;
+select substr(dayname(sysdate()),1,3) from dual;
+
+*add an hour subtract
+select addtime('2021-01-10 11:30:00','1') from dual;
+'2021-01-10  11:30:01'
+select addtime('2021-01-10 11:30:00','1:30:45.00001') from dual;
+
+   #LIST function
+* independent of datatype
+*any compilation done with null returns null
+* any operation done with null , returns null
+
+
+
+EMP
+ENAME    SAL    COMMITION
+A            5000       500
+B            6000         .
+C                .            700
+
+select* from emp where comm = null;
+pessimistic queryimg -> Searching for null value
+
+select* from emp where comm is null;
+
+is null -> Special Operator
+
+select* from emp where comm != null;
+
+select* from emp where comm is not null;
+
+select sal+comm from emp;
+
+5500
+.
+.
+select sal+ ifnull(comm,0) from emp;
+5500
+6000                                           if commition is null then 
+ .                                                     returns 0;
+                                                  else
+                                                      return comm;
+
+select ifnull(sal,0) =ifnull(comm,0) from emp;
+5500
+6000
+ 700
+
+ifnull(comm,0)
+ifnull(comm,100)
+ifnull(city,'Mumbai')
+ifnull(orderdate,'2021-04-01')
+
+EMP
+SAL
+1000
+2000
+3000
+4000
+5000
+
+select greatest(sal,3000) from emp;
+3000
+3000
+3000
+4000
+5000
+Uses:-
+a. used to det a lower limit on some value
+
+greatest(val1,val2,val3,....,val255)
+
+greatest(num1,,num2,num3)
+greatest('str1','str2','str3','str4')
+greatest('date1','date2','date3')
+
+Bonus =10%sal,min Bonus =300
+select sal,greates(sal*0.1,300) bonus from emp;
+
+select least(sal,3000) from emp;
+
+1000
+2000
+3000
+3000
+3000
+
+uses:-
+a. used to set a upper limit on some value
+
+least(val1,val2,val3,....,val255)
+
+least(num1,,num2,num3)
+least('str1','str2','str3','str4')
+least('date1','date2','date3')
+
+cashback =10% amt ,max Cashback =3000
+select sal,least (amt*0.1,3000) cashback  from orders;
+
+CASE expression clause
+
+EMP
+SAL       DEPTNO
+1000        10
+2000        10
+3000        20
+4000        30
+5000        40
+
+select 
+case
+when deptno=10 then 'Training'
+when deptno=20 then 'Exports'
+when deptno=10 then 'sales'
+else'others'
+end as "DEPTNAME"                       as ->optional
+from emp;
+
+Training
+Training
+Exports
+Sales
+Others
+
+select 
+case
+when deptno=10 then 'Training'
+when deptno=20 then 'Exports'
+when deptno=10 then 'sales'
+end as "DEPTNAME"                       as ->optional
+from emp;
+
+Training
+Training
+Exports                     .  If you dont specify else it shows null
+Sales
+.
+
+select 
+case
+when deptno=10 then 'Ten'
+when deptno=20 then 'Twenty'
+when deptno=30 then 'Thirty'
+when deptno=40 then 'Fourty'
+else'others'
+end as "DEPTNAME"                       as ->optional
+from emp;
+
+if deptno=10 then HRA =40% annual
+if deptno=20 then HRA =25% annual
+else HRA =15% annual
+
+select deptno,ename,sal,sal*12 annual,
+case
+when deptno=10 then sal*12*0.4
+when deptno=20 then sal*12*0.25
+else sal*12*0.15
+end hra
+from emp;
+
+# REQUIREMENT from client
+if sal >3000 then REMARK ='High Income'
+if sal =3000 then REMARK ='Middle Income'
+if sal <3000 then REMARK ='Low Income'
+
+solution :-
+select ename ,sal,
+case
+when sign(sal-3000) = 1 then 'High Income'
+when sign(sal-3000) = -1 then 'Low Income'
+else 'Middle Income'
+end "REMARKS"
+from emp
+order by 2;
+
+# Environment Functions
+
+select user() from dual;
+pgdac1
+
+insert into orders
+values(5001,'2021-08-10',1001,300,user(),sysdate());
+*used to maintain a log(audit trails) of DML operations
+
+show character set;
+(to know lang of sql)
+
+
+Assorted :_
+In MySQL, display the Enames with the vowels removed
+
+AMIT -> MT
+HARSHAL -> HRSHL
+VAIBHAV -> VBHV
+AHER -> HR
+
+# Group/Aggregate Function
+Char, Numbe,Date, List Environment Functions
+
+                     EMP
+EMPNO ENAME  SAL   DEPTNO   JOB   MGR
+1             Arun    8000       1               M        4
+2             Ali       7000      1                C         1
+3             Kiran   3000      1                C         1
+4            Jack    9000      2                M        .
+5         Thomas   8000     2                 C        4
+
+
+case
+when job ='M'then 'MANAGER'
+when job='C' then 'CLERK'
+end 'job'
+from emp;
+
+Single Row Function
+(will operate on1 row at a time):-
+Char,Number Date,List ,Environment Functions
+eg. upper(ename), round(sal) etc.
+
+Multi-row Functions:-
+(will operate multiple row at a time):-
+Group Functions
+e.g sum(sal) etc.
+
+
+select sum(sal) from emp;
+35000
+
+Assumption last row SAL is null :-
+
+select sum(sal) from emp;            <- NULL VALUES ARE NOT COUNTED BY GROUP                                                                       FUNCTIONS
+27000
+
+select sum (ifnull(sal,0)) from emp;               
+27000
+
+select avg(sal) from emp;
+27000/4 ->6750
+
+select avg(ifnull(sal,0)from emp;
+27000/5 -> 5400
+
+select min(sal) from emp;
+3000
+
+select max(sal) from emp;
+9000
+
+select count(sal) from emp;
+4                                                     <- returns a count of number of rows where SAL is                                                                 not having a null value
+
+select count(*) from emp;
+5                                                      <- returns total number of rows in the table
+
+select count(*) - count(sal) from emp;
+1
+
+select max(sal)/min(sal) from emp;
+9000/3000 -> 3
+
+select sum(sal)/count(*) from emp;         <-FASTER
+27000/5 -> 5400
+
+select avg(ifnull(sal,0)) from emp;            <-SLOWER
+5400
+
+Assumption last row SAL is  8000 :-
+
+select sum(sal) from emp
+where dept no=1;
+18000
+
+                                            *WHERE clause is used to retrive the rows from DB                                                   server harddisk to server RAM
+select avg(sal) from emp
+where job = 'C';
+6000
+
+COUNT-QUERY (counting the number of query hits) :-
+
+select count(*) from emp
+where sal > 7000;
+3
+
+sum(column)
+avg(column)
+min(column)              min(ename),min(ename)
+max(column)             max(ename),max(hiredate)
+count(column)           count(ename),count(hiredate)
+count(*)
+stddev(column)
+varience(column)
+
+select count(*), min(sal), max(sal) ,sum(sal) ,avg(sal) from emp;
+              5             3000      9000      35000      7000  
+
+Restrictions for Group functions:-
+
+1. you cannot SELECT column of table by itself alongwith a group function
+ 
+ select ename , min(sal) from emp;       <- Error in Oracle (works in MySQL but the                                                                                      output is meaningless) 
+
+2. you cannot SELECT a Single-Row function alongwith a group function
+ select upper(ename) , min(sal) from emp;     <- Error in Oracle (works in MySQL but                                                                                            the   output is meaningless) 
+
+3. you cannot use Group Function in the WHERE clause
+select *from emp
+where sal> avg(sal);                                <-ERROR in Oracle and MySQL
+
+  #GROUP BY clause
+
+WHERE clause -> 
+.
+.
+.
+.
+select sum(sal) from emp;
+35000
+
+select sum(sal) from emp
+where deptno =1;
+18000
+
+select deptno,sum(sal) from emp
+group by deptno;
+
+DEPTNO   SUM(SAL)
+----------     ------------
+   1                 18000
+   2                 17000
+
+
+1. Rows retrived from DB server HD to server RAM
+2. Sorting is done deptwise
+3. Grouping is done deptwise
+4. Summation is done deptwise
+5. HAVING clause
+6. ORDER BY clause
+
+SELECT clause ->select deptno,sum(sal) 
+FROM clause ->from emp
+GROUP BY clause -> group by deptno
+
+*Rules for GROUP BY clause
+1. Besides the Group functions ,whichever column is present in SELECT clause , it has to be present in GROUP BY clause
+
+select deptno, sum(sal) from emp;      <-ERROR in Oracle(works in mysql but output is                                                                   meaningless)
+select deptno, sum(sal) from emp
+group by deptno;
+
+2. whichever coloumn is present in GROUP BY clause , it may or may not be present in select clause
+
+select sum(sal) from emp
+group by deptno;
+
+SUM(SAL)
+------------
+18000
+17000
+
+select deptno, sum(sal) from emp
+group by deptno;
+
+select deptno, max(sal) from emp
+group by deptno;
+
+select deptno, min(sal) from emp
+group by deptno;
+
+select deptno, count(*) from emp
+group by deptno;
+
+select job,sum(sal) from emp
+group by job;
+
+select deptno ,sum(sal) from emp
+where sal>7000 
+group by deptno;
+DEPTNO   SUM(SAL)
+1                  8000
+2                 17000
+
+*WHERE clause is specified BEFORE the GROUP BY clause 
+*WHERE clause is used for searching
+*searching takes place in DB server HD
+*WHERE clause is used to restrict the rows
+*WHERE clause is used to retrive the rows from DB server HD to server RAM
+
+select deptno,job,sum(sal) from emp
+group by deptno,job;
+DEPTNO   JOB    SUM(SAL)
+----------   ------    -------------
+1                 C           10000
+1                 M           8000
+2                 C            8000
+2                 M           9000
+
+* no upper limit on the number of coloumns in GROUP BY clause
+*if you have large number of table, and if you have a large number of coloumn in GROUP BY clause , then the SELECT statement will be slow
+
+select job,deptno,sum(sal) from emp
+group by job,deptno;
+JOB   DEPTNO   SUM(SAL)
+-----    ----------  -------------
+C            1                10000
+C            2                8000
+M            1                8000 
+M            2                9000
+
+select sum(sal),deptno,job from emp
+group by job,deptno;
+SUM(SAL)   DEPTNO   JOB
+------------    ----------   -----
+
+Assumption:
+DEPTNOS ->40
+JOB ->  200
+
+select deptno, job ,sum(sal) from emp                  <-FASTER
+group by dept no,job;                              
+select deptno, job ,sum(sal) from emp                  <-SLOWER
+group by job,deptno;
+
+select ..........................................................
+group by city ,country ,district ,state;     <- SLOWER
+
+select .....................................................            <- FASTER
+group by country,state,district,city;
+
+*the order of coloumns in SELECT clause and the order of coloumns in GROUP BY clause need not be the same
+* the order of coloumns in SELECT clause will determine the position of the coloumns in the output (this you will write as per User requirements)
+*the order of coloumn in GROUP BY clause will determine the sorting order , grouping order,summation order , and hence the speed of prcessing(this you wilol write as per the data and the DISTINCT values in the table)
+
+select deptno ,sum(sal) from emp                  
+group by dept no,job;   
+DEPTNO   SUM(SAL)
+--------       ------------
+
+select deptno ,sum(sal) from emp                  
+group by dept no,job
+having sum(sal) > 17000;
+DEPTNO   SUM(SAL)
+---------       -----------
+1                    18000
+
+*  HAVING clause works AFTER the summation is done
+
+select deptno ,sum(sal) from emp                  
+group by dept no,job                                <- ERROR
+having sal > 17000;
+
+*whichever coloumn is present in select clause it can be used in having clause
+
+select deptno ,sum(sal) from emp                  
+group by dept no,job                                 <- WILL WORK(but it will inefficient)
+having deptno =1;
+DEPTNO   SUM(SAL)
+---------       -----------
+1                    18000
+
+select deptno ,sum(sal) from emp                  
+group by dept no,job                                <- WILL WORK (its recommended that only having sum(sal) > 17000;                                                             group functions should                                                                                                    be used in where clause)
+
+select deptno, sum(sal) from emp
+group by deptno;
+
+select deptno, sum(sal) from emp
+group by sum(sal);
+
+select deptno, sum(sal) from emp
+group by deptno
+order by 2;
+
+*ORDER BY clause is the LAST clause in SELECT statement
+
+# GROUP CLAUSE
+select................from......................
+where...............
+group by..............
+having......................
+order by..........;
+1. Rows retrived from DB server HD to server RAM
+2. Sorting is done deptwise
+3. Grouping is done deptwise
+4. Summation is done deptwise
+5. HAVING clause
+6. ORDER BY clause
+
+select deptno, count(*), min(sal) ,max(sal) , sum(sal) from emp
+group by deptno
+order by 1;
+DEPTNO         COUNT(*)     MIN(SAL)   MAX(SAL)   SUM(SAL)   
+-----------       -------------    -------------   ------------    -------------
+
+
+
+In Oracle :-
+select deptno , sum(sal) from emp
+group by deptno;
+
+DEPTNO  SUM(SAL)
+--------     -------------
+
+select sum(sal) from emp
+group by deptno;
+sum(sal)
+---------
+18000
+17000
+
+select max(sum(sal)) from emp                  <-NESTING OF GROUP FUNCTION IS
+group by deptno;                                              SUPPORTED IN ORACLE; NOT 
+MAX(SUM(SAL))                                               SUPPORTED IN ANY OTHER RDBMS
+----------------
+18000
+
+In MySQL:-
+
+select sum(sal) from emp
+group by deptno;
+SUM(SAL)
+------------
+18000
+17000
+
+select max(sum_sal)from 
+(select sum(sal) sum_sal from emp
+group by deptno) as abcd;
+
+max(sum_sal)
+---------------
+18000
+
+
+Data Redundancy -> unnecessary duplications of data (leads to a wastage of HD space)
+
+                  #JOINS
+
+to view / combine the coloumn of 2 or more tables
+emp-> driving table
+dept- -> driven table
+.
+select dname,ename from emp,dept
+where dept.deptno = emp.deptno;            IN ORDER FOR THE JOIN TO WORK                                                                           FASTER, PREFEREBLY THE DRIVING                                                                                   TABLE SHOULD BE TABLE WITH                                                                         "LESSER"  NUMBER OF ROW
+                                                               
+DNAME   ENAME
+---------   ----------
+TRN          Arun     
+TRN           Ali
+TRN         Kiran
+EXP          Jack
+EXP        Thomas
+
+select dname,ename from emp,dept
+where dept.deptno =emp.deptno
+order by 1;
+
+select dname ,loc ,ename,job ,sal from emp ,dept 
+where dept.deptno =emp.deptno
+order by 1;
+
+*the common coloumn in both the tables (i.e deptno), the common column name need 
+not be the same in both the tabeles, because the same coloumn may have a different meaning elsewhere in some other table
+
+select* from emp, dept
+where dept.deptno=emp.deptno
+order by 1;
+selectdeptno,dname,loc ,ename,job ,sal from emp, dept
+where dept.deptno=emp.deptno
+order by 1;
+
+select dept.deptno,dname,loc ,ename,job ,sal from emp, dept
+where dept.deptno=emp.deptno
+order by 1;
+
+select emp.deptno,dname,loc ,ename,job ,sal from emp, dept
+where dept.deptno=emp.deptno
+order by 1;
+
+select deptno, sum(sal) from emp
+group by deptno;
+DEPTNO   SUM(SAL)
+----------    ------------
+1                  18000
+2                  17000
+
+select dname ,sum(sal) from emp,dept
+where dept.deptno= emp.deptno
+group by dname;
+DNAME   SUM(SAL)
+---------    ------------
+TRN          18000
+EXP            17000
+
+select upper(dname) ,sum(sal) from emp,dept
+where dept.deptno= emp.deptno
+group by upper(dname)
+having.........
+order by............. ;
+
+Types Of Joins :-
+
+1. EQUIJOIN (also known as Natural join)
+* join based on equality condition
+* Shows matching rows of both the tables
+*Uses:-
+             a. data is stored in multiple tables, you want to view the coloumns of 2 or              more  tables, then you will require an Eqijoin
+* most frequently used join (more than 90%)
+select dname,ename from emp , dept
+where dept.deptno = emp.deptno;
+
+DNAME  ENAME
+---------  ---------
+TRN         Arun
+TRN         Ali
+TRN        Kirun
+EXP         Jack
+EXP         Thomas
+
+2. Inequijoin(Non-Equijoin)
+*join based on enequality condition
+* shows the non-matching rows of both the tables
+* Uses:-
+   a. Used in Exception Reports
+select dname,ename from emp , dept
+where dept.deptno ! = emp.deptno;
+
+DNAME    ENAME
+---------     ---------
+TRN          Jack
+TRN          Thomas
+ EXP           Arun
+ EXP           Ali
+EXP            Kirun
+MKTG       Arun
+MKTG       Ali
+MKTG       Kirun
+MKTG       Jack
+MKTG     Thomas
+
+3.Outerjoin
+
+
+(works in oracle)
+* join with(+) sign
+* shows matching rows of both the tables plus
+non matching rows of""outer table
+* Outer table -> Table which is an Outer side 
+*
+select dname, ename from emp,dept
+where dept.deptno =emp.deptno (+);    <- Right Outer Join
+
+LHS              RHS
+DNAME   ENAME
+--------    ----------
+TRN        Arun
+TRN        Ali
+TRN        Kirun
+EXP         Jack
+EXP         Thomas
+MKTG       .
+
+Select dname,ename from emp, dept
+where dept.deptno (+) = emp.deptno;          <- Left Outer Join
+DNAME   ENAME
+--------    ----------
+TRN        Arun
+TRN        Ali
+TRN        Kirun
+EXP         Jack
+EXP         Thomas
+.                SCOTT
+
+a.Half Outerjoin((+) sign on only 1 side (LHS or RHS))
+    i. Right Outerjoin   ii. Left Outerjoin
+
+Mysql syntax
+ANSI syntax for Full Outerjoin :-
+select dname,ename from emp full outer join dept              
+on(dept.deptnno =emp.deptno);
+
+
+ANSI syntax for Right Outerjoin:-
+select dname,ename from emp right outer join dept
+on(dept.deptnno =emp.deptno);
+*supported by all RDBMS incuding MySQL and Oracle
+
+
+ANSI syntax for Left Outerjoin:-
+select dname,ename from emp left outer join dept
+on(dept.deptnno =emp.deptno);
+*supported by all RDBMS incuding MySQL and Oracle
+
+ANSI for FULL Outerjoin:-
+* supported by all RDBMS except for MySQL
+
+To achieve FULL Outerjoin in MySQL:-
+*take Union Of ANSI syntax of Right Outerjoin and an ANSI syntax of Left Outer join
+
+(+) sign for outerjoin works only in Oracle RDBMS; not supported by any other RDBMS
+
+
+b.Full Outerjoin
+ *Union of Right Outerjoin and Left OuterJoin
+* shows matching rows of both the tables plus
+  non-matching rows of both the tables
+*based on Nested Do-While loop
+select dname, ename from emp,dept
+where dept.deptno =emp.deptno (+);
+union
+select dname, ename from emp,dept
+where dept.deptno =emp.deptno (+);
+
+Inner Join -> by default every join is Inner Join; using the (+) sign in Oracle or using the keyword , is what makes it an Outerjoin
+
+*  DO NOT MENTION INNER JOIN DURING INTERVIEWS UNLESS EXPLICITLY ASKED BY INTERVIEWER
+
+4.Cartesian join (also known as Cross join)(Cross product of 2 tables)
+*  join without a WHERE clause
+*  every row of driving table is combined with each and every row of driven table
+(returns all possible combinations)
+* Uses:-
+a. used for printing purposes
+e.g in the university , in STUDENTS table you have all the students names, in SUBJECTS table you have all the subjects names, when you're printing the marksheets, every student name is combined with each and every subject name
+
+select dname, ename from emp, dept  <- FAST(less I/O between server HD and                                                                      server RAM)
+select dname, ename from dept, emp; <- SLOW(more I/O between server HD and                                                                               server RAM)
+*the lesser the I/O between server HD and server RAM , the faster it will execute
+*the more the I/O between server HD and server RAM, the slower it will execute
+
+select dname,ename from emp,dept;
+DNAME     ENAME
+----------    ----------
+TRN           Arun
+TRN           Ali
+TRN           Kirun
+TRN           Jack
+TRN          Thomas 
+EXP            Arun
+EXP             Ali
+EXP            Kirun
+EXP            Jack
+EXP            Thomas
+
+5. Self join
+* joining a table to itself 
+* used when parent coloumn and child column , both are present in the same table
+
+select a.name ,b.ename from emp b, emp a
+where a. mgr = b.empno;
+
+A.ENAME     B.ENAME
+-----------     -----------
+Arun              Jack        
+Ali                 Arun
+Kirun             Arun
+Thomas         Jack
+dept-> driving table
+emp -> driven table
+
+Joining 3 or more Tables
+
+DEPTHEAD
+_____________
+DEPTNO   DHEAD
+----------    --------
+1                  Arun
+2                  Jack
+                                                       (5)    (3)       (2)
+select dname,ename,dhead from emp,dept,depthead 
+where depthead.deptno = dept.deptno and dept.deptno =emp.deptno;
+
+DNAME ENAME  DHEAD
+--------  ---------   ---------
+TRN        Arun       Arun
+TRN         Ali         Arun
+TRN        Kirun      Arun
+EXP         Jack      Jack
+EXP       Thomas    Jack
+
+Types Of Relationships amongst Tables:-
+
+1 : 1                 (Dept : Depthead) or (Depthead : Dept)
+1 : Many          (Dept : Emp) and (Depthead:emp)
+Many : 1          (Emp : Dept) and (Emp : Depthead)
+Many : Many   (Emp : Projects) and (Projects:Emp)
+
+PROJECTS
+PROJECT  CLIENTNAME   LOCATION   DESCRIPTION
+P1                Deloitte               Mumbai           Capital Gains System
+P2               BNP Paribas         Goregaon        Macros Programming
+P3               Morgan Stanley    Lower Parel    Assest Managment S/W
+P4                ICICI Bank           Bandra           Pension Processing S/W
+P5                 AMFI                 Lower Parel      Website Development
+
+INTERSECTION TABLE
+PROJECTS_EMP
+PROJNO     EMPNO
+---------       ---------
+P1                 1
+P1                 2
+P1                 3
+P2                 2
+P2                 1
+P3                 3
+P3                  1
+P3                  2
+
+select clientname, location,ename from projects_emp,emp,projects
+where projects_emp.projno = projects.projno
+and projects_emp.empno=emp.empno
+order by 1,2,3;
+
+* PROJECTS_EMP is the intersection table
+* Intersection table is required for Many : Many Relationship in RDBMS
+
+#Sub-queries (query within query)(SELECT within SELECT)(Nested queries)
+
+Display the ENAME who is receiving the min(sal):-
+
+select ename from emp              <- main query(parent)(outer)
+where sal =
+(select min(sal) from emp);         <-sub-query(child)(inner)
+
+* JOIN is faster than Sub-query.
+
+select ename from emp
+where sal =
+    (select min(sal) from emp
+     where deptno =(select..........
+                               where job = (select............)));
+
+*        max upto 255 levels for sub-queries
+*        the more the number of SELECT statements, the slower it will be
+
+Display the 2nd largest SAL :-   (Interview que)
+
+select max(sal) from emp
+where sal <
+(select max(sal) from emp);   
+
+Display all the rows who belong to the same DEPTNO as 'Thomas':-
+select* from emp
+where deptno =
+select deptno from emp
+where ename ='Thomas'
+    
+Display all the rows who are doing the same job as 'kirun'
+
+select8 from emp 
+where job =
+(select job from emp
+where ename ='Kirun');
+
+In Oracle:-
+Using Sub-queries in DML commands
+
+delete from emp
+where deptno=
+(select deptno from emp
+where ename ='Thomas')
+
+update emp set sal =10000
+where job =
+(select job from emp
+where ename ='Kirun');
+
+*  Above 2 commands are not work in MySQL.
+*   In MySQL you cannot UPDATE or DELETE from a table which you are currently SELECTing 
+
+In MySQL:-
+Using Subqueries In DML commands
+
+delete from emp
+where deptno=
+(select tempp.deptno from
+(select deptno from emp
+where ename ='Thomas')as temp);
+
+update emp set sal =10000
+where job =
+(select tempp.job from
+(select job from emp
+where ename ='Kirun') as tempp);
+
+Using Multi-row Sub-queries:-
+*  Sub-queries returns multiple rows
+
+Display all the rows who are receiving a SAL = to any of the 'Managers':-
+
+select * from emp
+where sal = any                                               //(8000,9000)
+(select sal from emp
+where job='M');
+
+Any Operator -> Logical OR
+
+select * from emp
+where sal in                                                  //(8000,9000)
+(select sal from emp
+where job ='M')
+
+*     IN operator -> Logical OR
+*     IN operator is faster than ANY operator
+
+To make it work faster :-
+1. Try to solve the problem by using a Join,because Join is Faster than sub-query
+2.Try to reduce the number of levels returned by sub-query,because the more the number of SELECT statements,the slower it will be 
+3. Try to reduce the number of rows returned by sub-query.
+
+select * from emp
+where sal >=                                                  //(8000,9000)
+(select min(sal) from emp
+where job ='M');
+
+Assumption,3rd row SAL is 13000 :-
+
+select*from emp
+where sal > all                                     //(8000,9000,......)
+(select sal from emp 
+where job ='M');
+
+ALL Operator -> Logical AND
+
+select*from emp
+where sal >                                    //(9000)
+(select max(sal) from emp 
+where job ='M');
+
+Assumption ,3rd row SAL is 3000:-
+
+Using sub-query in the HAVING clause :-
+
+In Oracle :-
+
+*Display the DNAME that is having max(sum(sal)):-
+
+select deptno,sum(sal) from emp
+group by deptno;
+DEPTNO   SUM(SAL)
+---------    ------------
+1                18000
+2               17000
+
+select sum(sal) from emp
+group by deptno;
+SUM(SAL)
+------------
+18000
+17000
+
+select max(sum(sal)) from emp
+group by deptno;
+MAX(SUM(SAL))
+----------------
+18000
+
+select deptno,sum(sal)from emp
+group by deptno
+having sum(sal)=
+(select max(sum(sal)) from emp
+group by deptno);
+DEPTNO  SUM(SAL)
+---------    -----------
+1                  18000
+
+select dname ,sum(sal)from emp,dept
+where dept.deptno =emp.deptno
+group by dname
+having sum(sal)=
+(select max(sum(sal)) from emp
+group by deptno);
+
+DNAME   SUM(SAL)
+---------     ------------
+TRN            18000
+
+In MySQL :-
+
+select max(sum_sal) from 
+(select sum(sal)sum_sal from emp
+group by deptno) as tempp;
+
+max(sum_sal)
+-------------
+18000
+
+
+select deptno,sum(sal)from emp
+group by deptno
+having sum(sal)=
+(select max(sum_sal) from
+(select sum(sal)sum_sal from emp
+group by deptno) as tempp));
+
+deptno   sum(sal)
+--------    ---------
+1               18000
+
+select dname ,sum(sal)from emp,dept
+where dept.deptno =emp.deptno
+group by dname
+having sum(sal)=
+(select max(sum_sal) from 
+(select sum(sal)sum_sal from emp
+group by deptno) as tempp);
+
+dname    sum(sal)
+------      ---------
+TRN        18000
+
+        Correlated Sub-query (using EXISTS operator)
+* this is the exception when sub-query is FASTER than a join
+
+Display the DNAMEs that contain employees
+
+Solution #1:-
+select deptno from emp;
+1
+1
+1
+2
+2
+
+select distinct deptno from emp;
+1
+2
+
+select dname from dept
+where deptno=any                   //(1,2)
+(select distinct deptno from emp);
+TRN
+EXP
+
+select dname from dept
+where deptno in                                        //(1,2)
+(select distinct deptno from emp);
+TRN
+EXP
+
+select dname from dept
+where deptno not in
+(select distinct deptno from emp);
+MKTG
+
+Solution #2:-
+select dname from emp, dept
+where dept.deptno = emp.deptno;
+TRN
+TRN
+TRN
+EXP
+EXP
+
+select distict dname from emp,dept
+where dept.deptno = emp.deptno;
+
+TRN
+EXP
+
+*If you have a join alongwith DISTINCT,
+to make it work faster , use Correlated Sub-query(use EXISTS operator)
+
+Solution #3:-
+
+select dname from dept where exists
+(select deptno from emp
+where dept dept.deptno = emp.deptno);
+
+TRN
+EXP
+
+* first the main query is executed 
+* for every row returned by main query , it will run the sub-query once
+* the sub-query returns boolean TRUE or FALSE value back to main query 
+* if sub-query returns TRUE value, then main query is eventually executed for that row
+* if sub-query returns FALSE value, then main query is not executed for that row
+*unlike earlier , we do not use DISTICT, hence no sorting takes place;
+this speeds it up
+*unlike a traditional join, the number of full table scans is reduced;
+this further speeds it up
+
+select dname from dept where not exists
+(select deptno from emp
+where from dept dept.deptno = emp.deptno);
+
+#Set Operators
+    Based On Set Theory
+
+EMP1                                             EMP2
+EMPNO   ENAME                  EMPNO   ENAME
+---------   ---------                   ---------    ---------
+1                  A                            1                   A 
+2                  B                            2                   B
+3                  C                            4                   D
+                                                   5                  E
+
+union -> combine the output of both the SELECT statements and it will suppress the duplicates 
+
+select empno,ename from emp1
+                union
+select empno ,ename from emp2;
+
+EMPNO   ENAME
+---------   ----------
+1                  A
+2                  B 
+3                  C
+4                  D
+5                   E
+
+* the structure of both the SELECT statements has to be the same , the number of coloumns in both the SELECT statements has to match even the corresponding datatype has to match.
+
+select empno1,ename from emp1
+                union
+select empno2,ename from emp2;
+
+EMPNO1    ENAME
+--------       -----------
+
+*even the columnnames me be different ;in this situation in the output the coloumn headingd are derived from 1 st SELECT statement.
+
+select empno1,ename from emp1
+                union
+select empno2,ename from emp2
+         order by 1;
+
+EMPNO1    ENAME
+---------     -----------
+1                   A 
+2                   B
+3                   C 
+4                   D
+5                   E
+
+union all -> combine the output of both the SELECT statements and the duplicates are not suppressed.
+
+select empno1,ename from emp1
+                union all
+select empno2,ename from emp2
+         order by 1;
+
+EMPNO1    ENAME
+---------     -----------
+1                   A 
+1                   A 
+2                   B
+2                   B
+3                   C 
+4                   D
+5                   E
+
+intersect -> will return what is common in both the SELECT statements and the duplicates are suppressed
+
+select empno1,ename from emp1
+               intersect
+select empno2, ename from emp2
+         order by 1;
+
+EMPNO1   ENAME
+---------     ---------
+1                     A
+2                    B
+
+minus -> will return what is present in the first SELECT statement and not present in the second SELECT statement and the duplicates are suppressed.
+         
+select empno1,ename from emp1
+               intersect
+select empno2, ename from emp2
+         order by 1;
+
+EMPNO1      ENAME
+---------       ---------
+3                   C
+
+* with the exception of UNION ALL; in all the other Set Operators the duplicates are suppressed
+
+select................................
+        union
+select................................
+        minus
+select................................
+        union
+select................................
+       intersect
+select................................
+        union all
+select................................
+         order by x;
+
+*        max upto 255 SELECT statements
+
+select job from emp where deptno =10
+minus
+select job from emp where deptno=20;
+
+select job from emp where deptno =10
+minus
+select job from emp where deptno=20;
+
+select job from emp where deptno =10
+minus
+select job from emp where deptno=20;
+
+select job from emp where deptno =10
+intersect
+select job from emp where deptno=20;
+
+* union , union all -> supported by all RDBMS
+* intersect, minus -> not supported by MySQL
+
+#pseudocolumns
+
+* fake columns (virtual columns)
+* Pseudocolumns is not a coloumn of the table, but you can use it in SELECT statement
+
+User created Pseudocolumns:-
+e.g
+1.  computed coloumns(ANNUAL = sal*12)
+2.  expressions (NET_EARNINGS = sal+comm-tax)
+3.  function-based coloumns (AVG_SAL =avg(sal),round(sal,-3))
+
+RDBMS supplied Pseudocoloumns:-
+
+select ename, sal from emp;
+
+*ROWNUM
+
+Rownum-> Row number
+
+select rownum, ename, sal from emp;
+
+select rownum,ename,sal from emp where rownum =1;
+select rownum,ename,sal from emp where rownum <4;
+select rownum,ename,sal from emp where rownum = 4 ; <- no rows selected
+
+select rownum ,ename,sal from emp order by ename;
+
+select rownum,ename,sal from
+(select ename ,sal from emp order by ename);
+
+INLINE VIEW -> if you use sub-query in the FROM clause,its known as Inline View.
+
+*ROWID
+
+select rowid,ename,sal from emp;
+
+Rowid -> Row Identifier
+
+* Rowid is the row address
+* Rowid is the address of the row in the DB server HD
+*Rowid is the actual physical memory location in the DB server HD where that row is stored
+* Rowid is fixed-length encrypted string of 18 characters
+* when you select from a table, the order of rows in the output will always be in ascending order of Rowid
+*when you UPDATE a row,the Rowid MAY change (if the rowlength increases)
+*No two rows of any table in the entire database server HD can have the same Rowid
+*Rowid works as an unique identifier for every row in the database
+*Rowid is used internall the RDBMS to distinguish between 2 rows in the database
+
+select rowid ,ename ,sal from emp;
+
+*you can use Rowid to UPDATE or DELETE the duplicate rows
+
+Rowid is used internallyby the RDBMS:-
+1. To distinguish between 2 rows in the database
+2. For Row locking
+3. To manage the Indexes 
+4. To manage the Cursors
+5. Row management
+
+* ROWID is available in MySQL but you can not view it.
+* ROWNUM is not available in MySQL
+
+
+ALTER table (DDL command)
+
+* Rename a table
+rename table emp to employees;              (only for MySQL)
+  
+  Rename-> DDL command
+
+* Add a column
+alter table emp add gst float;
+
+*Drop a column
+alter table emp drop coloumn gst;
+
+*Increase width of coloumn
+alter table emp modify ename varchar(30); 
+
+Inidirectly:-
+*   Reduce width of column
+
+In MySQL:
+alter table emp modify ename varchar(20);         <- data will get trunchated
+
+In Oracle:
+*you can reduce the width provided the contents are null
+
+alter table emp add x varchar(25);
+update emp set x = ename, ename =null;
+alter table emp modify ename varchar(20);
+/* Data Testing with X coloumn */
+update emp set ename =x;
+alter table emp drop coloumn x;
+
+* Change datatype of column
+  In Oracle :
+       you can change the datatype provided the contents are null
+   
+update emp set empno = null;
+alter table emp modify empno char(4);
+ 
+* Copy rows from one table into another table
+ insert into emp_nashik 
+select* from emp_mumbai;
+
+* To copy only certain rows :-
+insert into emp_nashik
+select* from emp_mumbai where deptno = 10;
+
+* To copy only certain coloumns:-
+
+insert into emp_nashik                               ( for only one coloumn )
+select ename from emp_mumbai;
+       oR
+insert into emp_nashik
+select null,ename,null from emp_mumbai;
+
+(works only when provided structure is same)
+
+*Copy a table (for testing purposes)
+
+create table emp_copy
+as
+select* from emp;
+
+*Copy a table (only sertain rows or certain columns)
+
+create table emp_copy
+as
+select empno,ename from emp where deptno =10;
+
+*Copy the structure of table
+
+Method #1
+
+create table emp_struct
+as
+select *from emp;
+delete from emp_struct
+commit;
+
+Method#2
+create table emp_struct
+as
+select *from emp;
+
+trunchate table emp_struct;
+
+*    TRUNCATE -> will delete all the rows and commit
+*     TRUNCHATE -> is a DDL command
+ 
+                     DELETE                               TRUNCATE
+                     ---------                                -------------
+1.  Delete is a DML command          1. TRUNCATE is a DDL command
+
+2. Delete from emp;                        2.     Autocommit
+      commit;
+  commit required
+
+3. Delete from emp;                        3. Rollback not possible
+   Rollback;
+ Rollback possible
+
+4.Delete from emp                          4. WHERE clase not supported
+where deptno=10;                                   (Trunchate will delete all
+WHERE clause is                                         the rows and commit)
+ supported
+
+5. 1 Million rows                                        5. 1 Million rows
+  (1000 MB)                                                    (1000 MB)
+Delete from emp;                                      tranchate table emp;                           
+commit;                                                   it will delete all the rows,it will commit also
+1000MB HD space is                             it will deallocate all the free space for others
+retained by emp table
+for deallocate
+Drop table emp;
+1000 MB HD space is 
+deallocated.
+then create table emp....
+
+6. when you delete the                 6.when you truncate the table, 
+rows the Delete triggers             the Delete triggers the...............
+on the table will execute
+
+Method #3
+create table emp_struct
+as 
+select*from emp where 1 = 2;
+
+*Rename a coloumn
+
+create table emp2 
+as
+select empno,sal salary
+from emp;
+
+drop table emp;
+
+rename table emp2 to emp;
+
+* Change position of coloumns in table structure
+   (for storage consideration, because of null values)
+ 
+create table emp2 
+as
+select ename,sal , empno
+from emp;
+
+drop table emp;
+
+rename table emp2 to emp;
+
+
+               EMP
+EMPNO  ENAME   SAL
+--------   ---------    ------
+101         SCOTT     5000
+102         KING        6000
+
+Extention coloumn -: Use to extend a table in future (extra coloumn)
+
+                       #INDEXES
+                
+                  EMP
+ROWID   EMPNO   ENAME      SAL       DEPTNO
+--------    -------   ---------         ----         ----------
+X001        5             A              5000              1
+X002       4             A               6000             1
+X003        1             C               7000             1
+X004        2            D               9000            2
+X005        3            E               8000            2
+
+*   present in all DBMS, all RDBMS 
+*   to speed up the search operation (for faster access)
+*   to speed up SELECT statements with a WHERE clause
+*   indexes are automatically invoked by MySQL as and when required (AI)
+*  duplicate values are stored inside an index
+*  null values are not stored in an index
+*  indexes are automatically updated by MySQL for all your DML operations
+* no upper limit on the number of indexes per table
+*larger the number of indexes the slower would be the DML operations
+* If you have two or more independent coloumns in where clause,then create seperate indexes for each coloumn; MySQL will use all the necessary indexes as and  when required
+* Cannot index Text and Blob columns
+
+In other RDBMS :-
+e.g
+select* from emp where empno = 0;     (for null value)
+  
+
+*  select * from emp;
+    select* from empno = 1;
+
+select * from emp where name ='C';
+select * from emp where sal < 5000;  
+
+COMPOSITE INDEX -> combine 2 or more INTER- DEPENDENT coloumns within a    single index
+INDEX KEY -> coloumn or set of columns on whose basis index has been created
+ * In MySQL ,you can combine upto 32 columns in a Composite index
+select* from emp
+where deptno= 2 and empno=1; 
+
+select* from emp
+where empno= 2 and sal > 5000; 
+
+conditons when an index should be created :-
+ *  to speed up SELECT statement with a WHERE  clause
+ *  if SELECT statement retrives < 25% of table data
+*  Primary key and Unique coloumns should always be indexed
+* common coloumns in join operations should always be indexed
+
+  select *from emp where empno = 1 ;     <- creating the index is beneficial
+  select*from emp where empno = 5 ;     <- creating the index is beneficial
+  
+  select*from emp where empno < 2;     <-creating the index is beneficial
+
+  select *from emp where empno > 1;      <-creating the index is  NOT beneficial
+
+               DEPT
+ROWID   DEPTNO   DNAME    LOC
+---------    ----------   ---------     -----
+Y011          1                TRN          Bby          
+Y012         2                EXP           Dlh
+Y013         3              MKTG          Cal
+
+select dname ,ename from emp,dept
+where dept.deptno =emp.deptno;
+
+Command to create Index:
+
+create index indexname on table(coloumn);
+
+create index i_emp_empno on emp(empno);
+drop index i_emp_empno on emp;
+
+create index i_emp_empno on emp(ename);
+create index i_emp_sal on emp(sal);
+
+create index i_emp_deptno_empno on emp(deptno,empno);
+
+deptno-> primary index key
+empno-> secondary index key
+
+* by default all indexes are in ascending order 
+
+create index i_emp_empno on emp(empno desc);
+
+create index i_emp_deptno_empno on emp(deptno desc,empno);
+
+create index i_orders_onum on orders(onum desc);
+
+to see which all indexes are created for specific table:-
+
+show indexes from emp;
+
+to see all indexes on all tables in the database:-
+select*from information_schema.statistics;
+
+to drop the index :-
+drop index i_emp_empno on emp;
+
+drop table emp;
+
+* If you drop the table , then all indexes on that table are dropped automatically
+
+create table emp_copy
+as 
+select* from emp;
+*if you create table using sub-query then the indexes created on the original table willnot be copied for the new table
+*if you want indexes for the new table , then you will have to create them manually
+
+create unique index i_emp_empno on emp(empno);
+--->>performs on extra function; it won't allow the user to INSERT duplicate values for EMPNO
+
+* at the time of creating the unique index,if you already duplicate value in EMPNO,then MySQL will not allow you to create the unique index
+
+* MySQL will not allow you to create more than one index on the same column(unless it is combined with other coloumns)
+
+Types Of Indexes :-
+1. Normal Index
+2. Unique Index 
+3. Clustered Index
+4. etc.
+
+                  # CONSTRAINTS                             
+ 
+             EMP
+EMPNO  ENAME  SAL    DEPTNO
+                   A         5000      1
+                   A        6000       1
+                   C         7000       1
+                   D         9000      2
+                    E         8000     2
+*  limitations/restrictions imposed on a table
+
+# PRIMARY KEY(Primary coloumn)
+ *  coloumn or set of coloumns that uniquely identifies a row
+ *  duplicate values are not allowed (has to be unique)
+ *  null values are not allowed (its a mandatory coloumn)
+ *  its recommended that every table should have a Primary Key.
+ *  the purpose of primary key is row uniqueeness
+ *  with the help of primary key you can distiguish between 2 rows of a table
+ * Text and Blob cannot be Primary key
+ *  unique index is automatically created  
+
+COMPOSITE PRIMARY KEY -> combine 2 or more coloumns together to serve  the purpose of Primary key.
+*  In MySQL, you can combine upto 32 columns in a composite Primary key
+* YOU CAN HAVE ONLY 1 PRIMARY KEY PER TABLE
+
+CANDIDATE KEY -> is a defination
+CANDIDATE KEY ->besides Primary key , any other coloumn in the table that can also serve the purpose of Primary key, is a good candidate for Primary key,is known as Candidate key.
+
+create table emp
+(
+empno char(4) primary key,
+ename varchar(25),
+sal float,
+deptno int
+);
+
+insert into emp values ('5', 'F' , 5000 , 2);
+                           or
+insert into emp values (null, 'F' , 5000 , 2);
+
+*  all the constraints are at server level
+* you can perform the DML operations using any front end Software , e.g MySQL Command Line Client, MySQL workbench, Java Ms.net,etc. ; the constraints will always be valid
+* known as Data Integrity
+* internally a constraints is a MySQL created function; it performs the validations , it checks for duplicates ,it checks for null etc.
+
+select * from information_schema.table_constrainsts
+where table_schema = 'metiitnashikpgdacsep2021';
+
+select* from information_schema.key_coloumn_usage
+where table_name ='EMP';                       (which coloumn have primary key)
+
+* unique index is automatically created 
+
+show indexes from emp;
+
+* to drop the primary key constraints
+
+alter table emp drop primary key;
+
+*composite primary key
+
+create table emp
+(
+empno char(4) ,
+ename varchar(25),
+sal float,
+deptno int,
+primary key(deptno,empno)
+);
+
+show indexes from emp;
+
+*  if you create a composite primary key then the index that is created automatically it will be a composite unique index
+
+Constraints are of 2 types:
+1. Column level constraints (specified on single column)
+2. Table level constraint(specified on 2 more coloumns )(composite)
+(has to be specified at the end of the structure)
+
+* If you have already created the table, if you already have rows in the table,
+if you want to add the constraint afterwords:-
+
+alter table emp
+    add primary key (empno) ;
+
+alter table emp
+    add primary key (deptno, empno);
+
+NOT NULL
+*  null values are not allowed (its a mandatory compalsory)
+    (similar to Primary key)
+* duplicate values are allowed (unlike Primary key)
+* ENAME  and SAL can be NOT NULL
+* you can have any number of not null constraints per table (unlike Primary key)
+* you cannot have a composite not null  constraint (unlike Primary key)
+*  you will have to specify a separate not null constraints for all the required coloumns
+* this is always coloumn level contraint (you cannot have a composite not null constraint like Primary Key)
+
+create table ep
+(
+empno char(4) primary key,
+ename varchar(25) not null,
+sal float not null,
+deptno int
+);
+
+* in MySQL , nullability is  a part of the datatype
+
+*to see not null coloumns :-
+ desc emp;
+
+to drop the not null constraint :-
+alter table emp modify ename varchar(25) null;
+
+to add the not null constraint afterwards to an existing table :-
+alter table emp modify ename varchar(25) not null;
+
+Solution for candidate key coloumn :
+PANNO -> Not null constraint + Unique index
+PPNO -> Notnull constraint + Unique index
+
+ALTERNATE KEY -> is not a constraint
+ALTERNATE KEY -> is a defination
+
+ALTERNATE KEY -> for the Candidate key coloumn , if you add a not null constraints and if you create a unique index for that coloumn , then that candidate key coloumn becomes an Alternative to Primary key; such a Candidate key is known as Alternate key.
+
+SUPER KEY -> is not a constraint
+                     -> is a defination
+                     -> if you have 1 or more Alternate keys in the table , then it similar to having multiple Primary keys in the table , then in such a situation the Primary key is known as Super key.
+
+UNIQUE
+
+*     duplicate values are not allowed (has to be unique) (similar to primary key)
+* null values are allowed (unlike Primary key)
+* you can enter any number of null values (but no duplicate values)
+
+eg. MOB no. (some cant give mob.no)
+* Text and Blob cannot be Unique (similar to primary key)
+* Unique index is automatically created.
+* in MySQL , you can combine upto 32 coloumns 
+    (similar to Primary key)
+* YOU CAN HAVE ANY NUMBER OF UNIQUE CONSTRAINTS PER TABLE (UNLIKE PRIMARY KEY)
+
+create table emp
+(
+empno char(4),
+ename varchar(25),
+sal float,
+deptno int,
+mob_no char(15) unique,                  <- column level constraint
+unique(deptno,empno)                      <- table level constraint
+);
+
+
+to show all constraints:
+ select* from information_schema.table_constraints;
+
+select* from information_schema.table_constraints
+where table_schema = 'metiitnashikpgdacsept2021
+
+select* from information_schema.key_coloumn_usage 
+where table_name ='emp';
+
+show indexes from emp;
+
+Unique costraints is also an index so to drop it :
+drop index mob_no on emp;
+drop index deptno on emp;
+
+To add the constraint to an already existing table:
+
+alter table emp
+   add constraint u_emp_mob_no
+          unique(mob_no);
+
+constraint u_emp_mob_no -> optional
+
+create table emp
+(
+empno char(4),
+ename varchar(25),
+sal float,
+deptno int,
+mob_no char(15) 
+unique(deptno,empno),                  <- column level constraint
+unique(mob-no)                              <- table level constraint
+);
+
+*coloumn level constraint can always be specified at table level at the end of the structure ),but a table level composite constraint can be never be specified at coloumn level
+*coloumn level constraint can always be specified at table level at the end of the structure ),except for not null constraint which is always a coloumn level constraint and therefore the syntax will not support you from specifying it at table level(at the end of the structure) 
+
+FOREIGN KEY (Foreign coloumn)
+                
+                   EMP
+EMPNO   ENAME    SAL       DEPTNO    MGR
+---------   ----------    -----       ---------      -----
+   1                  A         5000            1            1
+   2                  B         6000            1            1
+   3                  C          7000            1            1             <- DEPTNO(childcolumn)
+   4                   D         9000            2           2
+    5                  E          8000            2          2
+    6                   F          9000           2           2
+
+
+                      DEPT
+DEPTNO   DNAME       LOC
+   1                TRN            Bby               <- DEPTNO (parent column)
+   2                EXP            Dlh
+   3               MKTG          Cal
+     
+
+* column whose been derived from elsewhere
+* coloumn or set of coloumns that references a coloumn or a set of coloumns of some table.
+* foreign key constraints is specified on the child column (not the parent column)
+* Parent coloumn has to be Primary key or unique key(this is a pre-requisite for foreign key)
+* Foreign key column (child column) may contains duplicate values(unless specfied otherwise)
+* Foreign key coloumn (child column) may contain null values also (unless specified otherwise)
+* Foreign key may reference column of same table also (known as self referencing)
+
+create table dept
+(
+deptno int primary key,
+dname varchar(15),
+loc varchar(10)
+);
+
+create table emp 
+(
+empno char(4) primary key,
+ename varchar(25),
+sal float,
+deptno int,
+mgr char(4),
+constraint fk_emp_deptno foreign key(deptno) refrences dept (deptno),
+constraint fk_emp_mgr foreign key(mgr) references emp(empno)
+);
+
+constraint fk_emp_deptno  <- Optional
+constraint fk_emp_mgr <- Optional
+
+* Forign key constraint is not the same things as a join 
+* Forign key constraint is not required to write a join
+* Purpose of join is:-
+      All the data is not stored in one table; data is stored in multiple table; if you want to view the columns of 2 or more tables in a single SELECT statement ,then you will write a join
+*purpose of Forign key constraint is to ensure that a valid value is stored in child coloumn.
+
+select * from information_schema.table_constraints;
+
+select * from information_schema.table_constraints
+where table_schema= 'metiitnashikpgdacsep2021';
+
+select * from information_schema.key_column_usage
+where table_name ='emp';
+
+alter table emp drop forign key fk_emp_deptno;
+
+alter table emp
+add constraint fk_emp_deptno
+foreign key(deptno) references dept(deptno);
+
+you can delete the parent row provided child rows dont exist
+
+delete from dept where deptno=3;
+
+you can delete the parent row provided child rows exist
+
+1. 
+delete from emp where deptno =2;
+
+2.
+delete from dept where deptno = 2;
+
+
+ON DELETE CASCADE -> if you delete the parent row then My SQL will automatically delete the child rows also
+
+delete from dept where deptno =2 ;
+
+to preserve the child rows:
+1.
+update emp set deptno = null where deptno =2;
+2.
+delete from dept where deptno =2;
+
+create table emp 
+(
+empno char(4) primary key,
+ename varchar(25),
+sal float,
+deptno int,
+mgr char(4)
+constraint fk_emp_deptno forign key(deptno)
+ refrences dept (deptno)on delete cascade on update cascade,
+constraint fk_emp_mgr foreign key(mgr) references emp(empno)
+);
+
+ON UPDATE CASCADE -> if you update the parent column then MySQL will automatically update the child rows also.
+
+5 types of Constraints:-
+
+1. Primary key
+2. NOt null
+3. Unique 
+4.Foreign key
+5. Check
+
+Check constraints:
+
+* used for validations (used for checking puposes)
+e.g    qty > 0 ,rate < 10 etc.
+
+create tabel emp
+(
+empno char(4),
+ename varchar(25),
+sal float,
+deptno int,
+status char (1),
+comm float,
+mob_no char(15)
+);
+
+Allowed in check constraints:
+
+ Relational Operators
+ Logical Operators
+Arithmatic Operators
+Special Operators e.g between ,in ,like, etc.
+can even call Single-Row funbctions here:
+e.g upper,lower,round etc.
+
+create table emp 
+(
+empno int auto_increment primary key,
+ename varchar(25) check(ename=upper(ename)),
+sal float default 7000,
+check (sal between 5001 and 499999),
+deptno int,
+status char(1) default 'T'
+check (status in ('T','P','R')),
+comm float not null,
+mob_no char(15) unique,
+constraint fk_emp_mgr foreign key(deptno) references dept(deptno),
+check(sal+comm<750000)                                                <table level
+);
+
+
+* DEFAULT is not a constraint
+* DEFAULT is a clasue that can be used with create table
+*if user enters some value,then it will take default value
+  if nothing is entered, then it will take default value
+
+To make use of AUTO_INCREMENT and DEFAULT value ,use the following INSERT statement:-
+
+insert into emp(ename,deptno,comm,mob_no)
+values(.........................................................................);
+
+alter table emp add gst float auto_increment default 300 check (gst<10000);
+
+select* from user_indexes where table_name='EMP';
+
+              # privileges
+
+Grant and Revoke (DCL)
+
+grant permissions:
+
+pgdac1_mysql> grant select on emp to scott;
+pgdac1_mysql> grant insert on emp to scott;  
+pgdac1_mysql> grant update on emp to scott; 
+pgdac1_mysql> grant delete on emp to scott; 
+
+pgdac1_mysql> grant select, insert on emp to scott;
+
+pgdac1_mysql> grant all on emp to scott, king;
+
+revoke:
+pgdac1_mysql> revoke select on emp from scott;
+
+pgdac1_mysql> grant all on emp to public;
+
+mysql> grant priv1, priv2, priv3, priv4 to user1 ,user2 ,user3..........user100;
+
+Database Roles
+
+Role -> Set of privileges
+
+pgdac1_mysql> create role cdac_friends;
+pgdac1_mysql> grant select,insert ,update on emp to cdac_friends;
+pgdac1_mysql> grant cdac_friends to pgdac2, pgdac3, pgdac4;
+
+pgdac1_mysql> grant cdac_friends to pgdac5, pgdac6;
+pgdac1_mysql> revoke cdac_friends to pgdac2;
+
+show all privileges:
+
+select * from information_schema.table_privileges;
+
+scott_mysql> select * from metiitnashikpgdacsep2021.emp;
+scott_mysql> insert into metiitnashikpgdacsep2021.emp values.....;
+scott_mysql> update into metiitnashikpgdacsep2021.emp set....;
+scott_mysql> delete into metiitnashikpgdacsep2021.emp where.....;
+
+metiitnashikpgdacsep2021.emp -> schemaname.tablename
+
+* SCHEMA IS SYNONYM FOR DATABASE
+
+System tables 
+*   total of 63  System tables in MySQL
+*   automatically created when you install MySQL
+*   stored in information_schema
+*  store complete information of the database
+    e.g  statistics, table_constraints, key_column_usage, table_privileges etc.
+* set of 63 System tables known as DATA DICTIONARY (also known as    DATABASE CATALOG)
+* all the System tables are READ_ONLY
+*  you can only SELECT from the System tables; you cannot insert,update,   and delete
+* DDL FOR USER IS DML FOR SYSTEM TABLES
+
+
+Data is of 2 types:
+1. User data
+
+*     user created
+*     user tables and indexes
+
+2.System data
+
+*   system created (MySQL created)
+*  data that is stored in System tables
+*  also know as Metadata(data about data)
+ 
+
+# Oracle Corporatopn has released its own flavour of Linux -> known as Unbreakable Linux
+
+#Stored Objects
+
+*Objects  that are stored in the database
+     e.g Tables , Indexes
+    
+                                               #VIEWS
+
+               EMP
+EMPNO   ENAME  SAL   DEPTNO
+--------    ---------   ----    ---------- 
+1             A              5000         1
+2            B               6000         1
+3            C               7000         1
+4            D               9000         2
+5            E                8000        2
+
+*  Present in all RDBMSsome DBMS also
+*  handle to a table (used to access the table)
+*  view is a HD pointer(stores the address of table) (stored the Rowids of all the rows of the table)
+* view is used for indirect access to the table
+* USED FOR SECURITY PURPOSES
+* used to restrict the acess of users
+pgdac1_mysql> grant select on emp to scott;                  Traditional                                                                                                          <-  approches(outdated)
+scott_mysql> select* from metiitnashikpgdacwp2021.emp;
+
+create view viewname.........;
+
+pgdac1_mysql> create view v1
+                         as
+                         select empno,ename from emp;
+
+*   viewname and tablename cannot be the same
+*    v1 = select empno,ename from emp;
+
+pgdac1_mysql> grant select on v1 to scott;
+
+scott_mysql> select* from metiitnashikpgdacsep2021.emp;
+scott_mysql> select * from metiitnashikpgdacsep2021.v1;
+     
+         EMPNO    ENAME
+          --------     ---------
+              1                A
+              2                B
+              3                 C
+              4                 D
+               5                E
+                   
+* used to restrict the columns access
+* you may create as many views as you want (there's no upper limit)
+e.g create a separate view for every user
+* VIEW DOES NOT CONTAIN DATA
+* only the SELECT statement is stored; data is not stored
+* view is a stored query
+*SELECT statement on which the view is based, it is stored in the DB in the system tables
+  the system tables in the COMPILED FORMAT
+* VIEW IS AN EXECUTABLE FORMAT OF SELECT STATEMENT
+* hence the execution will be very fast
+
+select* from emp;
+* hiding source code from end user
+
+*  hiding source code from end user
+
+pgdac1_mysql> select,insert on v1 to scott;
+-----------------------------------------------------
+
+scott_mysql> insert into metiitnashikpgdacsep2021.v1 values(6,'F');
+
+*DML operations can be done on a view
+* DML operations performed on a view will afffect the base table 
+* constraints specified on base table will always be enforced even if you INSERT via the view 
+*entire application is build on views only
+
+pgdac1_mysql> drop view v1;
+
+pgdac1_mysql> create view v2
+                         as
+                         select* from emp where deptno = 1;
+
+pgdac1_mysql> grant select,insert on v2 to scott,amit ,king;
+
+amit_mysql> select* from metiitnashikpgdacsep2021.v2;
+  
+   EMPNO           ENAME      SAL       DEPTNO
+  ---------         ------------    -------      ----------
+     1                      A              5000            1 
+     2                      B              6000            1
+     3                      C              7000            1
+
+* used to restrict the row acess
+* used to restrict the coloumn?row acess (from of Encapsulation) (from of data hiding)
+
+pgdac1_mysql> create view v2
+                         as
+                         select* from emp where deptno = 1 ;
+
+  pgdac1_mysql> grant select,insert on v2 to scott,amit ,king;
+
+amit_mysql> 
+insert into metiitnashikpgdacsep2021.v2 values(6, 'F', 6000, 2);  <-ERROR
+
+* view WITH CHECK OPTION is similar to check constraint
+* view WITH CHECK OPTION can be used to enforce different checks for different users
+
+create view v1
+as
+select ename from emp;
+
+To change the SELECT statement (defination) of view:-
+
+drop view v1
+
+create view v1
+as
+select ename , sal from emp;
+----------------------------------------------------
+create or replace view v1
+as
+select ename , sal from emp;
+
+desc emp;
+
+desc v1;
+
+create or replace view v1
+as
+select ename , sal*12 from emp;
+
+select *from v1;
+
+* view based on computed column , you may specify an alias for the virtual coloumn
+* can only SELECT from this view
+*  DML operations not allowed (common for all RDBMS)
+----------------------------------------------------------------------
+create or replace view v1
+as 
+select upper(ename) u_ename , sal+comm net_ earning from emp;
+
+select* from v1:
+
+* view based on expression ,function etc. you may specify an alias for the virtual coloumn
+* can only SELECT from this view
+*  DML operations not allowed (common for all RDBMS)
+
+create or replace view v1
+as
+select dname,ename from emp,dept
+where deptt.deptno = emp.deptno;
+
+select * from v1;
+
+*     view based on join, GROUP BY clause , sub-queries, union etc.
+*      can only SELECT from this view
+*     DML operations not allowed
+
+drop view v1;                     (only the owner can drop the view)
+
+drop table emp;
+
+*         if you drop the table , the view remain'
+
+show tables;        <- will show tables and view but it wont tell which is a table
+                             and which is a view
+
+to see which is a table and which is a view :
+
+show full tables;
+
+to see the SELECT statement on which the view is based e.g for view v1:
+
+show create view v1;
+---------------------------------------------------------------
+create or replace view v1 as select ename, sal from emp;
+
+create or replace view v2 as select ename from v1;
+
+*   view based on view is allowed
+     to exceed the limits of SQL
+        e.g 
+     a. UNION of > 255 SELECT statements
+     b. sub-queries > 255 levels
+     c. function within function > 255 levels 
+     d.  to simplify the writing of complex SELECT statements
+          e.g join of 20 tables , sub-queries upto 30 level
+
+*  complex queries can be stored in view defination
+
+                                # MySQL- PL #
+
+*     product of MySQL
+*     MySQL programming Language
+*     this programming language works only with MySQL database
+*     programming language of MySQL
+*     used for database programming
+    e.g HRA_CALC ,ATTENDANCE_CALC, TAX_CALC,etc.
+*     used for server -side data processing (some processing that has to be done in the server)
+*  MySQL PL program can be called through MySQL Command Line client,
+    MySQL Workbench, PHP MyAdmin , Oracle Forms ,Reports , Menus ,     Graphics , Oracle Apex, Java (using JDBC drivers for connectivity),                MS .Net (using ODBC drivers for connectivity),etc.
+*  MySQL PL program can be called through any front end software 
+*  few 4 GL features (supports few OOPS features)
+*  MySQL PL program is a block of commands and hence its known as MySQL 
+    PL block
+*   Block level language
+
+
+mysql> call hra_calc();
+
+  BEGIN                                                                             
+         ____
+        INSERT INTO DEPT VALUES ( 1, 'a' , 'B' );               <-MySQL PL Block
+        COMMIT;
+         __
+   END;
+
+  BEGIN                    <- main Block (outer)(Parent)
+          -----  
+          BEGIN                          <- sub block (inner) (child)
+                    -----
+          END
+          ------
+  END;
+
+* Benefits of Block level Language :
+       1. Modularity (large program can be broken up into smaller units , easier for writing ,easier  for tesing ,debugging , maintainance etc.)
+      2.Control the scope of variables ( from of data hiding) (from of encapsulation)
+      3. Efiicient error managment (using Exceptions you can localize the error managment) 
+      4. Screen input and screen output is not allowed
+          used ONLY for processing 
+           (scanf , printf , etc. not available)
+
+*  SQL commands that are allowed inside MySQL PL:-
+                      DDL, DML, DTL/TCL , DQL
+  delete from emp where deptno =
+ ( select deptno from emp where ename = 'Thomas');      <- allowed
+
+*DCL commands are not allowed inside MySQL PL
+
+ To store the Output of MySQL PL program:-
+
+create table tempp
+(
+fir int,
+sec char (15)
+);
+
+     TEMPP
+FIR         SEC
+-----         ----
+
+STORED OBJECTS
+*     objects that are stored in the database
+*    e.g tables, indexes , views
+
+STORED PROCEDURES
+*    Routine (set of commands) that has to be called explicitly
+*    global procedures
+*   can be called through MySQL Command Client , MySQL Workbench,
+    Java ,MS. Net , etc.
+mysql> call intr_calc();
+* can be called through any front end software (only the drivers are needed    for connectivity )
+* stored in the database in the COMPILED FORMAT
+* hence the execution will be very fast
+*  hiding the source code from end user
+
+mysql > create procedure intr_calc() . . . . . 
+
+*   execution takes place in server RAM
+*   procedure can have local variables
+*   procedure can have IF statement ,loops etc.
+*   within the procedure all MySQL PL statements are allowed
+*   one procedure can call another procedure
+*   procedure can called itself (known as Recursion)
+*  you can pass parameters to a procedure with the same name even if the     NUMBER of parameters passed is different or DATATYPE of parameters     passed is different
+
+delimiter//
+create procedure abc()
+begin
+       insert into tempp values (1, 'inside abc');
+end;  //
+delimeter ;
+
+procedure created.
+
+     TEMPP
+FIR         SEC
+-----         ----
+1.            Inside abc
+
+-->> Read it,compile it , Plan , and store it in the DB in the COMPILED FORMAT
+
+
+*   ; is known as delimiter (it indicates end of command)
+
+mysql > call abc();
+mysql > select * from tempp; 
+     FIR         SEC
+     -----         ----
+       1.            Inside abc
+
+create procedure abc()
+begin
+       insert into tempp values (1, 'inside abc');
+end;  //
+delimeter ;
+
+call abc();
+
+drop procedure abc;
+
+delimiter//
+create procedure abc()
+begin 
+     declare x int;
+     set x = 15;                                     < - this will assign 15 to 'x' variable
+     insert into tempp values(x , 'inside abc');
+end; //
+delimeter ;
+
+in MySQL ,if you declare a variable and if you dont initialize it , then it will store a null value
+
+delimiter//
+create procedure abc()
+begin 
+     declare x int default 15;           
+     insert into tempp values(x , 'inside abc');
+end; //
+delimeter ;
+
+*   you can declare a value and assign a default value simultaneously
+
+delimeter//
+create procedure abc()
+begin 
+        declare x char(15) default 'CDAC';
+        insert into tempp values(1, x);
+end;//
+delimeter;
+
+call abc();
+
+delimiter//
+create procedure abc()
+begin
+    declare x char(15);
+    declare y float 3000;
+    declare z float default 0.4;
+    declare hra float ;
+    set hra = y*z;
+    insert into tempp values (y, x);
+insert into tempp values (hra , 'HRA');
+end; //
+delimeter;
+      
+HRA =40% sal
+
+delimiter//
+create procedure abc(x char(15), y float ,z float)
+begin
+    declare hra float ;
+    set hra = y*z;
+    insert into tempp values (y, x);
+insert into tempp values (hra , 'HRA');
+end; //
+delimeter;
+
+call abc ('KING',3000,0.4);
+call abc ('SCOTT',2500,0.3);
+
+*     to make it flexible, you can pass parameters to a procedure
+
+delimeter//
+create procedure abc()
+begin
+--   Single line comment
+    /* multi line comment*/
+
+end;//
+delimeter;
+
+drop procedure abc;
+
+to see which all procedures are created :-
+show  procedure status;     <- shows all procedure in all schemas
+
+show procedure stgatus where db = 'metiitnashikpgdacsep2021';
+show procedure status where name like 'A%';
+
+to view source code of procedure:-
+show create procedure abc;
+
+
+to share the procedure with other users:-
+pgdac1_mysql>grant execute on procedure abc to shubham;
+
+shubham_mysql> call metiitnashikpgdacsep2021.abc();
+
+pgdac1_mysql> revoke execute on procedure abc to shubham;
+
+
+delimiter//
+create procedure abc()
+begin
+    declare x int;
+    select sal into x from emp
+    where ename = 'KING';
+     /* proessing, e.g set hra = x*0.4, etc.
+    insert into tempp values (x , 'KING');
+end; //
+delimiter;
+
+call abc('KING');
+call abc('SCOTT');
+
+
+delimiter//
+create procedure abc()
+begin
+    declare x int;
+    select sal into x from emp
+    where ename = y;
+     /* proessing, e.g set hra = x*0.4, etc.
+    insert into tempp values (x , y);
+end; //
+delimiter;
+
+
+
+
+
+delimiter//
+create procedure abc()
+begin
+    declare x int;
+    declare y char(15);
+    select sal, job into x , y from emp
+    where ename = 'KING';
+     /* processing, e.g set hra = x*0.4, set l_job =lower(y) etc. */
+    insert into tempp values (x , 'KING');
+end; //
+delimiter;
+
+# Decision making in if statement 
+
+      TEMPP
+FIR            SEC
+-----            -----
+
+delimeter//
+create procedure abc()
+begin
+        declare x int;
+        select sal into x from emp where ename = 'KING';
+        if x > 5000
+        end if;
+end; //
+delimeter;
+
+
+if <condition_is_satisfied > then
+            ................................................; 
+           .................................................;
+            ................................................;
+end if ;
+
+delimeter//
+create procedure abc()
+begin
+        declare x int;
+        select sal into x from emp where ename = 'KING';
+        if x > 5000 then
+               insert into tempp values(x,'High sal');
+         else
+               insert into tempp values(x,'Low sal');
+        end if;
+end; //
+delimeter;
+
+*  if the IF statement condition is NOT satisfied then it will go in the ELSE  section
+*  ELSE is optional
+
+
+
+* nested IF statement (IF statement within another IF statement)
+
+delimeter//
+create procedure abc()
+begin
+        declare x int;
+        select sal into x from emp where ename = 'KING';
+        if x > 5000 then
+               insert into tempp values(x,'High sal');
+         else
+             if x < 5000 then
+                       insert into tempp values(x, 'Low sal');
+                  else
+                       insert into tempp values(x, 'Medium sal');
+                  end if;
+        end if;
+end; //
+delimeter;
+
+
+
+delimeter//
+create procedure abc()
+begin
+        declare x int;
+        select sal into x from emp where ename = 'KING';
+          if x > 5000 then
+                       insert into tempp values(x,'High sal');
+         elseif x < 5000 then
+                       insert into tempp values(x, 'Low sal');
+         else
+                       insert into tempp values(x, 'Medium sal');
+         
+        end if;
+end; //
+delimeter;
+
+you can use any no of elseif.
+
+if ............then
+            ...........;
+elseif  ...............then
+            ............;
+elseif  ...............then
+            ............;
+elseif  ...............then
+            ............;
+elseif ...............then
+           ............;
+else
+       .............;
+end if;
+
+
+delimiter//
+create procedure abc()
+begin
+    declare x boolean default TRUE;
+    if x then
+           insert into tempp values (1,'Mumbai');
+    end if;
+end;//
+delimeter;
+
+* boolean is a logical datatype
+
+delimiter//
+create procedure abc()
+begin
+    declare x boolean default TRUE;
+    if NOT x then
+           insert into tempp values (1,'Mumbai');
+    end if;
+end;//
+delimeter;
+
+
+# CASE statement
+
+delimiter//
+create procedure abc()
+begin
+    declare x int;
+    select sal into x from emp where ename = 'KING'
+    case
+    when x > 5000 then 
+         insert into tempp values (x , '> 5000');
+    when x < 5000 then 
+         insert into tempp values (x , '< 5000');
+    else
+         insert into tempp values (x , '= 5000');
+     end case;
+end; //
+delimeter;
+
+*  CASE is faster than IF statement
+*  ELSE is optional 
+*  if ELSE is not provided and if none of the cases are satisfied them MySQL will give an error message
+to skip the ELSE and avoid the error message , then you supply ELSE with and empty BEGIN and END block.
+
+LOOPS(for repetative/iterative processing)
+.
+.
+.
+.
+.
+delimeter//
+create procedure abc()
+begin 
+    declare x int default 1;
+    while x < 10 do
+            insert into tempp values(x, 'in while loop');
+           set x = x+1;     <-infinite loop
+           end while;
+end;//
+delimiter;
+
+$ kill [processid]
+
+delimiter //
+create procedure abc()
+begin
+      declare x int default 1;
+      declare y int default 1;
+      while x < 10 do
+               while y < 10 do
+                       insert into tempp values(y,'in y loop');
+              end while;
+              insert into tempp values (x,' in x loop ');
+              set x =x+1;
+       end while;
+end;//
+delimiter;
+
+delimiter //
+create procedure abc()
+begin
+      declare x int default 1;
+      declare y int default 1;
+      while x < 10 do
+               while y < x do
+                       insert into tempp values(y,'in y loop');
+              end while;
+              insert into tempp values (x,' in x loop ');
+              set x =x+1;
+       end while;
+end;//
+delimiter;   
+
+     TEMPP
+FIR              SEC
+----                 ----
+1                   in x loop
+1                   in y loop
+2
+2
+.
+.
+.
+9                   in x loop
+
+Repeat Loop (similar to do while loop)
+
+REPEAT
+       ......................................;
+       ......................................;
+UNTIL expression _is_not_satisfied
+END REPEAT;
+
+delimiter //
+create procedure abc()
+begin
+        declare x int default 1 ;
+        repeat
+              insert into tempp values(x,'in loop');
+               set x = x+1;
+        until x > 5;
+        end repeat;
+end;//
+delimiter ;  
+
+* there is no condition to enter the loop , but there is condition to exit the loop
+*it will execute at least once (similar to Do-while loop)
+Uses :-
+     a. Outerjoin (Master-Detail Reports (Parent -Child Reports))
+
+Loop , Leave and Iterate statement :-
+* Leave statement allows you to exit the loop (similar to 'break' statement of 'C' programming)
+*Iterate statement allows you to skip the entire code under it and start a new iteration (similar to'continue' statement of 'C' programming)
+* Loop statement executes a block of code repeatedly with an additional flexibility of using a loop label
+
+delimiter //
+create procedure abc()
+begin 
+    declare  x int default 1;
+    pqr_loop:loop
+         if x >10 then 
+                 leave pqr_loop;
+         end if;
+         set x = x+1;
+         if mod (x,2) != 0 then
+              iterate pqr_loop;
+          else
+               insert into tempp values ( x , ' inside loop');
+           end if;
+      end loop;
+end;//
+delimiter;
+
+Session variables:
+
+* global variables 
+* can be acessed through all SQL command and MySQL -PL programs
+   (can be accessed through front-end s/w also)
+* available throughout the session (available in the RAM till you exit)
+
+mysql> set @x +10;
+
+mysql> insert into dept values (@x , 'TRN','Bby');
+
+mysql> select @x from dual;
+
+
+Sub-blocks
+
+delimiter //
+create procedure abc()
+begin
+   declare x int default 1;
+      insert into tempp values (x, 'before sub');
+      end ;
+      insert into tempp values(x, 'after sub');
+end;//
+delimeter ;
+
+* main block cannot acess the sub _ blocks variables.
+* sub -block can access the variable of main block
+* sub_block can change the value of main blocks's variables; it will affect the remainder  of program
+
+delimiter //
+create procedure abc()
+begin
+   declare x int default 1;
+      insert into tempp values (x, 'before sub');
+     begin
+          declare x int default 3;
+      insert into tempp values (x, 'in sub');
+    end ;
+      insert into tempp values(x, 'after sub');
+end;//
+delimeter ;
+
+
+* If you have a variable with the same name in the both the block , then higher priority is given to Local variable
+
+Benefits of OO:
+1. Coading reduced 
+2.  Data hiding (from of encapsulation)
+3. Reusability of code
+
+
+set @x =1;
+delimiter //                                            
+create procedure abc()
+begin
+   declare x int default 1;
+      insert into tempp values (x, 'before sub');
+     begin
+          declare x int default 3;
+          insert into tempp values (x, 'in sub');
+          insert into tempp values(@x, 'in sub');
+   end;
+      insert into tempp values (x,'after sub');
+end;//
+delimeter ;
+
+                             
+                         #Cursour
+         EMP
+EMPNO    ENAME    SAL    DEPTNO
+ 1                    A          5000         1
+2                    B          6000          1
+3                    C          7000          1
+4                     D         9000         2
+5                     E          8000        2
+
+* present in all RDBMS and some of the DBMS and some of the front-ends also
+
+EMP
+----
+empno int
+ename varchar (15)
+sal int
+deptno int
+
+*  type of a variable 
+*  used for storing multiple rows 
+*  used for processing multiple rows
+*  used for handling multiple rows
+*  used for storing data temporarily
+*  cursour is similar to 2D array
+*  in MySQL, cursor is basedon SELECT statement
+
+declare pqr cursor for select * from emp where deptno = 1;
+
+
+declare x int;
+declare hra float;
+select sal into x from emp where empno = 1;
+set hra =x*0.4;
+insert into tempp...........; 
+select sal into x from emp where empno = 2;
+set hra =x*0.4;
+insert into tempp...........; 
+select sal into x from emp where empno = 3;
+set hra =x*0.4;
+insert into tempp...........;
+select sal into x from emp where empno = 4;
+set hra =x*0.4;
+insert into tempp...........;
+select sal into x from emp where empno = 5;
+set hra =x*0.4;
+insert into tempp...........;
+
+
+
+----------------------------------------------------------------------------------------------------------------
+cursor code:
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);
+    declare c int;
+    declare d int;
+    declare x int default 0;
+    declare c1 cursor for select * from emp;         <- CURSOR DECLARATION/DEFINATION(at this point, cursor does not contain any data)
+    open c1;                                                              IT WILL OPEN THE CURSOR C1, It will execute the select statement        
+    while x < 5 do                                                           
+          fetch c1 into a,b,c,d;                                   <- WILL FETCH THE NEXT ROW
+    /* processing e.g. set HRA = c*0.4 ,etc.*/
+          insert into tempp values (a,b);
+          set x = x+1;
+    end while;
+    close c1;                                <- close the cursor c1 and it will free the RAM
+end;//         
+delimiter;
+
+*cursor is READ_ONLY variable 
+* the data that is present inside a cursor it cannot be manipulated 
+*  you will have to fetch 1 row at a time  into some intemediate variables (e.g a,b,c,d variables),
+and do your processing with those variables
+* you can ONLY fetch sequentially(top to bottom)
+* YOU CANNOT FETCH BACKWORDS IN MySQL CURSOR
+* you can only fetch 1 row at a time.
+
+----------------------------------------------------------------------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);
+    declare c int;
+    declare d int;
+    declare x int default 0;
+    declare c1 cursor for select * from emp;        
+    open c1;                                                                 
+    while x < 3 do                                                           
+          fetch c1 into a,b,c,d;                                  
+    /* processing e.g. set HRA = c*0.4 ,etc.*/
+          insert into tempp values (a,b);
+          set x = x+1;
+    end while;
+    close c1;                               
+end;//         
+delimiter;
+-------------------------------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);                 (FOR ANY NO OF ROWS IN EMP)
+    declare c int;
+    declare d int;
+    declare x int default 0;
+    declare y int;
+    declare c1 cursor for select * from emp;    
+    select count(*) into y from emp;    
+    open c1;                                                                 
+    while x < y do                                                           
+          fetch c1 into a,b,c,d;                                  
+          insert into tempp values (a,b);
+          set x = x+1;
+    end while;
+    close c1;                                
+end;//         
+delimiter;
+
+* Declare a CONTINUE error-handler (exception)  for NOT FOUND event:-
+------------------------------------------------------------------------------------------
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);            
+    declare c int;
+    declare d int;
+    declare y int default 0;
+    declare c1 cursor for select * from emp;    
+    declare continue handler for not found set y=1 ;    <- IF NOT FOUND ERROR IS  ENCOUNTERD, 
+    open c1;                                                                              THEN SETB Y =1 AND CONTINUE WITH PROGRAM
+   cursor_c1_loop:loop                                                             
+          fetch c1 into a,b,c,d; 
+          if  y = 1 then
+              leave cursor_c1_loop;
+         end if;                                
+          insert into tempp values (a,b);
+      end loop cursor_c1_loop ;
+    close c1;                                
+end;//         
+delimiter;
+
+*NOT FOUND is a cursor attribute ,it returns a boolean TRUE value if the last fetch was
+unsuccessful, and a FALSE value if the last fetch was successful
+----------------------------------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);            
+    declare y int default 0;
+    declare c1 cursor for ename sal from emp;    
+    declare continue handler for not found set y=1 ;    
+    open c1;                                                                             
+    cursor_c1_loop:loop                                                             
+          fetch c1 into a,b; 
+                if  y = 1 then
+                      leave cursor_c1_loop;
+                end if;                                
+          insert into tempp values (b,a);
+      end loop cursor_c1_loop ;
+      close c1;                                
+end;//         
+delimiter;
+output:
+
+TEMPP
+SAL   ENAME
+
+
+------------------------------------------------------------------------------
+*within a procedure you cannot open the same cursor repeatedly ; you will get an error that the cusor is already open
+* you will have to close the cursor before you can reopen it
+
+* to reset the cursor pointer:
+open c1;
+close c1;
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);    
+    declare c int;
+    declare d int;        
+    declare y int default 0;
+    declare c1 cursor for select * from emp where deptno =1;    
+    declare continue handler for not found set y=1 ;    
+    open c1;                                                                             
+    cursor_c1_loop:loop                                                             
+          fetch c1 into a,b,c,d; 
+                if  y = 1 then
+                      leave cursor_c1_loop;
+                end if;                                
+          insert into tempp values (c,b);
+      end loop cursor_c1_loop ;
+      close c1;                                
+end;//         
+delimiter;
+
+-------------------------------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+    declare a int;
+    declare b varchar(15);    
+    declare c int;
+    declare d int;        
+    declare y int default 0;
+    declare c1 cursor for select * from emp where deptno =z;    
+    declare continue handler for not found set y=1 ; 
+    .........................................................................................;
+end; //
+delimiter;
+======================================================================
+to make it flexible , you can pass the DEPTNO as parameter to the cursor:-
+
+call abc(1);
+call abc(2);
+
+-----------------------------------------------------------------------------------------------
+delimeter //
+create procedure abc()
+begin
+       declare a varchar(15);
+       declare b int;
+       declare y int default 0;
+       declare c1 cursor for select lower(ename), sal+500 from emp;
+       declare continue handler for not found set y =1;
+       open c1;
+      cursor_c1_loop:loop
+          fetch c1 into a , b;
+           if y = 1 then
+                  leave cursor_c1_loop;
+           end if;
+           insert into tempp values(b,a);
+       end loop cursor_c1_loop;
+       close c1;
+end; //
+delimiter;
+
+
+            DEPT
+DEPTNO    DNAME        LOC
+---------     ---------          -----
+1                 TRN              Bby
+2                  EXP              Dlh
+3                 MKTG            Cal
+
+
+
+
+
+
+
+delimiter//
+create procedure abc()
+begain
+        ....................................................;
+         .................................................. ;
+         declare c1 cursor for select * from dept;
+         declare c2 cursor for select * from emp;
+         ......................................................;
+          .....................................................;
+          open c1;
+          cursor_c1_loop:loop
+               ................................................;
+            ...................................;
+       ....................................;
+end;//
+delimiter;
+
+*  no upper limit on the number of cursors that you can open at a time inside a program
+*  the only restriction would be the size of server RAM (it should be large enough to store so many rows)
+
+max 30 cursor per block in previous version of mysql
+
+
+delimiter//
+create procedure abc()
+begin
+              declare a int;
+              declare b varchar(15);
+              declare y int default 0;
+              declare c1 cursor for select empno,dname from emp, dept;
+              where dept.deptno = emp.deptno;
+             declare continue handler for not found set y = 1;
+             open c1;
+             cursor_c1_loop:loop
+                  fetch c1 into a ,b ;
+                  if y =1 then 
+                       leave cursor_c1_loop;
+                  end if;
+                  insert into tempp values(a,b);
+               end loop cursor_c1_loop;
+      close c1;
+end;//
+delimiter;
+ -------------------------------------------------------------------------------------
+delimiter//
+create procedure abc()
+begin
+              declare a int;
+              declare b varchar(15);
+              declare y int default 0;
+              declare c1 cursor for select* from emp;
+              declare continue handler for not found set y =1;
+              open c1 ;
+              cursor_c1_loop:loop
+                       fetch c1 into a, b, c, d;
+                       if y = 1 then 
+                            leave cursor_c1_loop;
+                       end if;
+                      update emp set sal = sal + 1;
+          end loop cursor_c1_loop; 
+          close c1;
+end;//
+delimiter;
+
+------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+              declare a int;
+              declare b varchar(15);
+              declare y int default 0;
+              declare c1 cursor for select* from emp;
+              declare continue handler for not found set y =1;
+              open c1 ;
+              cursor_c1_loop:loop
+                       fetch c1 into a, b, c, d;
+                       if y = 1 then 
+                            leave cursor_c1_loop;
+                       end if;
+                      if c > 7000 then 
+                                update emp set sal = sal + 1;
+                       end if;
+          end loop cursor_c1_loop; 
+          close c1;
+end;//
+delimiter;
+==============================================================================
+MOST IMPORTANT PROGRAM:-
+------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+              declare a int;
+              declare b varchar(15);
+              declare y int default 0;
+              declare c1 cursor for select* from emp for update ;
+              declare continue handler for not found set y =1;
+              open c1 ;
+              cursor_c1_loop:loop
+                       fetch c1 into a, b, c, d;
+                       if y = 1 then 
+                                 leave cursor_c1_loop;
+                       end if;
+                      if c > 7000 then 
+                                update emp set sal = sal + 1 where empno = a ;
+                       end if;
+          end loop cursor_c1_loop; 
+          commit;         <- LOCKS ARE AUTOMATICALLY RELEASED WHEN YOU ROLLBACK
+          close c1;                   OR COMMIT
+end;//
+delimiter;
+------------------------------------------------------------------------------------------
+
+delimiter//
+create procedure abc()
+begin
+              declare a int;
+              declare b varchar(15);
+              declare y int default 0;
+              declare c1 cursor for select* from emp for update ; (for update used to locking rows)
+              declare continue handler for not found set y =1;
+              open c1 ;
+              cursor_c1_loop:loop
+                       fetch c1 into a, b, c, d;
+                       if y = 1 then 
+                                 leave cursor_c1_loop;
+                       end if;
+                      if c > 7000 then 
+                                delete from emp where empno = a ;
+                       end if;
+          end loop cursor_c1_loop; 
+          commit;         <- LOCKS ARE AUTOMATICALLY RELEASED WHEN YOU ROLLBACK
+          close c1;                   OR COMMIT
+end;//
+delimiter;
+
+
+
+Cursors
+uses:-
+a.  used for storing/processing/handling multiple rows
+b. USED TO LOCK THE ROWS MANUALLY
+
+To lock the rows manually BEFORE issuing UPDATE or DELETE:-
+*    you require a cursor whose SELECT statementcontains a FOR UPDATE clause
+
+delimiter//
+create procedure abc()
+begin
+      declare c1 cursor for select * from emp for update;
+      open c1;
+      close c1;
+end; //
+delimiter ;
+-------------------------------------------------------------------------------
+call abc();
+
+declare c1 cursor for select* from emp for update;
+open c1;
+close c1;
+
+
+# Procedure parameters are of 3 types:-
+
+IN (by default)(FASTEST in terms of processing speed)
+----
+*    Read only (value of the parameter cannot be changed inside the procedure)(you can READ from it byt you cant assign a value to it)
+*    can pass constant,variable, expression 
+*    call by value
+
+delimiter//
+create procedure abc(in y int)
+begin
+       insert into tempp values(y, ' inside abc');
+end;//
+------------------
+delimiter//
+create procedure pqr()
+begin
+       declare x int default 10;
+       call abc(5);
+       call abc(x);
+       call abc(2*x + 5);
+end; //
+delimiter;
+------------
+call pqr();
+==================================================================================
+OUT (MOST SECURE)
+-----
+*     write only (inside the procedure you can assign a value to it but you can't READ from it)
+*     can pass variables only
+*     call by reference (procedure can return a value indirectly if you call by reference)
+
+delimiter//
+create procedure abc(out y int)
+begin
+     set y = 100;
+end; //
+delimiter;
+---------------------------
+delimiter //
+create procedure pqr()
+begin
+     declare x int default 10;
+     insert into tempp values(x ,'before abc');
+     call abc(x);
+     insert into tempp values (x,'after abc');
+end;//
+delimiter;
+
+-----------
+call pqr();
+===============================================================================
+INOUT (BEST FEATURE and FUNCTIONALITY)
+--------
+*  Read and Write
+*  can pass variables only
+*  call by reference (procedure can return a value indirectly if you call by reference)
+
+delimiter//
+create procedure abc(out y int)
+begin
+     set y = y*y*y;
+end; //
+delimiter;
+-----------------
+delimiter //
+create procedure pqr()
+begin
+     declare x int default 10;
+     insert into tempp values(x ,'before abc');
+     call abc(x);
+     insert into tempp values (x,'after abc');
+end;//
+delimiter;
+--------
+call pqr();
+        
+
+  Which one to use when ?
+1.  If you dont want to return a value ,then use IN parameter
+2. If you want to return a value , then:-
+      a. on public network (e.g Internet) security is important use out parameter.
+  
+      b.on private network (e.g MET nashik) security is not important use INPUT parameter
+
+
+STORED OBJECTS
+*object that are stored in the database
+*e.g  CREATE...... tables,indexes,views stored procedures
+
+STORED FUNCTIONS
+*  Routine (set of commands ) that returns a value directly (with the help of Return statement) and compalsarily 
+* global functions 
+* stored in database (there is a system table for functions also)
+* can be called through MySQL-PL (has to be called through some program because a function returs a value and that value has to be stored somewhere; and therefore it has to be equated with some variable , or it has to be a part of some expression ),java MS.Net,etc.
+*can be called through any front end software
+*stored in the database in the COMPILED FORMAT
+*hence the execution will be very fast
+* hiding source code from end user
+*etc. benefits same as stored procedures
+*stored functions can have local variables ,cursors etc.
+* within the function call MySQL-PL statements allowed
+*Stored procedure can call another function
+*function can call itself (known as Recursion)
+* you can pass parameters to a function
+* OVERLOADING OF STORED FUNCTIONS IS NOT ALLOWED
+
+STORED FUNCTIONS are of 2 types:-
+
+1.  Deterministic
+ 
+2. Not Deterministic
+
+*For the same input parameters,if the stored function returns the same result , it is considered deterministic, and otherwise the stored function is not deterministic
+*you have to decide weather a stored function is deterministic or not 
+*if you declare it incorrectly . the stored function may produced an unexpected result , or the available optimization is not used which degrades the performance 
+
+            TEMPP
+            ---------
+ FIR                     SEC
+-----                     ------
+
+
+delimiter//
+create function abc()
+returns int
+deterministic
+begin
+    return 10;
+end; //
+delimiter ;
+---> Read it ,compile it ,make a plan , and store it in DB in COMPILE FORMAT
+
+Function created.
+-----------------------------------------------------------------------------
+
+delimiter //
+create procedure pqr()
+begin
+     declare x int;
+     set x = abc();
+    insert into tempp values (x , 'after abc');
+end;
+delimiter;
+--------------------------
+call pqr();
+
+To drop the function:
+drop function abc;
+
+================================================================
+
+delimiter//
+create function abc(y int)
+returns int
+deterministic
+begin
+    return y *y;
+end; //
+delimiter ;
+
+Function created
+--------------------------------------------------
+delimiter //
+create procedure pqr()
+begin
+      declare x int;
+      set x =abc(10);
+      insert into tempp values(x,'after abc');
+end; //
+delimiter;
+----------------
+call pqr();
+
+output
+
+            TEMPP
+            ---------
+ FIR                     SEC
+-----                     ------
+100                   after abc
+
+
+*    STORED FUNCTIONS CAN BE CALLED IN SELECT STATEMENT
+*    STORED FUNCTIONS CAN BE CALLED IN SQL COMMANDS 
+
+select abc(sal) from emp;
+select ename , upper(ename), sal , abc(sal) from emp;
+select abc(10) from dual;
+delete from emp where abc(sal) = 100000;
+
+           EMP
+
+ ENAME      SAL
+---------       -----
+KING          9000
+
+ delimiter //
+create function abc(x int)
+returns boolean
+deterministic
+begin
+      if x > 5000    then
+                return TRUE;
+      else
+             return FALSE;
+     end if;
+end; //
+delimiter ;
+----------------------------------------------------------
+delimiter//
+create procedure pqr()
+begin
+        declare  y int ;
+        select sal into y from emp where ename = 'KING';
+        if abc(y) then
+               insert into tempp values(y,'> 5000');
+        else
+  	insert into tempp values(y, '<= 5000');
+        end if;
+end; //
+delimiter ;
+-------------------------
+call pqr();
+
+
+
+TEMPP
+FIR          SEC
+----          -----
+
+drop function abc;
+
+to see which all functions are created:-
+
+show function status;
+
+show function status where db = 'metiitnashikpgdacsep2021';
+show function status where name like 'a%';
+
+to view source code of function;
+	
+# DATABASE TRIGGERS
+    
+                 EMP                                            DEPTOT
+ENAME      SAL    DEPTNO                DEPTNO     SALTOT
+---------       -----    ----------                --------           --------
+A              5000            1                            1                   15000
+B               5000            1                           2                     6000
+C               5000            1
+D               3000           2
+E               3000           2
+
+*  triggers are present in some of the RDBMS
+*  Routine (set of commands) that gets executed    AUTOMATICALLY when some EVENTS (when something    happens) takes place 
+*  triggers are written on tables 
+*  trigger name maximum 30 character
+*  stored in the database in the COMPILED FORMAT
+*  Events are :-
+      Before Insert ,After Insert
+      Before Delete , after Delete
+      Before Update , After Update
+*  all trigers are at server level
+*  you can perform the DML operations using any front-end software, the trigger will always execute
+*  within the trigger you can have any processing; all MySQL -PL
+statements allowed (e.g declare variables , cursors , use IF statement , loops etc.)
+* you can call stored procedures and stored functions inside the trigger
+* weather you rollback or commit AFTERWORDS , the data will always be consistent
+*  for some reasons if DML operation on table fails, then it will cause the event to fail, and then changes made by the trigger are automatically Rolled back
+*  if trigger fails , then it will cause the event to fail, and then DML operation on table is automatically Rolled back
+*  YOUR DATA WILL ALWAYS BE CONSISTENT
+ 
+*  Rollback and Commit not allowed inside the trigger
+*  Rollback or commit has to be specified AFTERWORDS, the data will always be consistent
+
+
+
+
+
+
+mysql > insert into emp values ( ' F ', 3000, 2 ) ;
+
+INSERT trigger
+
+delimiter //
+create trigger abc
+before insert 
+on emp for each row
+begin
+     insert into tempp values (1, 'inserted' );
+end;//
+delimiter;
+
+Trigger created.
+
+--> Read it ,compile it , make a plan , store it into the server harddisk
+
+
+delimiter //
+create trigger abc
+before insert 
+on emp for each row
+begin
+     insert into tempp values (1, 'inserted', user ( ) ,sysdate( ) );
+end;//
+delimiter;
+
+Uses:-
+
+  *   maintain logs (audit trails) of insertions .
+     AFTER insert trigger is recommended
+  *   automatic data duplicaton , data mirroring , concept of parallel server ,       standby database
+*  maintain the SHADOW tables in the event of insert
+*   In case of ATM utomatic updatation happens if we withdraw money
+and if we debit money if it will not come then it will automatically gets roll back due to triggers
+
+*if you drop the table , then the indexes and triggers are dropped automatically
+
+
+*  In MySQL , all the triggers are at Row level 
+    (the triggers will fire for each row)
+*Events are :-
+    Before Insert ,After Insert
+    Before Delete , after Delete
+    Before Update , After Update
+
+* In MySQL , you can have maximum 6 triggers per table.
+
+delimiter //
+create trigger abc
+before insert 
+on emp for each row
+begin
+     insert into tempp values (new.sal ,new.ename );
+end;//
+delimiter;
+
+*   new.ename,new.sal ,new.deptno are MySQL created variables
+
+delimiter //
+create trigger abc
+before insert 
+on emp for each row                               
+begin                                            (6000)   (3000)
+      update depttot set saltot = saltot + new.sal
+      where deptno = new.deptno;
+end;//
+delimiter;
+
+show triggers;      <- show all triggers from all schemas
+
+show trigger from [db_name];
+
+show triggers from metiitnashikpgdacsep2021;
+
+select * from information_schema.triggers;
+-----------------------------------------------------------------------
+DELETE trigger
+ 
+ delete from emp where deptno = 2;
+
+delimiter //
+create trigger pqr
+before delete
+on emp for each row
+begin
+        insert into tempp values (1 , 'deleted');
+end; //
+delimiter;
+
+Trigger created.
+
+
+Uses:-
+*  maintain logs (audit trails) of deletions
+
+
+delimiter //
+create trigger pqr
+before delete
+on emp for each row
+begin
+        insert into tempp values (old.sal ,old.ename);
+end; //
+delimiter;
+
+* old.ename ,old.sal ,old.deptno are MySQL created variables.
+
+
+delimiter //
+create trigger pqr
+before delete
+on emp for each row
+begin                                                         (3000)
+        update deptot set saltot = saltot - old.sal
+        where deptno = old.deptno;
+end; //                          (2)
+delimiter;
+
+Uses :-
+
+* maintain HISTORY tables in the event of delete 
+
+
+UPDATE trigger
+
+update emp set sal = 6000 where deptno = 1 ;
+
+delimeter//
+create trigger xyz
+before update 
+on emp for each row
+begin 
+      insert into tempp values (1, 'updated' ) ;
+end; //
+delimeter ;
+
+Trigger created.
+
+Uses :-
+*  maintain logs (audit trails )of updations 
+*  
+
+delimeter//
+create trigger xyz
+before update 
+on emp for each row
+begin 
+      insert into tempp values (old.sal ,old.ename ) ;
+      insert into tempp values (old.sal ,old.ename ) ;
+end; //
+delimeter ;
+
+*    old.ename, old.sal ,old.deptno
+     new.ename,new.sal,new.deptno are MySQL created variables
+
+Uses:-
+*maintain SHADOW and HISTORY tables in the event update
+
+update emp set sal = 6000 where ename = 'A ';
+
+delimeter//
+create trigger xyz
+before update 
+on emp for each row
+begin                                          (15000)  (5000)     (6000)
+      update deptot set saltot = saltot -  old.sal   +   new.sal
+      where deptno = old.deptno;
+end; //
+delimeter ;
+
+NORMALIZATION
+
+*  concept of table design
+*  what tables to create ,structures,columns,datatypes ,widths, constraints
+*  based on user requirements
+*  part of Design phase (1/6)
+*  sim is to have an "efficient" table structure
+*  aim of normalization is to avoid data redundancy(avoid the unnecessary duplication of data)
+* aim is to reduce the problems of insert, update and delete
+*  Normalization is done from an input perspective
+*  Normalization is done from a Forms perspective
+* VIEW ENTIRE APPLICATION ON A PER_TRANSACTION BASIS AND YOU NORMALISE EACH TRANSACTION SEPARATELY
+E.g
+CUTOMER PLACES AN ORDERS,
+CUSTOMER MAKES THE PAYMENT,
+CUSTOMER CANCELS THE ORDER,
+
+Onum
+Cnum
+Cname
+Caddr
+Ccity
+Cpincode
+Cmobno
+Orderdate
+Delydate
+prodcd
+prodname
+Qty
+RAte
+Itemtotal
+Ototal
+ 
+productCD    productName    QTY         RATE                    ITEMTOTAL
+
+P001             PENDRIVE              60            10                              600
+P002            MARKER                  10             20                              200
+P003       MOBILE PHONE          2              100                             200
+
+Getting ready for normalisation:
+1.  Identify all the transaction (make a list ) e.g 
+2. Ask the user/Client for sample data
+3. For a given transaction ,make a list of fields
+4. For all practicle purposes you can have a single table with all these columns
+4. For every field ,with permision and involvement of User/Client ,strive for atomicity (fiwld is make up sub_fields ,sub-field is made up of sub-sub-fields)
+6. For every field make a list of field properties.
+7. Get User sign-off
+8. End of User involvement
+9. For all practicle purposes you can have a single table with all these coloumns
+10. For every column ASSIGN the Datatypes and widths
+11. For every column Assign the necessary Not Null, unique  and check constraints
+12.Remove the computed columns (e.g itemtotal , ototal)
+13.Key elements will be Primary key of this table
+*   At this point data is in Un-Normalised Form (UNF)
+
+12.  UNF Un-Normalized Form
+
+- Prodcd
+- Prodname
+- Qty
+- Rate
+
+step1>    Remove the Repeating group into a new table
+
+Onum
+Cnum                                Prodcd
+Cname                             Prodname
+ Caddr                                        Qty
+  Ccity                                       Rate
+Cpincode
+Cmobno
+Orderdate
+Delydate
+
+
+
+step2>   Key element will be the Primary key of new table
+
+step3>  ( This step may or may not be required.)
+        Add the primary key of the original table to the new table to give you Composite primary key
+
+Onum     <-PK                      Onum   <- PK
+Cnum                                   Prodcd
+Cname                                Prodname
+ Caddr                                        Qty
+  Ccity                                       Rate
+Cpincode
+Cmobno
+Orderdate
+Delydate
+
+Composite Primary key
+*    above the three steps are to be repeated infinitely till you cannot          Normalise any further 
+FIRST NORMAL FORM (FNF) (SINGLE NORMAL FORM) (1NF)
+  Repeating groups are removed from table design
+*   1 : Many Realtionships is always encounterd in First Normal Form
+          e.g. Dept : Emp
+25%
+------------------------------------------------------------
+step 4 > Only the tables with composite primary key are examine
+
+Onum     <-PK                           Onum   
+------                                       ------            KEY ELEMENTS
+Cnum                                      Prodcd
+                                              ---------
+Cname                                  Prodname
+ Caddr                                        Qty             NON KEY ELEMENTS
+  Ccity                                       Rate
+Cpincode
+Cmobno
+Orderdate
+Delydate
+
+step 5 > Those non-key elements that are not dependent on the entire composite Primary key ; they are to be removed in a new table
+
+Onum     <-PK                      Onum   <-PK                   
+Cnum                                Prodcd                       Prodname
+Cname                                Qty                               Rate       
+ Caddr                                      
+  Ccity                                      
+Cpincode
+Cmobno
+Orderdate
+Delydate
+
+step 6 > The key element on which partially dependent ,it is to be added to new table, and it will be the Primary key.  
+*above three steps are to be repeated infinitely till you cannot Normalize any further
+
+Onum     <-PK                      Onum   <-PK                    prodcd   <-PK
+Cnum                                Prodcd                       Prodname
+Cname                                Qty                               Rate       
+ Caddr                                      
+  Ccity                                      
+Cpincode
+Cmobno
+Orderdate
+Delydate
+
+SECOND NORMAL FORM (SNF) (DOUBLE NORMAL FORM)  (2NF) ->
+Every column is functionally dependent on the Primary key (this is know as Functional Dependency)
+FUNCTIONAL DEPENDENCY -> without primary key ,that coloumn cannot function 67%
+--------------------------------------------------------------------------------
+step 7 >     Only the non key elements are examined
+step 8 >  Remove the inter-dependent non-key elements into a new table
+
+Onum(PK)       Cnum (PK)       Onum  (PK)           prodcd(PK)
+Orderdate     Cname              prodcd               prodname
+Delydate        Caddr                 Qty                  Rate
+                        Ccity 
+                        Cpincode
+                        Cmobno
+step 9 > Key element will be Primary key of new table; and the Primary key of new table it is to be retained in the original table for relationship purposes
+
+
+Onum(PK)       Cnum (PK)       Onum  (PK)           prodcd(PK)
+Orderdate     Cname              prodcd               prodname
+Delydate        Caddr                 Qty                  Rate
+Cnum                Ccity 
+                        Cpincode
+                        Cmobno
+*above three steps are to be repeated infinitely till you cannot Normalize any further
+THIRD NORMAL FORM(TNF) (TRIPLE NORMAL FORM) (3NF) ->
+Transitive dependencies (inter-dependencies) are removed from table design
+
+4th Normal Form (also known as Boyce-codd Normal Form) (BCNF)
+*    4th  Nomal Form is an extention  of Normal Form
+*   you may or may not implement the 4th Normal Form
+*  Used to protect the integrity of data
+* normally used on public network (e.g Internet)
+
+                                          CUSTOMERS
+
+CNUM         CNAME        CADDR    CCITY    CPINCODE          CMOBNO
+---------     ---------        ----------   --------     -----------             ---------- 
+1001               MET          adgaon     nashik        422003              100
+1002              MET           bandra     mumbai      400050             200
+1003           AITYCP       Np             mumbai       400021              300
+1004           SALMAN    adgaon      Nashik         400021             300
+
+
+DE-NORMALISATION
+
+
+*if the data is large ,if the SELECT statement is slow,
+add an extra coloumn to the totabl ,to improve the performance ,to make the SELECT statement work faster
+*normally done for computed columns,expression ,function-based columns , summary columns ,formula columns, etc.
+e.g
+itemtotal = qty * rate
+ototal = sum(itemtotal)
+
+* in some situations you may want to create an extra table in your application and store the totals over there
+e.g
+DEPTTOT
+
+
+
+LAB EXAM
+1. Create few tables
+2. Insert few rows
+3. 5-10 Setect statements on above tables
+4. 1 stored procedure
+5. 1 stored function
