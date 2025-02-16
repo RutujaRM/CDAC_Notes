@@ -1,0 +1,541 @@
+
+
+
+1.   In Java arrays are
+A. objects
+B. object references
+C. primitive data type
+D. None of the above
+
+Answer:  A
+
+
+Session 1
+
+2 .Which component is responsible to run java program?
+A) JVM
+B) JDK
+C) JIT
+D) JRE
+
+Answer D
+
+
+3. Which is not a primitive data type?
+A.Boolean
+B.Character
+C.Arrays
+D.Integer
+Answer C
+
+
+
+4.What will be printed out if you attempt to compile and run the following code int i=1; 
+switch(i)
+{ 
+case 0:
+System.out.prinln("zero"); 
+break; 
+case 1:
+System.out.println("one"); 
+case 2:
+ System.out.prinln("two"); 
+default:
+System.out.println("default");
+}
+
+A. One 
+B. one, default 
+C. one,two,default 
+D. Default
+DI. 
+Ans. C
+
+
+
+Session 2
+5.
+Which line out of the following will compile without a warning or an error?
+A. boolean b=null; 
+B. float f=1.3; 
+C. byte b=257; 
+D. int i=10;
+
+Ans. D
+
+
+
+Session 2.
+
+6. What is the size of a byte datatype?
+
+A. -128 to 127
+B. (-2 power 8 )-1 to 2 power 8
+C. -255 to 256
+D. depends on the particular implementation of the Java Virtual machine 
+
+Ans. A
+
+
+
+7.Given the following code									
+public class test
+{
+	public  static void main(String args[])
+		{
+		int x,y;
+		y=10;
+		}
+}		
+On Compilation of above code
+
+A) Local variable y might not have been initialized
+B) No Error
+C) Local variable x might not have been initialized
+D) Local variable x initialized but not declared.
+
+Ans. B
+
+
+
+8. What  will be the output ?
+public class test
+{
+	public static void main(String args[])
+	{
+		System.out.println(9^2);
+	}
+}
+
+A) 81      
+B) 7      
+C) 11    
+D)  0 
+
+Ans C
+
+
+
+9. What is the output?
+public class test
+{
+	
+	static void call(int x)
+	{
+		x+=2;
+	}
+	public  static void main(String args[])
+	{
+		int num=0;
+		call(num++);
+		System.out.println(num);
+	}
+}
+A) 1
+B) 2
+C) 3
+D) 0
+
+Ans. A
+
+
+10. Default value of reference type is
+
+A. 0
+B. /0
+C. zero
+D. null
+
+Ans. D
+
+
+
+Session 3
+
+11. static member scope is _______
+
+A. They are created when the class is loaded at runtime.
+B. They are created when main get called.
+C. They are created when class object get created.
+D. They are created when class get modified.
+
+Ans. A
+
+
+12. What is the return value of constructor in java?
+
+A. 1
+B. null
+C. void
+D. instance
+
+Answer D
+
+
+
+Session 4
+13. Where an object of a class get stored?
+
+A. Heap
+B. Stack
+C. Disk
+D.File
+Answer A
+
+
+
+14. What is reference to an object?
+
+A) It is address of an object
+B) It is address of where the variables and methods of object are stored
+C) It is pointer having address of an object
+D) It is address of only variables and not the methods of an object 
+
+Answer B
+
+
+15. While using encapsulation, which among the following is possible?
+A) Code modification can be additional overhead
+B) Data member’s data type can be changed without changing any other code
+C) Data member’s type can’t be changed, or whole code have to be changed
+D) Member functions can be used to change the data type of data members 
+
+Answer B
+
+16. Which of the following is true?
+	1. A class can extend more than one class.
+	2. A class can extend only one class but many interfaces.
+3. An interface can extend many interfaces.
+4. An interface can implement many interfaces.
+5. A class can extend one class and implement many interfaces.
+
+A.   1 and 2
+B.   2 and 4
+C.  3 and 5
+D.  3 and 4
+E.  2 and 5
+Answer:  C
+
+
+
+17.Given Following code :
+import java.io.*;
+class base
+{
+	void disp()throws IOException
+	{
+	}
+}
+class sub extends base
+{
+	void disp()throws Exception
+	{
+	}
+}
+
+public class myclass 
+{
+	public static void main(String args[])
+	{
+				
+	}
+}
+A) compile error   
+B) neither compilation nor runtime error 
+C) no compilation error but exception at runtime.
+D) Both A. And B
+
+Answer A
+
+
+
+18. What is subclass in java?
+A. A subclass is a class that extends another class
+B. A subclass is a class declared inside a class
+C. Both above.
+D. None of the above.
+
+Answer: A 
+
+
+19. Order of execution of constructors in Java Inheritance is
+
+A. super to sub class
+B. sub to super class
+C. Random order
+D. none
+
+Answer A
+
+
+20. What is the error in the following code?
+class Test 
+{
+abstract void display( );
+}
+
+A.No error
+B.Method display( ) should be declared as static
+C.Test class should be declared as abstract
+D.Test class should be declared as public
+
+Answer : C
+
+
+
+21. Which of the following is true?
+	1. A class can extend more than one class.
+	2. A class can extend only one class but many interfaces.
+	3. An interface can extend many interfaces.
+	4. An interface can implement many interfaces.
+            5.A class can extend one class and implement many interfaces.
+
+A. 1 and 2
+B. 2 and 4
+C. 3 and 5
+D. 3 and 4
+E. 2 and 5
+
+Answer:  C
+
+
+22.Which among the following is safe?
+
+A) Upcasting
+B) Downcasting
+C) Both upcasting and downcasting
+D)If upcasting is safe then downcasting is not, and vice versa
+
+Answer A
+
+23.Which of these is an incorrect array declaration?
+
+A) int arr[] = new int[5].
+B) int [] arr = new int[5].
+C) int arr[] = new int[5].
+D) int arr[] = int [5] new
+
+Answer D
+
+24. What is the output of this program?
+ class average 
+{
+ public static void main(String args[])
+ {
+ double num[] = {5.5, 10.1, 11, 12.8, 56.9, 2.5};
+ double result;
+ result = 0;
+ for (int i = 0; i < 6; ++i)
+ result = result + num[i];
+ System.out.print(result/6);
+ }
+ }
+
+A. 16.34
+B. 16.566666644
+C. 16.46666666666667
+D. 16.46666666666666
+
+Ans C
+Difficulty Level: Easy
+
+25.non final functions have to be
+A. overridden 
+B. may be overridden 
+C. ABoth a and b 
+D.None of the above
+
+Ans.B
+
+
+Session 9
+
+26. Wrapper class is part of package_______
+A. java.lang
+B. java.util
+C. java.io
+D. java.awt
+
+Ans A
+
+
+27.What is the correct ordering for the import, class and package declarations when found in a single file? 
+
+A. package, import, class 
+B. class, import, package 
+C. import, package, class 
+D. package, class, import
+
+Ans. A
+
+
+28.Which of the following is the correct way of importing an entire package ‘pkg’?
+
+A. import pkg.
+B. Import pkg.
+C. import pkg.*
+D.Import pkg.*
+
+Answer C
+
+
+29. Garbage collection works on
+
+A. heap 
+B. queue 
+C. tree 
+D.None of the above
+
+Ans. A
+
+
+30 Wrapper class is part of package_______
+
+A. java.lang
+B. java.util
+C. java.io
+D. java.awt
+
+Ans A
+
+
+31. Which statement is true,if the following program is run by  java test ?
+public class test
+{
+	public  static void main(String []args)
+	{
+		String []num={"one","two","three","four"};
+		if(args.length==0)
+		{
+			System.out.println("Zero");
+		}
+		else
+		{
+System.out.println(num[args.length]+" arguments”);
+		}
+   }
+}
+
+A. The program won’t run because argument of main  is not properly mentioned 
+B. The program will throw a NullPointerException
+C. The  program will display Zero when executed
+D. The program will display 0 arguments when executed
+
+Ans. C
+
+32. What is the output of this program?
+ class Output
+ {
+ public static void main(String args[])
+ {
+ try
+ {
+ int a = 0;
+ int b = 5;
+ int c = b / a;
+ System.out.print("Hello");
+ }
+ }
+ }
+
+A. Hello
+B. World
+C. HelloWOrld
+D.Compilation Error
+
+Ans D
+
+
+33. In exception handling mechanism,  finally block is always executed, even if no exception occurred in the try block
+
+A) False	
+B) True
+
+Ans B
+
+
+34. One of the following is unchecked exception
+
+A. IOException 
+B. ClassNotFoundException
+C. FileNotFoundException 
+None of the above
+
+Ans.D
+
+
+35. Which of the following may have null value?
+
+A. collection
+B.  List
+C.  Map
+D. Set
+
+Ans C
+
+36.Which Collection implementation is suitable for maintaining an ordered sequence of objects,when objects are frequently inserted and removed from the middle of the sequence ?
+
+A. TreeMap
+B. HashSet
+C. Vector
+D.LinkedList
+
+Ans. D
+
+37. How many methods Serializable has?
+
+A. 1 
+B. 2 
+C. 3
+D.0
+
+Answer: D
+
+
+
+
+38. hich is not the advantage of Reflection?
+
+A. Examine a class’s field and method at runtime
+B. Construct an object for a class at runtimewrong
+C. Examine a class’s field at compile timecorrect
+D. Examine an object’s class at runtime
+
+Answer C
+
+
+
+
+
+
+
+
+39.
+public class Test {
+   public static void main(String[] args) {
+      System.out.println(Thread.currentThread().isDaemon());
+   }
+}
+
+A) true
+B) false
+C) Compile time error
+D)Run time exception
+
+Answer  B
+
+
+
+40. A lambda expression can be used...
+
+A. As a method argument
+B. As a conditional expression in an if statement
+C. In a return statement
+D.In a throw statement
+
+Answer A and C 
+
+
+ is the return value of constructor in java?
+What is the return value of constructor in java?at is the return value of constructor in java?
+

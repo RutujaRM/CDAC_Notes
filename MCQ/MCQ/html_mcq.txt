@@ -1,0 +1,207 @@
+1. Which attribute specifies a unique alphanumeric identifier to be associated with an element?
+a) class
+b) id
+c) article
+d) html
+
+(Answer: B =>  The id attribute is most used to point to a style in a style sheet, and by JavaScript (via the HTML DOM) to manipulate the element with the specific id. )
+
+2.  The _____________ attribute specifies an inline style associated with an element, which determines the rendering of the affected element.
+a) dir
+b) style
+c) class
+d) article
+
+(Answer: B =>  Style attribute specifies an inline style for an element. )
+
+
+3. Which attribute is used to provide an advisory text about an element or its contents?
+a) tooltip
+b) dir
+c) title
+d) head
+
+(Answer: C =>  The extra information about an element is specified by title tag.  )
+
+
+4. The __________ attribute sets the text direction as related to the lang attribute.
+a) lang
+b) sub
+c) dir
+d) ds
+
+(Answer: c
+Explanation: The dir attribute specifies the text direction of the element’s content.)
+
+5. State whether the given statement is true or false. !DOCTYPE is case sensitive”.
+a) True
+b) False
+
+(Answer: b
+Explanation: HTML is case insensitive.)
+
+
+6. HTML and XHTML stands for ______
+a) Hyper Text Markup Language and Extensible HyperText Markup Language
+b) Hyper Text Markup Language and Extensible HyperText Marking Language
+c) Hyper Text Marking Language and EXtensible HyperText Marking Language
+d) Hyper Text Marking Language and Extensible HyperText Markup Language
+
+(Answer: a)
+
+7. Choose the correct tag for the largest heading in HTML.
+a) h6
+b) heading
+c) h1
+d) head
+
+(Answer: C)
+
+8. Which of the following are table tags?
+a) table, thead, tr, td
+b) colspan, table, tr
+c) table, tt, tr, td
+d) thead, colspan, td, tr
+
+(Answer: a)
+
+9. Choose the correct HTML for width attribute and its value.
+a) width:80
+b) width="80"
+c) WIDTH=>80
+
+(Answer: b)
+
+
+10. Which feature was already introduced before HTML5?
+a) Canvas/SVG
+b) Video
+c) Geolocation
+d) Frames
+
+(Answer: D its already there in XHTML)
+
+11. Which tag is used with JavaScript?
+a) <canvas>
+b) <table>
+c) <article>
+d) <footer>
+
+(Answer: A )
+
+12. What is the correct syntax of doctype in HTML5?
+a) <!doctype html>
+b) <doctype html!>
+c) <doctype html>
+d) </doctype html>
+
+(Answer: A )
+
+
+13. Which of the following is not semantic element for text in HTML5?
+a) <mark>
+b) <time>
+c) <wbr>
+d) <article>
+
+(Answer: d )
+
+14. Which of the following is not set with font-style property?
+a) font-style: normal
+b) font-style: italic
+c) font-style: oblique
+d) font-style: capitalize
+
+(Answer: d)
+
+15. What should be set with text-align property so that every line has equal width like in magazines and newspapers?
+a) text-align: justify
+b) text-align: none
+c) text-align: bottom
+d) text-align: top
+
+(Answer: a)
+
+16. Which of the following is not used with text-decoration property?
+a) overline
+b) underline
+c) line-through
+d) inline
+
+(Answer: d)
+
+17. To show deleted text, which element is used?
+a) <ins>
+b) <del>
+c) <em>
+d) <strong>
+
+(Answer: b)
+
+
+18. Which of the following gives a text description of the image if it is not available?
+a) alt
+b) title
+c) src
+d) height
+
+(Answer: a)
+
+19.  Which element is used for creating links?
+a) <a>
+b) <p>
+c) <li>
+d) <ol>
+
+(Answer: a)
+
+20. Which one of the following is not the value of the target attribute?
+a) _blank
+b) _top
+c) _self
+d) _empty
+
+(Answer: d)
+
+21. Which tag is used for List items?
+a) <li>
+b) <ol>
+c) <ul>
+d) <dl>
+
+(Answer: a)
+
+22. In which part of the HTML metadata is contained?
+a) body tag
+b) html tag
+c) head tag
+d) title tag
+
+(Answer: C)
+
+
+23. What is the default type of ‘type’ attribute of <input> element?
+a) Text
+b) Password
+c) Numerals
+d) Special Characters
+
+(Answer: a)
+
+
+24. If we want to use a nice looking green dotted border around an image, which css property will we use?
+
+a)border-color
+b)border-decoration
+c)border-style
+d)border-line
+
+(Answer: c)
+
+25.How can we write comment along with CSS code ?
+
+a) //
+b) <!-- -->
+c) #
+d) /* */
+(Answer : D)
