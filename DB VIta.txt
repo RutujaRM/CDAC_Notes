@@ -1,0 +1,1514 @@
+ Extra MCQ
+ 
+
+
+
+1. Redo Log Buffer SGA stores all the redo log entries. 
+ 
+2. Process is a ’thread of control’ or mechanism in Operating System that executes series of steps. 
+ 
+3. The data of a row in a table may not be able to fit the same data block. Data for row is stored in a chain of 
+data blocks which is called as Row chaining 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+4. A sub-query cannot have a clause and a ___________ of selects. 
+ 
+5. A _________ is a set of values that may appear in one or more columns. 
+ 
+6. PL/SQL provides ______keyword, which is used to name an exception. 
+ 
+7. An defined as the collection of blocks which must be continuous whenever allocation takes 
+place. 
+ 
+8. A _______ is a table that is currently being modified by a DML statement. 
+ 
+9. The character is used to designate wild characters. 
+ 
+10. Indexes are created in conjunction with and ____ constraints. 
+ 
+11. Types of views are_ ______and _______ . 
+ 
+12. The date function that returns a numerical value is . 
+ 
+13. To define access keys in the menu give the ______symbol before the desired character. 
+ 
+14. An index may contain upto columns. 
+ 
+15. To print the message along with the variable ew use the package . 
+ 
+16. To select data from a range of values operator is used. 
+ 
+17. A expression returns either TRUE or FALSE. 
+ 
+18. number of columns can be used in an ORDER BY clause. 
+ 
+19. Once the values are inserted in a table, the size of its columns can only be Increased & can never be 
+decreased 
+ 
+20. ROWID is a pseudo column 
+ 
+21. In DBMS terms, the number of rows in a table is called its cardinality & the no. of columns it has defines its 
+degree 
+ 
+22. The most serious drawback in the ER model is that it cannot depict relationships 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+23. Dummy records is used to represent many to many relationship in the Network model 
+ 
+24. The data structure used in the Network model is graph & that used in the hierarchical model is tree 
+ 
+25. An SQL query is interpreted & a PL/SQL block is compiled before execution 
+ 
+26. The 4 phases of processing a cursor are Declare, Open, Fetch & Close 
+ 
+27. The FOR UPDATE clause when used with a SELECT query locks a table 
+ 
+28. When a user executes SELECT ……. FOR UPDATE on a table, it tries to lock it, but if the table is already 
+locked, the user is placed in a no-operation mode. This situation can be prevented by using NOWAIT clause 
+ 
+29. A table whose primary key retains its uniqueness in the view created over it is called a key preserved table 
+ 
+30. Instead of trigger is used to take care of operations on columns of a Non Key-preserved table through the 
+join view 
+ 
+31. A tablespace is a collection of datafiles 
+ 
+32. The SQL query for calculating the cube of 4 is SELECT POWER(4, 3) FROM dual 
+ 
+33. WITH READ ONLY clause when used with CREATE VIEW statement prevents the users from modifying the 
+underlying base tables through the view 
+ 
+34. The With admin option clause of the GRANT command makes the recipient the owner of the granted 
+object 
+ 
+35. The With grant option clause of the GRANT command allows the recipient to pass the privilege to others 
+ 
+36. The 5 important components of a Database Management system (DBMS) are Database engine, data
+dictionary, query processor, report writer & form generator 
+ 
+37. Specialization is a IS-A relationship and Composition is a HAS-A relationship 
+ 
+38. 1NF specifies that there should be no repeating groups 
+39. The join that combines every row (no matter matching or non-matching) of both the tables is a FULL join 
+ 
+40. All uncommitted data during the course of a transaction is stored in REDO LOG buffer 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+41. The precompiler used for SQL statements embedded in a C program is Pro*C 
+ 
+42. DBMS_OUTPUT is a package and PUT_LINE is a function 
+ 
+43. The 2 implicit variables available to a trigger that contain the row values before and after updates are :new
+and :old 
+ 
+44. The error codes for user defined error messages must lie between -20000, and -20999 
+ 
+45. RAISE_APPLICATION_ERROR statement terminates the PL/SQL block abruptly and displays the specified 
+error message 
+ 
+46. A NULL value in the column indicates that the value is not applicable or currently not available 
+47. In the FOR UPDATE clause in cursors 
+A. Lock is not obtained on the rows fetched 
+B. All locks are released when COMMIT is issued 
+C. Locks for the rows processed before the COMMIT, are released D. Locks are released when the 
+cursor is closed 
+ 
+48. If a User-defined Exception has the same name as a Predefined Exception 
+A. There is a compilation error 
+B. The User-defined Exception overrides the Predefined Exception 
+C. The Predefined Exception overrides the User-defined Exception D. None of the above 
+ 
+49. If a row is attempted to be fetched from an unallocated row in a PL/SQL table 
+A. A NULL value is returned 
+B. The VALUE_ERROR Exception is raised 
+C. The NO_DATA_FOUND Exception is raised 
+D. The value of the data returned cannot be predicted 
+ 
+50. Given this procedure 
+Procedure dept_salary 
+(v_bonus IN BOOLEAN, v_raise IN BOOLEAN, v_issue_chk IN OUT BOOLEAN) IS 
+BEGIN v_issue_chk := v_bonus OR v_raise; 
+END; 
+If v_bonus = TRUE and v_raise = NULL, which value is assigned to v_issue_chk? 
+A. True B. False C. NULL D. None 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+51. You create a view with the 
+following statement 
+CREATE VIEW COW_MILK_VW AS 
+(Select cow_name, milk_type from COW_MILK); 
+What will happen when a user attempts to INSERT a new cow_name and milk_type via this view? 
+A. The INSERT will fail. 
+B. The INSERT will succeed or fail based on whether the user can see the record once added. 
+C. The INSERT will succeed 
+D. The INSERT will succeed only if the user has the privilege to insert data 
+E. into the view. 
+F. The INSERT will succeed only if the user has the privilege to insert data 
+G. into the table. 
+ 
+52. Which of the following objects are dropped automatically when a table is dropped. 
+A. Procedure B. Constraints C. Views 
+D.Synonyms 
+ 
+53. Consider the following four options from a single statement. Which of the following 
+lines in the SELECT statement below contain an error. 
+A. SELECT DECODE (EMPID, 58385,’INACTIVE’,’ACTIVE’) EMPID 
+B. FROM EMP 
+C. WHERE SUBSTR (LASTNAME, 1, 1) > TO_NUMBER (‘S’) 
+D. AND EMPID > 02000 
+E. ORDER BY EMPID DESC, LASTNAME ASC; 
+ 
+54. User ‘Janko’ would like to insert a row into the Emp table, which has 3 columns: empid, lastname, salary. The 
+user would like to enter data for empid 59694, lastname Harry, but no salary. Which statement would work 
+best. 
+A. INSERT INTO EMP VALUES (59694,’Harry’, NULL); 
+B. INSERT INTO EMP VALUES (59694,’Harry’); 
+C. INSERT INTO EMP (empid, lastname, salary) VALUES (59694,’Harry’); 
+D. INSERT INTO EMP VALUES (Select 59694 from ‘Harris’); 
+E. INSERT INTO EMP(empid, lastname) VALUES (59694,’Harry’); 
+ 
+55. Examine the trigger 
+CREATE OR REPLACE TRIGGER upd_team_salary FOR EACH ROW BEGIN 
+ Update team 
+ Set salary = tot_salary + :new.salary 
+Where ID = :new.team_id; 
+END; 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+Which statement must be added to make this trigger execute after updating the salary column 
+of player table 
+A. After update on player B. After salary update of player 
+C. After update [salary] on player D. After update of salary on player 
+ 
+56. For every new ballplayer added to the Player table, a record must be inserted into the Player_Bat_Stat 
+table. 
+You have written a trigger to accomplish this task. To which timing will this trigger be assigned. 
+A. After B. Instead of C. Statement D. Pre-Insert 
+ 
+57. Which of the following is one of the benefits of using procedures and functions A. Procedures and 
+functions increase the number of calls to the database. 
+B. Procedures and functions are reparsed for multiple users by exploiting shared SQL areas. 
+C. Procedures and functions avoid reparsing for multiple users by exploiting shared SQL areas. 
+D. Testing of procedures and functions requires the database to the restarted to clear out shared SQL areas for 
+future access. 
+ 
+58. Overall logical structure of a database can be expressed graphically by A. ER diagram B. Records 
+ C. Relations D. 
+Hierarchy 
+ 
+59. A table can have maximum no. Of Long Raw datatype columns 
+A. One B. No limit C. 255 D. depends on tablespace 
+ 
+60. A user is setting up a join operation between Emp and Dept tables. The query should return all the 
+employees, which are assigned dept, as well as the employees which are yet not assigned any dept. 
+A. Select e.empid, d.head from emp e, dept d; 
+B. Select e.empid, d.head from emp e, dept d where e.deptno = d.deptno; 
+C. Select e.empid, d.head from emp e, dept d where e.deptno = d.deptno (+); D. Select e.empid, 
+d.head from emp e, dept d where e.deptno (+)= d.deptno; 
+ 
+61. Output from a table called PLAYS with two columns, PLAY_NAME and AUTHOR, is shown next. Which of the 
+following SQL statements produced it? 
+PLAY_TABLE 
+------------------------------------- 
+"Midsummer Night’s Dream", SHAKESPEARE 
+"Waiting For Godot", BECKETT 
+"The Glass Menagerie", WILLIAMS 
+A. select PLAY_NAME|| AUTHOR from PLAYS; 
+B. select PLAY_NAME, AUTHOR from PLAYS; 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+C. select PLAY_NAME||’, ’ || AUTHOR from PLAYS; 
+D. select PLAY_NAME||’, ’ || AUTHOR play_table from PLAYS; 
+ 
+62. Which of the following statements contains an error? 
+A. select * from EMP where EMPID = 493945; 
+B. select EMPID from EMP where EMPID = 493945; 
+C. select EMPID from EMP; 
+D. select EMPID where EMPID = 56949 and LASTNAME = ’SMITH’; 
+ 
+63. Which of the following statements are NOT TRUE about ORDER BY clauses? 
+A. Ascending or descending order can be defined with the asc or desc keywords. 
+B. Only one column can be used to define the sort order in an order by clause. 
+C. Multiple columns can be used to define sort order in an order by clause. 
+D. Columns can be represented by numbers indicating their listed order in the select 
+E. clause within order by. 
+ 
+64. In order to perform an inner join, which criteria must be true? 
+A. The common columns in the join do not need to have shared values. 
+B. The tables in the join need to have common columns. 
+C. The common columns in the join may or may not have shared values. 
+D. The common columns in the join must have shared values. 
+ 
+65. A user is setting up a join operation between tables EMP and DEPT. There are some employees in the EMP 
+table that the user wants returned by the query, but the employees are not assigned to department heads 
+yet. Which SELECT statement is most appropriate for this user? 
+A. select e.empid, d.head from emp e, dept d; 
+B. select e.empid, d.head from emp e, dept d where e.dept# = d.dept#; 
+C. select e.empid, d.head from emp e, dept d where e.dept# = d.dept# (+); 
+D. select e.empid, d.head from emp e, dept d where e.dept# (+) = d.dept#; 
+ 
+66. Developer ANJU executes the following statement: CREATE TABLE animals AS SELECT * from 
+MASTER.ANIMALS; What is the effect of this statement? 
+A. A table named ANIMALS will be created in the MASTER schema with the same data as the ANIMALS table 
+owned by ANJU. 
+B. A table named ANJU will be created in the ANIMALS schema with the same data as the ANIMALS table 
+owned by MASTER. 
+C. A table named ANIMALS will be created in the ANJU schema with the same data as the ANIMALS table 
+owned by MASTER. 
+D. A table named MASTER will be created in the ANIMALS schema with the same data as the ANJU table 
+owned by ANIMALS. 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+67. Which of the following is not a feature of a CURSOR FOR loop? 
+A. Record type declaration B. Opening and parsing of SQL statements C. Fetches records from 
+cursor D. Requires exit condition to be defined 
+ 
+68. Which line in the following statement will produce an error? 
+A. cursor action_cursor is 
+B. select name, rate, action 
+C. into action_record 
+D. from action_table; 
+E. There are no errors in this statement. 
+ 
+69. You issue the following statement. What will be displayed if the EMPID selected is 60494? SELECT 
+DECODE (empid,38475, ’Terminated’,60494, ’LOA’, ’ACTIVE’) FROM emp; 
+A. 60494 B. LOA C. Terminated D. ACTIVE 
+ 
+70. After executing an UPDATE statement, the developer codes a PL/SQL block to perform an operation based 
+on SQL%ROWCOUNT. What data is returned by the SQL%ROWCOUNT operation? 
+A. A Boolean value representing the success or failure of the update 
+B. A numeric value representing the number of rows updated 
+C. A VARCHAR2 value identifying the name of the table updated D. A LONG value containing all data 
+from the table 
+ 
+71. A procedure declares a user-defined exception but does not raise it explicitly. Which of the following 
+statements is true about this function? 
+A. The user-defined exception will never be raised. 
+B. The user-defined exception will be handled by a WHEN OTHERS exception handler. 
+C. The procedure will fail on compile. 
+D. The user-defined exception is defined incorrectly. 
+ 
+72. Which statement most accurately describes the result of not creating an exception handler for a raised 
+exception? 
+A. The program will continue without raising the exception. 
+B. There will be a memory leak. 
+C. Control will pass to the PL/SQL block caller’s exception handler. 
+D. The program will return a %notfound error. 
+ 
+73. Which three of the following are implicit cursor attributes? 
+A. %found B. %too_many_rows C. %notfound D. %rowcount E. %rowtype 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+74. If left out, which of the following would cause an infinite loop to occur in a simple loop? A. loop 
+B. end loop C. if-then D. exit 
+ 
+75. Which of the following is not a feature of a CURSOR FOR loop? 
+A. Record type declaration B. Opening and parsing of SQL statements 
+C. Fetches records from cursor D. Requires exit condition to be defined 
+ 
+76. Developer JANET receives an error due to the following statement in the DECLARATION section: PI 
+CONSTANT NUMBER;. The problem is because: 
+A. There is not enough memory in the program for the constant. 
+B. There is no value associated with the constant. 
+C. There is no datatype associated with the constant. 
+D. PI is a reserved word. 
+ 
+78. The OTHERS exception handler is used to handle the OTHERS 
+raised exception. A. TRUE B. FALSE 
+ 
+79. Which of the following statements are true about WHILE loops? A. 
+Explicit exit statements are required in while loops. 
+B. Counter variables are required in while loops. 
+C. An if-then statement is needed to signal when a while loop should end. 
+D. All exit conditions for while loops are handled in the exit when clause. 
+ 
+80. Which line in the following statement will produce an error? 
+A. cursor action_cursor is B. select name, rate, action 
+C. into action_record D. from action_table; 
+E. There are no errors in this statement. 
+ 
+81. The command used to open a CURSOR FOR loop is 
+A. open B. fetch C.parse D. None, cursor for loops handle cursor opening implicitly. 
+ 
+82. After executing an UPDATE statement, the developer codes a PL/SQL block to perform an operation based 
+on SQL%ROWCOUNT. What data is returned by the SQL%ROWCOUNT operation? 
+A. A Boolean value representing the success or failure of the update 
+B. A numeric value representing the number of rows updated 
+C. A VARCHAR2 value identifying the name of the table updated D. A LONG value containing all data from the 
+table 
+ 
+83. A developer would like to use referential datatype declaration on a variable. The variable name is 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+EMPLOYEE_LASTNAME, and the corresponding table and column is EMPLOYEE, and LASTNAME, 
+respectively. 
+How would the developer define this variable using referential datatypes? 
+A. Use employee.lname%type. 
+B. Use employee.lname%rowtype. 
+C. Look up datatype for EMPLOYEE column on LASTNAME table and use that. 
+D. Declare it to be type LONG. 
+ 
+84. The RAISE_APPLICATION_ERROR( ) procedure defines errors returned in which of the following numeric 
+ranges? 
+A. -00000 and -99999 B. -01200 and -01299 
+C. -00030 and -00039 D. -20000 and -20999 
+ 
+85. When developing a PL/SQL library, the developer defines variable NUM2 as IN OUT in the ADD_NUMS( ) 
+function. Which of the following statements may happen as a result of this? A. The add_nums( ) function 
+will not compile. 
+B. Code running after add_nums( ) that uses the NUM2 variable may behave unpredictably because NUM2’s 
+value was changed in add_nums( ). 
+C. The add_nums( ) function will return errors to the user when run. 
+D. The add_nums( ) function will cause a memory leak. 
+ 
+86. In which areas of a PL/SQL block must the developer place code for user-defined exceptions? (Choose three) 
+A. Command line PL/SQL block call B. Variable declaration section 
+C. Executable section D. Exception handler 
+ 
+87. A procedure declares a user-defined exception but does not raise it explicitly. Which of the following 
+statements is true about this function? 
+A. The user-defined exception will never be raised. 
+B. The user-defined exception will be handled by a WHEN OTHERS exception handler. 
+C. The procedure will fail on compile. 
+D. The user-defined exception is defined incorrectly. 
+ 
+88. Which of the following lines in the PL/SQL source code will return an error? 
+A. create procedure estatus ( 
+B. eid NUMBER, statchar CHAR ) is begin 
+C. select status into statchar from EMP where EMPID = eid; end; D. There are no errors in this code block 
+ 
+89. Which of the following trigger types will be impacted by constraining factors brought on by mutating tables? 
+A. Row triggers only B. Statement triggers only 
+C. Both row and statement triggers D. Neither row or statement triggers 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+90. The developer issues the following statement: 
+CREATE OR REPLACE TRIGGER soccer_fans_snacks_02 BEFORE DELETE ON SOCCER_FANS BEGIN 
+DELETE FROM soccer_fans_snacks END; WHERE fan_id = :old.fan_id; Why will trigger creation fail? 
+A. The row trigger does not properly reference the old value in FAN_ID. 
+B. The statement trigger should have been defined as a row trigger. 
+C. The statement trigger fires after the delete statement is processed. 
+D. The row trigger does not properly define the associated table 
+ 
+91. To find information about trigger status, which of the following views are appropriate? 
+A. ALL_TRIGGERS B. ALL_OBJECTS 
+C. ALL_TRIGGER_COLS D. ALL_SOURCE 
+ 
+92. UPDATE OR DELETE ON SOCCER_FAN_SNACKS. Which two of the following keywords may be useful in your 
+trigger source code to distinguish what should run, and when? 
+A. inserting B. updating C. deleting D. truncating 
+ 
+93. The SOCCER_FANS table has a trigger associated with it that inserts data into 
+SOCCER_FANS_SNACKS whenever rows are inserted into SOCCER_FANS. A foreign key constraint 
+exists between FAN_ID on SOCCER_FANS and SOCCER_FANS_SNACKS. What happens when the 
+trigger fires? 
+A. The trigger processes normally. 
+B. The trigger invalidates. 
+C. The trigger execution fails because of a mutating or constraining table. 
+D. The trigger execution succeeds because the trigger is a statement trigger. 
+ 
+94. The developer issues the following statement: 
+CREATE OR REPLACE TRIGGER soccer_fans_snacks_02 BEFORE DELETE ON 
+SOCCER_FANS FOR EACH ROW 
+BEGIN 
+ DELETE FROM soccer_fans_snacks 
+ WHERE fan_id = :prechange.fan_id; 
+END; 
+Why does the trigger fail on creation? 
+A. The statement trigger improperly references the changed row data. 
+B. The row trigger does not define prechange as the referencing keyword for old column values. 
+C. Row triggers cannot process before the triggering statement. 
+D. Statement triggers cannot process before the triggering statement. 
+ 
+95. Table SOCCER_FAN_SEAT contains two columns: FAN and SEAT_NUM. 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+A trigger is created in this table, whose triggering statement definition is AFTER UPDATE OF SEAT_NUM ON 
+SOCCER_FAN_SEAT. You issue an UPDATE statement that changes column FAN only. Which of the following 
+best describes what happens next? 
+a) The trigger fires successfully. b) The trigger fires unsuccessfully. 
+c) Nothing, the SEAT_NUM column was not updated. d) The trigger invalidates 
+ 
+96. The maximum length of varchar2 when used in PL/SQL block is 
+A. 16k B. 32k C. 4k 
+ 
+97. The max length of varchar2 when used in a table is 
+ D. Either b or c 
+A. 16k B. 32k C. 4k D. Either b or c 
+ 
+98. Any value added to NULL gives 
+A. the value itself. B. 0 C. NULL D. Unpredictable 
+ 
+99. The keys that can have NULL values are 
+A. Primary Key B. Unique Key 
+C. Foreign Key D. Both b and c 
+ 
+100. A Decision Support System (DSS) consists of 
+A. More DML, less DQL B. More DQL, less DML 
+C. Half DML, half DQL D. Only DML 
+ 
+101. The number of columns in a table is known as its 
+A. Degree B. Cardinality C. Domain D. Range 
+ 
+102. The clause(s) that every SQL Server query must have is/are 
+A. Select B. From C. Where D. Both (a) and (b) 
+ 
+103. System event triggers are always 
+A. Row level B. Table level C. Schema level D. Either (b) or (c) 
+104. Triggers can be written for 
+A. Insert, delete, update B. Create, alter, drop 
+C. Login, logout D. Both (a) and (b) E. (a) , (b) and (c) 
+ 
+105. Rollback and Commit affect 
+A. Only DML statements B. Only DDL statements 
+C. Both (a) and (b) D. All statements executed in SQL*PLUS 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+106. The NOWAIT option works for 
+A. Implicit cursors only B. Explicit cursors only C. Both (a) and (b) D. Neither (a) or 
+(b) 
+ 
+107. The query associated with a cursor is executed in 
+A. Declare phase B. Open phase 
+C. Fetch phase D. Close phase 
+ 
+108. The INSTEAD OF trigger works at 
+A. Row level B. Table level C. Schema level D. Database level 
+ 
+109. The default parameter type in stored procedures is 
+A. IN B. OUT C. INOUT D. There is no default type 
+ 
+110. GRANT and REVOKE are 
+A. DDL statements B. DML statements 
+C. DCL statements D. None of these 
+ 
+111. The value of INSTR(‘CALIFORNIA’,’A’,1,2) is 
+A. 2 B. 1 C. 10 
+ 
+112. The correct syntax of DECODE statement is 
+A. DECODE(if1,then1,if2,then2,……….,else) 
+B. DECODE(if1,then1,else1,if2,then2,else2……….,) 
+C. DECODE(value,if1,then1,else1,if2,then2,else2……….,) D.
+None of these 
+ 
+113. Consider the following where clause WHERE A.no=B.no(+) 
+The above outer join lists 
+A. All matching & non-matching rows of table B 
+B. All matching & non-matching rows of table A 
+C. All non-matching rows of table B 
+D. All non-matching rows of table A 
+ 
+114. TRUNCATE TABLE statement 
+D. 9 
+A. Drops a table temporarily B. Removes all rows of a table 
+C. Removes specified number of rows from a table D. Removes all constraints from a table 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+115. Consider a table OLD with few rows. The statement 
+CREATE TABLE new AS SELECT * FROM OLD WHERE 1=2 
+A. copies all the rows from OLD to NEW 
+B. creates a dummy NEW table 
+C. (c) creates an empty NEW table with column definitions same as OLD D. (d) creates a table NEW that acts 
+as a synonym for OLD 
+ 
+116. In a query with a GROUP BY clause, the columns in the SELECT clause 
+A. must be aggregate functions only 
+B. must also appear in the GROUP BY clause 
+C. must also appear in the GROUP BY and HAVING clauses 
+D. Both (a) and (b) 
+E. Can be selected arbitrarily 
+ 
+117. The name of the only column in the DUAL table is 
+A. X B. C D. DUMMY D. None of these 
+ 
+118. TNS in the file tnsnames.ora stands for 
+A. Transparent Network Substrate B. Transport Network Substrate 
+C. Transparent Network System D. Transparent Network Server 
+ 
+119. Comments in a PL/SQL code are inserted using 
+A. – B. /* */ C. Both (a) and (b) D. # 
+ 
+120. The CHAR and NCHAR data types 
+A. have no difference 
+B. belong to two different character sets 
+C. have different storage requirements 
+D. have different storage requirements and retrieval time 
+ 
+121. Consider a table TAB with a single row 
+NAME 
+CHARRIS 
+Then, the query 
+SELECT SUBSTR(Name,-3) FROM TAB gives 
+A. RIS B. CHA C. ARRIS D. ARR 
+122. The wild card character % used in strings means 
+A. any number of characters B. one or more characters 
+C. at least one character D. at least one alphabet 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+123. In an RDBMS, another word for Column is __________. 
+A. Row B. Tuple C. Attribute 
+ 
+124. __________ is the fastest RDBMS. D. Applet 
+a. Oracle B. Informix C. Progress D. MS SQL Server 
+ 
+125.. For an Oracle user, the privilege to access the tables of other users is known as __________. 
+A. Object level security B. Command level security 
+C. Logging in security D. File level security 
+ 
+126. __________ is used for taking backups of table data. 
+A. IMP B. SQL*Loader C. Oraterm D. EXP 
+ 
+127. Music videos can be stored in a __________ datatype. 
+A. Long B. Long raw C. Raw D. Varchar2 
+ 
+128. Null value has an ASCII value of __________. 
+A. 0 B. 32 C. 64 D. 255 
+ 
+129. In a SELECT statement, the WHERE clause is used to retrieve rows from __________. 
+A. Server RAM to client end B. Server RAM to server disk C. 
+Server disk to server RAM D. Client RAM to server end 
+ 
+130. Logical operator __________ has higher precedence than OR. 
+A. NOT B. AND C. Both of the above D. None of the above 
+131. __________ is used for importing data from other RDBMS into Oracle. 
+A. IMP B. SQL*Loader C. Oraterm D. EXP 
+ 
+132. The component of SQL that is used for inserting rows in tables is known as __________. 
+A. DDL B. DML C. DCL D. DQL 
+ 
+133. The component of SQL that is used for granting and revoking privileges is known as __________. 
+A. DDL B. DML C. DCL D. DQL 
+ 
+134. Which one of the following is an invalid table name? 
+A. EMP_2008 B. Emp_2008 C. emp_2008 D. 2008_EMP 
+ 
+135. In Oracle, you can have a maximum of __________ columns per table. 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+A. 1000 B. 254 C. 255 D. 256 
+ 
+136. To suppress the duplicate values, you can use the keyword __________. 
+A. Distinct B. Unique C. Either of the above D. None of the above 
+ 
+137. Each table is perceived as 
+A. a flat structure. B. a two-dimensional structure. C. a linked structure. D. None of 
+the above 
+ 
+138. Which one is a TCL (or DTL) statement? 
+A.update B.Truncate C.Alter D. RollBack 
+ 
+139. __________ is used to set the keyboard mapping in Oracle. 
+A. Key-Function B. Oraterm C. Oramap D. SQL*Loader 
+ 
+140. Which of the following is NOT a type of SQL statement? 
+A. DDL B. DCL C. DNL D. DML 
+ 
+141. Which of the following statement contain an error? 
+A. Select * from EMP where EMPNO=493945; 
+B. Select EMPNO from EMP where EMPNO=493945; 
+C. Select EMPNO from EMP; 
+D. Select EMPNO where EMPNO = 56949 and LASTNAME='SMITH'; 
+ 
+142. Maximum size of RAW datatype is ---------- 
+A. 255 bytes B. 2000 bytes C. 225 bytes D. 1234 bytrs 
+ 
+143. The transaction control that prevents more than one user from updating data in a table is called 
+__________. 
+A. Locks B. Commits C. Rollbacks D. Savepoints 
+ 
+144. Which of the following has the same meaning as <>? 
+A. <= B. := C. != D. => 
+ 
+145. The max length of varchar2 when used in table is 
+A. 16000 B. 32000 C. 4000 D. Either 2. Or 3. 
+ 
+146. Oracle 11g can be best described as 
+A. Object-based DBMS B. Object-oriented DBM 
+C. Object-Relational DBM D.Relational DBMS 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+147. Oracle 11g runs on 
+A. Windows NT B. UNIX C. Solaris D. (a), (b) and (c) 
+ 
+148. _____ holds the definitions of all of the data tables. 
+A. database B. data dictionary C. data source D. data mining 
+ 
+149. The ____ operator is used for pattern matching. 
+A. DISTINCT B. LIKE C. GROUP BY D. ORDER BY 
+ 
+150. Which of the following is invalid rollback statement in oracle? 
+A. ROLLBACK; B. ROLLBACK WORK; 
+C. ROLLBACK TO SAVEPOINT A; D. None of the above 
+ 
+151. Omitting the WHERE clause from a DELETE statement has which of the following effects? A. The delete 
+statement will fail because there are no records to delete. 
+B. The delete statement will prompt the user to enter the criteria for the deletion. 
+C. The delete statement will fail because of syntax error. 
+D. The delete statement will remove all records from the table. 
+ 
+152. When char datatype is converted to Varchar2 data type of same width then 
+A. All the blank spaces associated with that column value are removed. 
+B. All the blank spaces associated with that column value will remain. 
+C. It is not possible to convert the character to varchar2 data type. 
+D. None of the above 
+153. CHR function 
+A. Accepts a number & returns the character B. Accepts a character & returns the number 
+C. Accepts a number & returns the number D. None of the above 
+ 
+154. A COMMIT statement 
+A. Saves the previous changes B. Saves the changes for the current session 
+C. Saves the changes for all sessions D. None of the above 
+ 
+155. Select ' " ' || SUBSTR('happybirthday',-4,6)||' " ' from dual; 
+What is the output of the above statement? 
+A. "happyb” B. "ybirth" C. Statement generates an error D. "hday" 
+ 
+156. Which function will NOT automatically return NULL if passed a NULL argument ? 
+A. TRUNC B. INSTR C. REPLACE D. TRANSLATE 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+157. The character used for concatenating strings in Oracle is 
+A. && B. + C. || D. None of these 
+ 
+158. How many columns are presented after executing this query: 
+SELECT address1||','||address2||','||address2 "Address" FROM 
+employee; A. 3 B. 2 C. 1 
+D. ERROR 
+ 
+159. Choose the Incorrect option related to DBMS 
+A. There is no Security of data B. Not support distributed database C. satisfy more than 8 rule of Dr. 
+E.F. Codd D. None 
+ 
+160. Choose the correct pattern Matching sign for matching a single character. 
+A. _ B. ? C. * D. % 
+ 
+161. EDIT or ED command places the contents of the query buffer in a file named _____ by default 
+A. AFEIDT.BUF B. ATFIED.BUF C. AFIEDT.BUF D. AETIED.BUF 
+ 
+162. INITCAP(cdac) returns 
+A. Cdac B. CDAC C. cdac D. Cdac 
+ 
+163. The DUAL table has 
+A. One row many columns C. One column and many Rows 
+C. One row and One Column D. Many Rows and many columns 
+ 
+164. ____________ makes a string of certain length by adding a certain set of characters to the left A. 
+LTRIM B. LPAD 3. SUBSTR 4. INSTR 
+ 
+165. SQL command can be terminated by ________________. 
+A. semicolon B. slash C. blank line D. All of the above 
+166. DESCRIBE is an __________ command. 
+A. SQL B. SQL*Plus C. PL*SQL D. Forms 6i 
+ 
+167. In Oracle, the upper limit for nested functions is upto __________ levels. 
+A. 0 B. 32 C. 64 D. 255 
+ 
+168. Wildcards used for pattern matching are __________. 
+A. * and ? B. $ and # C. @ and ! D. % and _ 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+169. __________ functions can be used to make your queries case-insensitive. 
+A. Upper and lower B. Lpad and rpad C. Ltrim and rtrim D. Replace and translate 
+ 
+170. Which of the following is not a group function? 
+A. Avg( ) B. Sqrt( ) C. Sum( ) D. Max( ) 
+ 
+171. The value of INSTR(‘CALIFORNIA’,’A’,1,2) is __________ . 
+A. 2 B. 1 C. 10 D. 9 
+ 
+172. The SQL query to retrieve current time in Oracle is __________ 
+A. Select SysTime from dual; 
+B. Select SysDate from dual; 
+c. Select TO_CHAR (SysDate,’HH:MI:SS’) from dual; 
+d. Select TO_CHAR (SysDate,’HH:MM:SS’) from dual; 
+ 
+173. To lock the rows of a table manually, you can use a Select statement with the __________ clause. A. 
+For Update B. For Delete C. For Insert D. For Lock 
+ 
+174. __________ function can be used to make character column data as right-justified. 
+A. Lpad B. Rpad C. Ljustify D. Rjustify 
+ 
+175. Nesting of __________ functions is allowed. 
+A. Date B. List C. Aggregate D. All of the above. 
+ 
+176. The correct syntax of DECODE statement is 
+A. DECODE(if1,then1,if2,then2,……….,else) 
+B. DECODE(if1,then1,else1,if2,then2,else2….,) 
+C. DECODE(value,if1,then1,else1,if2,then2,else 2……….,) 
+D. None of the above 
+ 
+177. Which of the following is not a number function? 
+A. sinh( ) B. to_number( ) C. sqrt( ) D. round( ) 
+ 
+178. Which line in the following SELECT statement will produce an error? 
+A. select dept, avg(salary) B. from emp 
+C. group by empid; D. No errors in this statement 
+ 
+179. Which of the following is the correct order of precedence of SQL clauses? 
+A. HAVING, GROUP BY, WHERE B. WHERE, GROUP BY, HAVING 
+C. GROUP BY, HAVING, WHERE D. HAVING, WHERE, GROUP BY 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+ 
+180. Fill in the blank with a numeric function to get 15 as the output. SELECT __________(-15) "Absolute" 
+FROM DUAL; 
+ A. FLOOR B. MOD C. EXP 
+ 
+181. Which of the following is NOT a GROUP function? 
+ D. ABS 
+A. LENGTH() B. AVG() C. MAX() D. COUNT() 
+182. Which of the following SOL functions is used to display the current session date and time? 
+A. DATE B. TO_DATE C. SYSDATE D. CURRDATE 
+ 
+183. Which of the following is the correct syntax for using the HAVING clause? 
+A. SELECT (column_name) 
+HAVING (function condition) 
+GROUP BY (column_name) 
+FROM (entity_name); 
+ 
+B. SELECT (column_name) FROM 
+(entity_name) 
+GROUP BY (column_name) 
+HAVING (function condition); 
+ 
+C. SELECT (column_name) 
+FROM (entity_name) 
+HAVING (function condition) 
+GROUP BY (column_name); 
+ 
+D. SELECT (column_name) 
+HAVING (function condition) 
+FROM (entity_name) 
+GROUP BY (column_name); 
+ 
+184. Which of the following SQL functions can operate on any datatype? 
+A. TO_CHAR B. LOWER C. LPAD D. MAX 
+ 
+185.The NVL( ) function 
+A. Assists in distribution of output across multiple columns. 
+B. Allows you to specify alternate output for non-NULL column values. 
+C. Allows you to specify alternate output for NULL column values. 
+D. Nullifies the values of the column output. 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+186. Which function can be categorized as similar in function to an IF-THEN-ELSE statement? 
+A. sqrt( ) B. decode( ) C. new_time( ) D. rowidtochar( ) 
+ 
+187. Which of the following uses of the HAVING clause are appropriate? 
+A. To put returned data into sorted order. 
+B. To execute certain data groups based on known criteria. 
+C. To include certain data groups based on unknown criteria. 
+D. To include certain data groups based on known criteria 
+ 
+188. Months_between returns ------------ 
+A. a number B. a character C. a date D. a month 
+ 
+189. Which of the following is not a group function. 
+A. LTRIM B. MAX C. MIN D. STDDEV 
+190. Select CEIL(MOD(POWER(2,3), FLOOR(3.5))) from dual; What is the result of the above statement? 
+A. 0 B.1 C. 2 D. 4 
+ 
+191. ____________ makes a string of certain length by adding a certain set of characters to the left 
+A. LTRIM B. LPAD C. SUBSTR 
+ 
+192. SQL command can be terminated by ________________. 
+D. INSTR 
+A. semicolon B. slash C. blank line 
+ 
+193. In an RDBMS, another word for Column is __________. 
+D. All of the above 
+A Row B Tuple C Attribute D Applet 
+ 
+194. The default value of linesize is __________. 
+A. 14 B. 25 C. 66 D. 80 
+ 
+195. A Cartesian product is 
+A. A group function 
+B. Produced as a result of a join select statement with no clause 
+C. The result of fuzzy logic 
+D. A special feature of oracle server 
+ 
+196. Consider the following where clause 
+WHERE A.no=B.no(+) 
+The above outer join lists…. 
+A. All matching & non-matching rows of table B 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+B. All matching & non-matching rows of table A 
+C. All non-matching rows of table B 
+D. All non-matching rows of table A 
+ 
+197. Which one of the following statements about oracle’s set operators is incorrect: 
+A. UNION - Combine the unique rows returned by 2 SELECT statements 
+B. UNION ALL - Combine the rows returned by 2 SELECT statements (including all duplicates) 
+C. INTERSECT - Return only those rows that are in both SELECT statements 
+D. EXCEPT - Return the rows that are in the first SELECT but not the second 
+ 
+198. To alter the Oracle prompt for accepting input from the keyboard, one an A. 
+Change the prompt in the config.ora file. 
+B. Use the prompt clause of the accept command. 
+C. Enter a new prompt in the login.sql file. 
+D. There is no way to change a prompt in Oracle. 
+ 
+199. The default character for specifying substitution variables in SELECT statements is 
+A. Ampersand B. Ellipses C. Quotation marks D. 
+Asterisk 
+ 
+200. Evaluate the SQL statements 
+CREATE TABLE dept (dept_id NUMBER (2), dname VARCHAR2 (14), Loc VARCHAR2 (13)); 
+ROLLBACK; 
+DESCRIBE DEPT 
+What is true about the statements? 
+A .The ROLLBACK statement frees the storage space occupied by the DEPT table. 
+B The DESCRIBE DEPT statement returns an error. 
+C The DESCRIBE DEPT statement displays the structure of the DEPT table only if 
+there is a COMMIT statement introduced before the ROLLBACK statement. 
+D. The DESCRIBE DEPT statement displays the structure of the DEPT table 
+ 
+201. If five tables are given & three join conditions are given & select Query is applied then what will happen? 
+A. Cartesian product of first 3 tables 
+B. Three joins make relation between four tables & keep the fifth independent
+C. We cannot apply 3 joins on 5 tables 
+D. None of above
+ 
+202.The RAW datatype stores what type of data? 
+A. Character data B. Binary data C.Numeric data D. ASCII data 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+203.In a correlated query 
+A. The inner query fires first 
+B. The outer query fires first 
+C. inner query fires for every row returned by outer query 
+D. no order 
+ 
+204. A user is setting up a join operation between Emp and Dept tables. The query should return all the 
+employees, which are assigned a dept, as well as the employees which are yet not assigned any dept. 
+A. Select e.empid, d.dname from emp e, dept d; 
+B. Select e.empid, d.dname from emp e, dept d where e.deptno = d.deptno; 
+C. Select e.empid, d.dname from emp e, dept d where e.deptno = d.deptno (+); D. Select e.empid, d.dname 
+from emp e, dept d where e.deptno (+)= d.deptno 
+ 
+205. The limit of level of nesting is __________ subqueries in SQL 
+A. 255 B. 1024 C. 1000 D. 2000
+ 
+206. Which is not a Set operator? 
+A. Union B. Intersect C. Join D. Minus 
+ 
+207. How many types of joins are there? 
+A. 3 B. 6 C. 5 D. 4 
+ 
+208. Which of the following is auto committed? 
+A. insert B. delete C. update D. truncate 
+ 
+209. Which SQL commands are used to create, modify and delete database structure but not data? 
+A. DDL B. DML C. DCLD. D. QL 
+210. Which of following is not a set operator? 
+A. union B. union all C. subtract D. Intersect 
+ 
+211. The join which performs Cartesian product is called __________. 
+A. Left join B. Left outer join C. Right outer join D. Cross join 
+ 
+212. Which of the following queries can you use to search for employees with the pattern 'A_B' in their names? 
+A. SELECT last_name FROM employees WHERE last_name LIKE '%A\_B%'; 
+B. SELECT last_name FROM employees WHERE last_name LIKE '%A_B%'; 
+C. SELECT last_name FROM employees WHERE last_name LIKE 'A_B%' ; 
+D. SELECT last_name FROM employees WHERE last_name LIKE '%A\_B%'; 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+213. Which of the following correctly shows the correct use of the TRUNC command on a date? 
+A. SELECT TRUNC(TO_DATE(12-Feb-99,DD-MON-YY, 'YEAR')) "Date " FROM DUAL; 
+B. TRUNC = TO_DATE('12-Feb-99','DD-MON-YY'), 'YEAR', "Date " FROM DUAL; 
+C. SELECT TRUNC(TO_DATE('12-Feb-99','DD-MON-YY'), 'YEAR') "Date " FROM DUAL; D. date = 
+TRUNC(TO_DATE('12-Feb-99','DD-MON-YY'), 'YEAR') "Date " FROM DUAL 
+ 
+214. Evaluate this SQL statement: SELECT e.employee_id, (.15* e.salary) + (.5 * e.commission_pct) + 
+(s.sales_amount * (.35 * e.bonus)) AS CALC_VALUE FROM employees e, sales WHERE e.employee_id = 
+s.emp_id; What will happen if you remove all the parentheses from the calculation? 
+A. The value displayed in the CALC_VALUE column will be lower. 
+B. The value displayed in the CALC_VALUE column will be higher. 
+C. There will be no difference in the value displayed in the CALC_VALUE column. 
+D. An error will be reported. 
+ 
+215. The EMPLOYEES table contains these columns: EMPLOYEE_ID NUMBER(4) ENAME VARCHAR2 (25) JOB_ID 
+VARCHAR2(10) Which SQL statement will return the ENAME, length of the ENAME, and the numeric position of 
+the letter "a" in the ENAME column, for those employees whose ENAME ends with a the letter "n"? 
+A. SELECT ENAME, LENGTH(ENAME), INSTR(ENAME, 'a') FROM EMPLOYEES WHERE SUBSTR(ENAME, -1, 1) = 
+'n'; 
+B. SELECT ENAME, LENGTH(ENAME), INSTR(ENAME, ,-1,1) FROM EMPLOYEES WHERE SUBSTR(ENAME, -1, 1) = 
+'n'; 
+C. SELECT ENAME, LENGTH(ENAME), SUBSTR(ENAME, -1,1) FROM EMPLOYEES WHERE INSTR(ENAME, 1, 1) = 
+'n'; 
+D. SELECT ENAME, LENGTH(ENAME), SUBSTR(ENAME, -1,1) FROM EMPLOYEES WHERE INSTR(ENAME, -1, 1) = 
+'n'; 
+ 
+216. You would like to display the system date in the format "Monday, 01 June, 2001". Which SELECT statement 
+should you use? 
+A. SELECT TO_DATE (SYSDATE, 'FMDAY, DD Month, YYYY') FROM dual; 
+B. SELECT TO_CHAR (SYSDATE, 'FMDD, DY Month, YYYY') FROM dual; 
+C. SELECT TO_CHAR (SYSDATE, 'FMDay, DD Month, YYYY') FROM dual; D. SELECT TO_CHAR (SYSDATE, 
+'FMDY, DDD Month, YYYY') FROM dual; 
+ 
+217. Which is an SQL*Plus command? 
+A. INSERT B. UPDATE C. SELECT D. DESCRIBE 
+218. Which SELECT statement should you use to extract the year from the system date and display it in the 
+format "1998"? 
+A. SELECT TO_CHAR(SYSDATE, 'yyyy') FROM dual; 
+B. SELECT TO_DATE(SYSDATE, 'yyyy') FROM dual; 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+C. SELECT DECODE(SUBSTR(SYSDATE, 8), 'YYYY') FROM dual; 
+D. SELECT DECODE(SUBSTR(SYSDATE, 8), 'year') FROM dual; 
+ 
+219. Evaluate this SQL statement: SELECT ename, sal, 12*sal+100 FROM EMP; The SAL column stores the 
+monthly salary of the employee. Which change must be made to the above syntax to calculate the 
+annual compensation as "monthly salary plus a monthly bonus of $100, multiplied by 12"? A. No change 
+is required to achieve the desired results. 
+B. SELECT ename, sal, 12*(sal+100) FROM emp; 
+C. SELECT ename, sal, (12*sal)+100 FROM emp; 
+D. SELECT ename, sal+100,*12 FROM emp; 
+ 
+220. Which describes the default behavior when you create a table? A. 
+The table is accessible to all users. 
+B. Tables are created in the public schema. 
+C. Tables are created in your schema. 
+D. Tables are created in the DBA schema. 
+ 
+221.Evaluate the SQL statement: SELECT ROUND (TRUNC (MOD (1600, 10),-1), 2) FROM dual; What will be 
+displayed? 
+A. 0 B. 1 C. 0.00 D. an error statement
+ 
+222.You added a PHONE-NUMBER column of NUMBER data type to an existing EMPLOYEES table. The 
+EMPLOYEES table already contains records of 100 employees. Now, you want to enter the phone numbers of 
+each of the 100 employees into the table some of the employees may not have a phone number available. 
+Which data manipulation operation do you perform? 
+A. MERGE B. INSERT C. UPDATE D. ADD 
+ 
+223.You define a multiple-row subquery in the WHERE clause of an SQL query with a comparison operator"=" 
+What happens when the main query is executed? 
+A. the main query executes with the first value returned by the subquery 
+B. the main query executes with the last value returned by the subquery 
+C. the main query executes with all the values returned by the subquery 
+D. The main query fails because the multiple-row subquery cannot be used with the comparison operator. 
+224. A subquery can be used to _________. 
+A. create groups of data 
+B. sort data in a specific order 
+C. convert data to a different format 
+D. retrieve data based on an unknown condition 
+ 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+225. You need to display the last names of those employees who have the letter "A" as the second character in 
+their names. Which SQL statement displays the required results? 
+A. SELECT last_name FROM EMP WHERE last_name LIKE'_A%; 
+B. SELECT last_name FROM EMP WHERE last name='*A% 
+C. SELECT last_name FROM EMP WHERE last name ='* _A%; 
+D. SELECT last_name FROM EMP WHERE last name LIKE '* a% 
+ 
+226. How should a many-to-many relationship be handled? 
+A. By adding an join table 
+B. By adding an intersection table 
+C. By adding union table 
+D. By adding Cartesian table 
+ 
+227. PL/SQL is a __________ GL. 
+A.1 GL B.2 GL C.3 GL D.4 GL 
+228. When you create a variable in PL/SQL that has not been initialized, it stores a __________ value.
+A.Blank B.0 C.Null D.Garbage
+229. Datatype conversion from number to __________ is implicit. 
+A.Date B.Char C.Boolean D.Raw 
+230. The if elsif else end if construct is similar to __________ function of SQL. 
+A.Decode B. Round C.Trunc D.Sign 
+231. In PL/SQL, we can use __________ for single line comment. 
+A.** B.- - C.\\ D.|| 
+232. In PL/SQL, A __________ variable can store a logical true or false value. 
+A. Char B. Binary C. Boolean D. Logical 
+233. In PL/SQL, the __________ loop variable need not be declared. 
+A. While B. Do While C. Infinite D. For 
+234.Which of the following statements is true about while loops? 
+A. Explicit exit statements are required in while loops. 
+B. Counter variables are required in while loops. 
+C. An if-then statement is needed to signal when a while loop should end. 
+D. All exit conditions for while loops are handled in the exit when clause. 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+235. Comments in a PL/SQL code are inserted using 
+A. - - B. /* */ C. Both (1) and (2) D. #
+236. Which of the following is true? 
+A. For nested blocks an object defined in a parent block is available within all its child blocks (nested blocks). 
+B. The reverse is not true; objects defined in a child block are not visible to the parent. 
+C. If a nested block defines an object with the same name as an object in its parent block then only the local object is 
+visible. 
+D. All of the above 
+237. Consider the following PL/SQL block: 
+DECLARE v_itemcode warehouse. 
+item_code % TYPE; v_ordered 
+warehouse.order_id% TYPE; 
+v_shipdate warehouse.shipdate_id% 
+TYPE; 
+BEGIN 
+SELECT item_code, order_id, v_shipdate INTO v_itemcode, 
+v_ordered 
+FROM WAREHOUSE 
+WHERE Quantity >=500; 
+END; 
+What will be the result upon execution of this block? 
+A. The block will be execute without any error. 
+B. An error is caused by the declaration of v_orderid. 
+C. An error is caused by the WHERE clause. 
+D. An error is caused by the INTO clause.
+238. The PL SQL blocks can contain _________ & _______________ statements 
+A.DML,DCL B. DML,DDL C. GRANT,REVOKE D. TCL,DML 
+239. begin 
+ for i in 3..1 loop dbms_output.put_line(i); 
+ for j in 1..3 loop dbms_output.put_line(j); 
+ end loop; 
+end loop; 
+end; 
+/ 
+What is the output of the sample code above assuming SETSERVEROUTPUT is set ON? 
+A. 3,1,2,3,2,1,2,3,1,1,2,3 
+B. 1,1,2,3,2,1,2,3,3,1,2,3, 
+C. 1,1,2,3 
+D. Nothing is printed 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+240. Which of the following describes the concept of composite data type? 
+A. A composite data type is a variable that is comprised of multiple datatypes and can hold multiple rows of data. 
+B. A composite datatype is a type that is comprised of multiple datatypes. 
+C. A composite data type is a type that can hold multiple rows of data. 
+D. A composite datatype is a variable object that can hold multiple rows. 
+241. DECLARE v_total_records 
+stats_tab.t_recs%TYPE; 
+BEGIN 
+SELECT COUNT(*) 
+INTO v_total_records 
+FROM records_tab; 
+DBMS_OUTPUT.PUT_LINE('Total records 
+found:||v_total_records'); END; 
+/ 
+Why will the sample call to DBMS_OUTPUT above NOT show the total records in the RECORDS_TAB 
+table? 
+A. DBMS_OUTPUT will only work in a stored procedure, function, or package. 
+B. The call to the PUT_LINE procedure is not syntactically correct. 
+C. DBMS_OUTPUT can only be used from within a function(anonymous, stored, or client-side). 
+D. The variable is treated as literal string 
+242. _____________ is a compulsory section of a PLSQL block.
+A. Declaration section marked by the keyword DECLARE 
+B. Executable section marked by the keyword BEGIN …. END
+C. Exception section marked by the keyword EXCEPTION D.All of the above 
+ 
+243._____________ is used to declare a variable X based on EMPNO column of EMP table. A. 
+Empno%type X 
+B. Emp.Empnop%type X 
+C. X(Emp.Empno%type) 
+D. None of the above 
+244. ___________ is used to declare a composite variable X which has as many columns as in the table EMP 
+A.X Emp%tabletype 
+B.X Emp%rowtype
+C.X Emp 
+D. Emp X 
+ 
+245. In ______________ loop, the variable CTR is implicitly created by oracle 
+A. FOR CTR in 1..10 loop ------------- end loop
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+B.WHILE CTR<=10 loop ------------- end loop 
+C.LOOP ------------------ exit when <condition(s) 
+end loop D. All of the above 
+246. In ______________ loop, the variable CTR is incremented/decremented implicitly by oracle
+A.FOR CTR in 1..10 loop ------------- end loop B.WHILE 
+CTR<=10 loop ------------- end loop C.LOOP --------
+---------- exit when <condition(s) end loop D. All 
+of the above 
+247. ____________ loop if used properly can be used to ensure that the statements within the loop are 
+executed iteratively but at least once. 
+A. loop .. end loop;
+B. While loop …….end loop; 
+C. for I in 1..10 loop ……… end loop; 
+D. All of the above 
+248. The concept of Labels in a PLSQL block can be used to ____________ 
+A. Differentiate between variables with the same name in nested loop or nested blocks 
+B. Divert the course of execution of the program to a specific point rather than the normal course of 
+flow C. Both option a and b
+D. Neither a nor b 
+249. The attribute to declare a variable according to another previously declared variable or database column. 
+A.%ROWTYPE B.%TYPE C.%DATATYPE D.%VARIABLE 
+250. Identifiers in PLSQL can contain upto __________ characters. 
+A.255 B.30 C.1000 D. none 
+251. Dropping a table has the following effects on a non-unique index created for the table. 
+A. No effect 
+B. The index will be dropped 
+C. The index will be rendered invalid 
+D. The index will contain NULL values 
+252. An oracle – defined exception is raised 
+A. By the PL/SQL raise statement 
+B.. In the PL/SQL exception handler 
+C. Automatically by oracle 
+D.. By the user 
+253. The command used to open a CURSOR FOR loop is 
+A.Open B.Fetch C. Parse D. None of the above 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+254. Which line in the following statement will produce an error? 
+A. cursor action_cursor is 
+B. select name, rate, action 
+C. into action_record 
+D. from action_table; 
+255. The NOWAIT option works for 
+A. Implicit cursors only 
+B. Explicit cursors only 
+C. Both (1) and (2) 
+D. Neither (1) or (2) 
+256. The query associated with a cursor is executed in 
+A. Declare phase B. Open phase C. Fetch phase D. Close phase 
+257. Which statement most accurately describes the result of not creating an exception handler for a raised exception? A. 
+The program will continue without raising the exception 
+B. There will be a memory leak 
+C. Control will pass to the PL/SQL block caller’s exception 
+handler. D. The program will return a %notfound error 
+258. When we combine multiple columns in a single index, it is known as a __________ index. A. Composite B. 
+Multiple C. Multicol D. Complicated 
+259. Which of the following is true? 
+A. An exception is a named error condition in a Pl/SOL program. 
+B. PL/SQL program can define their own exceptions. 
+C. Exception handlers are program blocks that Handle error conditions. 
+D. All of the above.
+260. In PL/SOL if you need to deal with a group of rows, then you must place returned data into 
+A. Select statement B. Cursors C. into clause D. Code storage 
+261. In Explicit cursors the __________ attribute returns the number of rows fetched from the active set. 
+ A. SQL %FOUND B. SQL %ROW C. SQL %ROWCOUNT D. SQL %COUNT 
+262. Which of the following database objects stores table column data and row reference information? 
+ A. Tables B. Sequences C. Indexes D. Views 
+263. Fetching past the last row of a cursor 
+A. Raises the NO_DATA_FOUND Exception 
+B. Raises the VALUE_ERROR Exception 
+C. Raises the CURSOR_NOT_FOUND Exception 
+D. Does not raise an exception 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+264. The attribute __________ indicates whether a FETCH statement returns a row from the active set . 
+A. %isfound B. %notpresent C. %notfound D. %isopen 
+ 
+265. Values in table BOX_RCPT_TAB 
+ID RECEIPT_DT 
+100 09-JAN-98 
+101 08-JAN-98 
+102 09-JAN-98 
+DECLARE 
+ v_id NUMBER(2); 
+BEGIN 
+ SELECT id 
+ INTO v_id 
+ FROM box_rcpt_tab 
+ WHERE receipt_dt = '08-JAN-98'; 
+END; 
+/ 
+Which exception will be raised by the statement above? 
+A. INVALID_NUMBER B. TOO_MANY_ROWS C. VALUE_ERROR D. NO_DATA_FOUND 
+ 266. What is a PRAGMA? 
+A. A conversion 
+function 
+B. A composite data type 
+C. A pre-compiler directive 
+D. A utility program used to extract data into flat files. 
+267. The __________ statement retrieves the current row and advances the cursor to the next row. 
+A. SET B. GET C. MOVE D. None of the above 
+268. What is the PRAGMA exception_init used for ? 
+A. To declare an exception 
+B. To associate an exception name with an exception number. 
+C. To handle exception 
+D. To associate a function with an exception number. 
+269. ____________ is the name of the Implicit cursor created by Oracle in a PLSQL block 
+A. Oracle B.PLSQL C.SQL D. Cursor 
+270. __________ is the type of cursor used for DML statements within a PLSQL block A.IMPLICIT B.EXPLICIT 
+C.both IMPLICIT and EXPLICIT 
+D.neither IMPLICIT and EXPLICIT 
+271. ___________ is the type of cursor used for SELECT statements in a PLSQL block which return more than one row 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+A. Explicit B. Implicit C. Both Explicit and Implicit D. Neither Explicit nor Implicit 
+272. ___________ is the sequence of steps for handling Explicit cursors 
+A. Declare--Fetch and Process Iteratively--Open—Close 
+B. Declare—Open--Close-- Fetch and Process Iteratively 
+C. Declare--Open--Fetch and Process Iteratively--Close 
+D. Open—Declare--Fetch and Process Iteratively—Close 
+273. The ____________ step actually executes the SELECT query associated with an Explicit cursor 
+A. Declare B. Open C .Fetch D. Close 
+274. _____________ is the valid syntax for a Cursor For Loop. 
+A.While EREC in <Cursorname> loop ------ end loop 
+B.EREC in <Cursorname> loop ------ end loop 
+C.IF EREC in <Cursorname> then ------ end if 
+D.For EREC in <Cursorname> loop ------ end loop 
+275. Using a Cursor For Loop does not require explicit 
+A. Open B. Fetch C. Close D. All of the above 
+276___________ is not a Explicit Cursor attribute 
+A. %Open B. %Found C. %NotFound D. %rowcount
+277. ______________ is an explicit cursor attribute which does not return a Boolean value 
+A. %Open B. %Found C. %NotFound D. %rowcount
+278._____________ is an explicit cursor attribute which can be used to exit from a Cursor loop after certain number of 
+rows in the cursor have been processed 
+ A. %Open B. %Found C.%NotFound D.%rowcount
+279. Actual values for parameterized cursors have to passed at the time of _____________ the cursor. 
+A.Declaring B. Opening C.Fetching (values from the cursor) D.Closing 
+280. To open an already opened explicit cursor, you need to first _______ the cursor 
+A . Redeclare B. Fetch from C. Reopen D. Close
+281. __________ option can be used with the query of the cursor to obtain a lock on the rows opened by the cursor 
+A FOR LOCK B.FOR UPDATE C.FOR CHANGE D.FOR EXPLICIT 
+282. _________ clause can be used with the clause to obtain a lock to return an error in case you cannot get a lock. 
+A GiveError B.NOWAIT C.WAIT D. Error 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+283. In case a lock is requested for, in the cursor’s query, the lock is actually achieved when you _________ the cursor. 
+A Declare B. Open C .Fetch(from the cursor) D. Close 
+284. _______________ option can be used with an Update/Delete command to update/delete the row from the table 
+through the corresponding row in the cursor to avoid a possible table scan. 
+A.Where Current of <cursorname> 
+B.Where Current of <tablename> 
+C.Where Current of Row 
+D.Where Current of Thisrow 
+285. ________________ is an Oracle Pre-Defined exception. 
+A No_Data_Found B. Found_No_Data C. Data_Not_Found D.No_data
+286. ____________ type of exceptions have to be explicitly raised 
+A.Oracle Pre-defined B. Oracle Non-Pre-defined C. User-defined D. All of the above 
+287. ______________ is an Exception-handler which can handle unhandled exception 
+A When All B. When Others C. When Any D. When Exception 
+288. ___________________ is a false statement. 
+A.Begin the Exception-handling section with the EXCEPTION Keyword 
+B.Define the required number of exception-handlers, each with it’s own set of actions 
+C.When an exception occurs, PL SQL processes only one Exception-handler before leaving the block D.Place 
+the OTHERS clause before all the other exception-handlers 
+289. The ___________________ utility tells the compiler to associate an exception name with an Oracle error number 
+A.PRAGMA INIT_EXCEPTION 
+B.PRAGMA EXCEPTION_INITIALISE 
+C.PRAGMA EXCEPTION_INIT
+D.PRAGMA EXCEPTIONINIT 
+290. ____________________ returns the numeric value for the error code in PLSQL. 
+A.SQLERRM B.SQLERRCODE C.SQLERR D.SQLCODE
+291. _____________________ returns the message associated with an error code in PLSQL. 
+A.SQLERRM B.SQLERRMSG C.SQLMSG D.SQLCODE
+292. When an exception occurs in a PLSQL block and it is handled, the block is said to _________________ 
+A Complete B. Terminate with success C. Terminate with failure D. Neither of the above 
+293. When an exception occurs in a PLSQL block and it is handled, the uncommitted DMLs in the block _________________ 
+A.are implicitly rolled back 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+B.are implicitly committed 
+C.can be committed or rolled back as per requirement 
+D.Have to be committed, else they are rolled back 
+294. A field, or a combination of fields, that has a unique value is a __________. A. foreign key B. primary key 
+C. relation 4. Table 
+295. _____ holds the definitions of all of the data tables. 
+A database B. data dictionary C. data source D. data mining 
+296. If you delete a row in a table, and Oracle deletes the related entries in all other tables. This is known as __________. 
+A.Referential Integrity B. Deleting rows C. Data Integrity D. Cascading delete
+297. The RAISE_APPLICATION_ERROR( ) procedure defines errors returned in which of the following numeric ranges? A.. –
+00000 and –99999 
+B. –01200 and –01299 
+C. –00030 and –00039 
+D. –20001 and –20999 
+278. The default parameter type in stored procedures is __________. A. IN 
+B. OUT C. IN OUT D. There is no default type
+299. . Denormalization is needed: 
+A. to utilize disk space efficiently 
+B. to speed up data access 
+C. to optimize update operation 
+D. All of the above 
+300. Developer ANJU executed the following statements: 
+create table animals as select * from Master.animals; 
+What is the effect of this statement? 
+A. A table named animals will be created in the Master schema with the same data as the animals table owned by ANJU. 
+B. Syntax error in the statement. 
+C. A table named animals will be created in the ANJU schema with the same data as the animals table owned by 
+Master. 
+D. None of the above. 
+301. Select * from __________ will give a listing of the source code of Stored procedures, Stored functions and Packages. 
+A. User_source B. All_source C. DBA_source D. All of the above 
+302. When a Database trigger causes a second one to fire, which in turn causes a third one to fire, the concept is known as 
+__________ triggers. 
+A. Cascading B. Mutating C. Constraining D. Waterfall 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+303. When we combine multiple columns in a single index, it is known as a __________ index. 
+A. Composite B. Multiple C. Multicol D. Complicated 
+304. In PL/SQL, to raise our own user-defined backend error messages, we can issu the command __________. A. Raise B. 
+Raise exception name C. Raise error D. 
+Raise_application_error 
+305. Entity Integrity is managed in RDBMS with the help of __________ constraint. 
+A. Primary key B. Not Null C. Unique D. Foreign key 
+306.Normalisation is needed to reduce data __________. 
+A. Redundancy B. Complexity C. Visualization D. Processing 
+307. Repeating groups are removed from table design. This is definition of which Normal Form? A. 1st Normal Form B. 2nd
+Normal Form C. 3rd Normal Form D. 4th Normal Form 
+308. . Denormalisation is needed to improve __________ efficiency. 
+A. SELECT B. INSERT C. UPDATE D. DELETE 
+309. The CREATE VIEW command is used to __________. 
+A. To recompile View 
+B. To recompile a Table 
+C. To define a View of one or more tables or Views 
+D. All of the above 
+310. Which of the following views will allow DML operations? 
+A. View based on ORDER BY clause 
+B. View based on GROUP BY clause 
+C. View based on join 
+D. None of the above 
+311. . In which of the following SQL commands can you call a stored function? 
+A. SELECT B. UPDATE C. DELETE D. All of the above 
+312. Oracle periodically runs __________ algorithm to free the server RAM of unused packages. 
+A. Bubblesort B. L.R.U. C. Cache D. F.I.F.O. 
+313. Entity integrity ensures that 
+A. Every field value corresponds to a related Field value 
+B .Every field value is within a certain range of values 
+C. Every row is unique
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+D. None of the above 
+314. Which of the following statement is true about packages? 
+A. Packages allow granting of privileges easily 
+B. Packages enable the overloading of procedures, functions and triggers 
+C. Packages improve performance by loading multiple objects into RAM at once
+D. Packages improve performance by loading single object into library at once. 
+315. Which of the following is the capability of a stored function? 
+A. Return a value 
+B. Accept Parameters 
+C. Accept & return parameters 
+D All of the above 
+316. Create or replace procedure aaa(num number) as 
+ Begin 
+ …… 
+ End; 
+/ 
+How to call this stored procedure at SQL prompt? 
+ A. Run aaa; B. Execute aaa; C. Execute aaa(56); D. Run aaa(56); 
+317. To find information about trigger status , which of the following views are appropriate? 
+A. ALL_TRIGGERS B. ALL_OBJECTS C. ALL_TRIGGER_COLS D. ALL_SOURCE 
+ 
+318. A trigger is based on After insert on a table. The reference :old.column will 
+A. Give the previous value for that column 
+B. Give the current value for that column 
+C. Give NULL 
+D. Invalid statement 
+319. A table can contain how many individual primary keys ? 
+A.Only One B. Only Two C. Depends on the user D. None 
+ 
+320. On-delete-cascade option with foreign key constraint does which one of the following? 
+A. Delete from the master table 
+B. Delete from the transaction table 
+C. Removes all the transaction entries along with master 
+D. None 
+321. To drop a constraint, which statement is valid? 
+A. Alter table tablename drop constraint constraintname; 
+B. Alter table tablename delete constraint constraintname; 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+C. Alter table tablename drop constraintname; 
+D. None 
+322. A user can use the procedure of another user if he is having 
+A. Read privilege 
+B. Write privilege 
+C. Execute Privilege 
+D. All the privileges 
+323. Which integrity constraint enforces Relationship between 
+two tables? 
+A. Primary key B. Check C. References D. None 
+ 
+324. Create procedure P1( arg1 number, arg2 out 
+number) as Begin 
+ ---
+ 
+--- 
+ 
+E 
+nd; 
+ / 
+Calling P1(2,3) will 
+A. Execute successfully 
+B. Will return an error due to second argument 
+C. Will return an error due to the first argument 
+D. Nothing 
+True and False 
+1. Data is raw facts whereas Information is meaningful data. (True/False) 
+2. In an RDBMS, relationship between 2 files is maintained programmatically. (True/False) 
+3. DBMS does not support Distributed Databases. (True/False) 
+4. The upper limit for CHAR datatype is 4000 characters. (True/False) 
+5. Null value is independent of datatype. (True/False) 
+6. The Relational operator < has higher precedence than >. (True/False) 
+7. The Arithmetic operator ** can be used for exponentiation. (True/False) 
+8. By default, the ORDER BY clause returns output in ascending order. (True/False) 
+9. You can commit to a savepoint. (True/False) 
+11.Dual is a system table. (True/False) 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+12.The work done by the computer to convert Information into Data is known as processing. (True/False) 
+13.DBMS does not support Client-Server architecture. (True/False) 
+14.SQL*Plus can be used for creating ordinary text reports. (True/False) 
+15.In Oracle, the upper limit for table name is 30 characters. (True/False) 
+16.The upper limit for Varchar2 datatype is 2000 characters. (True/False) 
+17.In Oracle, Date and time is stored together in a single Date datatype. (True/False) 
+18.You can have only 1 Long column per table, either Long or Long Raw. (True/False) 
+19.You can specify an Alias only for computed fields and not for ordinary columns of a table. (True/False) 
+20.You can Commit to a savepoint but you cannot Rollback to a savepoint. (True/False) 
+21.The ORDER BY clause whenever used should always be the last clause of an SQL query (True/False) 
+22.Oracle reserved words can be used for naming a table. (True/False) 
+23.In order to select data that is within a range of values, the "BETWEEN" operator is used. (True/False) 
+24.Date and time arithmetic is not supported by Oracle. (True/False) 
+25.NVL function can be used only with number datatype. (True/False) 
+26.Log(m,n) will return the Log of m to the base n. (True/False) 
+27.The default date format in Oracle is ‘DD-MON-YY’. (True/False) 
+28.Group functions are not allowed in the WHERE clause of Select statement. (True/False) 
+29.Any operation done with null, returns null. (True/False) 
+30.Within PL/SQL block, screen input and screen output is not allowed. (True/False) 
+31.EXISTS,SOME,ANY are operators in SQL. (True/False) 
+32.COUNT(expr)function returns the number of rows where expr is not null. (True/False) 
+33.The "i" in Oracle9i stands for "improved". (True/False) 
+34.A Rollback statement cannot be used to close a transaction. (True/False) 
+35.ROWID is the only pseudo column in any Oracle table. (True/False) 
+36.The second parameter in the ROUND function specifies the number of digits after the decimal point. (True/False) 
+33.DCL commands are allowed within a PL/SQL block. (True/False) 
+34.& works after compilation. (True/False) 
+35.Value of a constant can be changed in a sub-block. (True/False) 
+36.To break and come out of a loop in PL/SQL, we can use EXIT statement. (True/False) 
+37.PL/SQL For loop variable is a Read-only variable. (True/False) 
+38.Using goto statement, you cannot transfer control from main block into sub-block. (True/False) 
+39.PL/SQL extends SQL by adding control structures found in other procedural language. (True/False) 
+40.DDL commands can be used in PL/SQL block. (True/False) 
+41.PL/SQL supports boolean data type. (True/False) 
+42.You can fetch backwards in PL/SQL cursors. (True/False) 
+43.You cannot specify default value for cursor parameters. (True/False) 
+44.You can create a cursor based on a join of two tables. (True/False) 
+45.Control cannot be transferred from the exception back into the block. (True/False) 
+46.No upper limit on the number of indexes per table. (True/False) 
+47.Null values are stored in an index. (True/False) 
+USM’s Shriram Mantri Vidyanidhi Info Tech Academy
+Database Technologies Question Bank eDAC Sept 21 
+48.The "%FOUND", "%NOTFOUND" and "%ISOPEN" attributes of cursors are boolean. (True/False) 
+49.The close statement disables the cursor and the active set becomes undefined. (True/False) 
+50.Stored procedures support recursion. (True/False) 
+51.In the case of OUT parameters, you can pass variables only. (True/False) 
+52.In the case of IN parameters, it is call by reference. (True/False) 
+53.Unique constraint will allow null values. (True/False) 
+54.You can disable all constraints except for foreign key constraint. (True/False) 
+55.DML operations are not allowed for a view containing an order by clause. (True/False) 
+56.View contains table data. (True/False) 
+57.You can create a synonym for a table even if the table doesn’t exist. (True/False) 
+58.You can create server side session variables by declaring them in stored procedures. (True/False) 
+59.A stored function must compulsorily return a value. (True/False) 
+60.2NF applies only to the tables with composite primary keys. ( True/ False) 
+61.Primary key is Compulsory in Table. (True/False) 
+62.Packages enable the overloading of procedures and functions when required. (True/False) 
+63. Oracle, by default creates an index on every UNIQUE column of a table.(True/False) 
+ 
+ 
