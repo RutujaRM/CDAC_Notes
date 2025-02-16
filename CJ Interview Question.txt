@@ -1,0 +1,64 @@
+Conceptual Questions for Java.
+=====================================================================================
+1 What is java platform 
+2 What is platform independence 
+3 Jdk jre 
+4 Class and Object 
+5 What is activation, give example
+6 Garbage Collection in java 
+7 What is a Constructor, what is it use & when is it invoked 
+8 Tell us about destructor in Java 
+9 Explain the signature of the main program. What is the use of static in it 
+10 Explain the concept of package 
+11 What is classpath 
+12 How do we include multiple package in classpath
+13 What is different Primitive Types supported in Java
+14 What the reference type in Java
+15 Static block in class , use of it
+16 Access specifiers in class package 
+17 Tell us more about protected access specifiers 
+18 Does java support virtual function how 
+19 Tell us about overloaded and overridden functions 
+19 Tell us about final keyword where it can be applied and usage of it
+20 Tell more about Static data members and functions
+21 How does virtual dispatch works in java 
+22 Explain Object identity and Object equality with example 
+23 List all methods of object class and mention use of that methods
+24 Tell us more about hasCode and toString method 
+25 Give example of equal and identical object 
+26 Tell us more about instanceof operator with a small demo 
+27 Tell us more about loose coupling with a small demo
+28 Explain solid principles
+29 Explain SIP DIV AND ISP tell us more about these principle 
+30 What does open closed principle say give example
+31 Tell us about inheritance in java 
+32 Tell us about constructor chaining in inherited classes 
+33 Tell us the use of @override annotation
+34 Does java support multiple inheritance 
+35 Differnce between Interfaces and Abstract classes 
+36 Usage of Interface 
+37 When to Interface over Abstract Class
+38 What is functional interface 
+39 Tell us more about static class,  inner class, nested class  and when to use it 
+40 What is anonymous inner class, why do we use it, Give Example
+41 Explain exceptional handling in java 
+42 Tell us all keywords associated with exception handling 
+43 Can we handle multiple Exceptions
+44 Tell us Exception class hierarchy 
+45 What is Checked Exception and Unchecked Exception 
+46 Tell us more about unchecked exception, what are restrictions when we use it
+47 Tell us more about finally block, why it is needed
+48 What is autocloseable and why do we use it
+49 What is advantage of autocloseable 
+50 Explain destructor in java, Any alternative for destructor
+51 Explain Collection Class Hierarchy 
+52 Tell us about more about HashSet HashMap 
+53 What is Comparable Comparator, when to use what 
+54 Tell us more about Iterable and Iterator interface 
+55 How to provide support for iterating in Java
+56 What are default methods in interface 
+57 What are callback in java 
+58 Different ways in which u can achieve callback 
+59 Tell us more about method reference and lamda expression
+60 Tell us more about super keyword in java. How do call parent class construct through child class constructor
+================================================================================================================
