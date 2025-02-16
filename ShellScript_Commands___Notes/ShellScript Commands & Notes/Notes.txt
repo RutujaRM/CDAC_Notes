@@ -1,0 +1,278 @@
+man commands to see the manual of the commands
+
+whoami 	=> Display the current logged in user
+who	=> Display current logged in users
+who -b	=> system boot up time
+uname	=> OS information 		
+uname -a => Display OS, Login username, Kernel version, current hardware support like x86 or x64
+arch 	=> Display OS architecture like x86 or x64
+hostname => Show/Set system hostname
+echo $PATH
+cd ~ go directly to the home directory.
+cd - will point you back to the place from you came from
+
+lpr filname to give print
+date display the current date
+	if we want to format the date then we can go for the following commands
+		date +%d-%m-%Y
+		date +%d:%:m%:Y
+
+cal to display the calender of current month
+	cal -y to display the months of Current Year
+	cal -y 2017	to display the months of 2017
+
+touch	use to create empty files.
+		touch File{1..10}.txt
+		touch Test{1..10}.txt
+		touch alpha{a..z}.txt
+			create file in sequences
+
+head - output the first part of files
+       Print  the  first  10  lines  of each FILE to
+       standard output.
+
+tail - output the last part of files
+       Print the last 10 lines of each FILE to standard output.
+
+cp /bin/???? . Copy the file/folder from /bin dir with 4 char
+ls –a    (create .anyfile for example)--all  .a file show with name (do not ignore entries starting with . ) << Create file with .name>>
+		DISPLAY ALL THE HIDDEN FILE IN THE CURRENT DIRECTORY
+	create file starting with '.' filename eg:- .abcfile
+
+ls –p (--indicator-style=slash append / indicator to directories)
+ls -r, --reverse (reverse order while sorting)
+ls -l	(List all the files) equivalent to "ll" command
+ls -i (-i, --inode  print the index number of each file) to view it type ==> stat --format=%i third
+		An inode is an entry in inode table, containing information ( the metadata ) about a regular file and directory.
+		Like (File type, Permissions to that file, Link count,User ID,Group ID,Size of file,Time stamp,Attributes,
+			  Access control list & Other Meta-Data)
+ls -o     (like -l, but do not list group information) <<dont display USER column>>
+ls --sort=time (List according to the time)
+ls --sort=size (list according to the size)
+touch a b c 		Easiest way to create an empty file
+touch abc xyz lmn pqr nba gcr
+touch a b c 		Easiest way to create an empty file
+touch abc xyz lmn pqr nba gcr
+mkdir -p MET MET/IIT MET/IIT/DAC MET/IIT/DACA  MET/ISDR/ADSD (Create all subfolder in 1 shot)
+ls –R 	(Recursive list subdirectories recursively)
+ls a    (List all the file with name starting with ‘a’ 
+ls a* p* l*
+ls [apl]*
+ls [!apl]* (List all the file which is not starting from a, p, l)
+ls stt* (Just a couple of letter it will show the result)
+
+=============================  CAT &  Re-direction =============================
+Cat(concatenate ) command is very frequently used in linux.
+It reads data from file and give their content as output to the terminal(STD output) or file.
+It helps us to create,view,concatenate files.
+So let us see some frequently used cat commands.
+
+cat filename (cat - concatenate files and print on the standard output)
+cat [OPTION] [FILE]...
+cat > first			=> Create a File with Cat Command 
+cat first		 	=> just display the file contents in terminal
+cat > first			=> Create a File with Cat Command 
+cat first		 	=> just display the file contents in terminal
+cat >> first		=> Appending The file Double Redirection Operator
+cat < first 		=> just display the file contents ((OR)) it use file name first as a input for a command and output will be shown in a terminal.
+cat first second 	=> View Contents of Multiple Files in terminal
+
+		Re-direction ****************
+ls > output (All the cotent of ls will be stored in the the file with name output)
+cal > calfile
+date > datefile
+whoami > username	=> put the content into username file
+history > historyfile
+man ls > ManualS
+col -b < ManualS	=> Do Not output any backspaces, printing only the last character written to each column position
+col -b < ManualLS > Man-LS
+		
+		tac	****************
+tac - concatenate and print files in reverse order Last will come first
+
+
+============= Standard File Descriptors =============
+The file descriptors 0, 1, 2 are kept for the bash shell usage.
+0 => STDIN								=> STDIN stands for standard input which is the keyboard by default.
+1 => STDOUT								=> This stands for the standard output which is the screen by default.You can redirect output to a file using the >> symbol.
+2 => STDERR 							=> This file descriptor is the standard error output of the shell which is sent to the screen by default.
+			   If you need to redirect the errors to a log file instead of sending it to the screen, you can redirect errors using the redirection symbol
+			   You can use the above file descriptors to control input and output.
+cat first second third					=> Cat Multiple File
+cat first second third 2> errlogfile	=> Error Will be stored in errlogfile
+cat first second third 2>> errlogfile	=> Error Will be APPENDED & stored in errlogfile
+
+
+
+=============================   • PATTERN MATCHING  =============================		
+GREP 									=> Use for pattern matching.
+man grep								=> Display Manual of Grep usage in UNIX
+man grep > grepfile						=> Redirect the content of grep into grepfile
+vi grepfile 
+col -b < grepfile 						=> Do not output any backspaces, printing only the last character
+										   written to each column position.
+col -b < grepfile > grepopfile			=> Properly output the file and put it into grepopfile
+vi grepopfile 					
+grep -e beginning grepopfile			=> -e For expression Searches for "beginning" in file 
+grep -i symbolic grepopfile 	 		=> Ignoring case sensitivity (CREATE CAPITAL WORDS First)
+grep -c symbol grepopfile				=> Count the lines where strings are matched with -c option
+grep -v symbol grepopfile				=> The -v option instructs grep to print all lines that do not contain or match the expression.
+grep -v symbol grepopfile				=> The -v option instructs grep to print all lines that do not contain or match the expression.
+grep -vc symbol grepopfile				=> Count the lines that do not contain or match the expression.
+grep -n symbol grepopfile				=> Return the Actual Lines Number that contain the search pattern with -n option
+grep -w symbol grepopfile				=> Search for exact matching word using the -w option
+grep -w symbol grepopfile				=> Search for exact matching word using the -w option
+grep -w "the named" grepopfile			=> Search for exact matching word using the -w option		make Symbolic and do the comparision between -i and -w
+											make "the named" one more time and do experiment
+
+---------------------------------META DATA OPERATORS -----------------------------------------------------------
+								^      Matches characters at the beginning of a line
+								$      Matches characters at the end of a line
+								"."    Matches any character given in the range
+								[a-z]  Matches any characters between A and Z
+								[^ ..] Matches anything apart from what is contained in the brackets
+
+grep ^GREP grepopfile					=> To print lines beginning with a certain character
+grep POSIX$ grepopfile					=> To display lines that end with the letter POSIX 
+											first make POSIX in file at end of line
+grep  pattern$ grepopfile 				=> To display line Ending with "pattern" use $
+grep -c pattern$ grepopfile 			=> To return count of line returning "pattern"
+grep "POSIX.)"$ grepopfile				=> If special character the use pair of ""
+grep "P" grepopfile						=> "P" Matches any character in the line for "p" like pipe or program and etc....
+grep -c "p" grepopfile					=> Return count of line matchin the character "p"
+grep -c [a-z] grepopfile 				=> [a-z]  Matches any characters between A and Z & return the line
+grep [0-9]								=> [0-9]  Matches any characters between 0 and 9 & return the line
+grep -c [0-9]							=> [0-9]  Matches any characters between 0 and 9 & return the count
+grep -R students MET					=> Search all files in the current directory and in all of its subdirectories for the word ‘students’ create name file with student keyword
+grep --color binary grepopfile 			=> Finally, you can force grep to display output in colors
+
+
+
+grep -n -e beginning grepopfile 		=> Searches the Expression & Display the line number where the "beginning" is written 
+grep -nc -e beginning grepopfile 		=> Searches the Expression & COUNT the line consisting the expression "beginning" and return count
+grep . grepopfile 						=> Search for line with ATLEAT SINGLE OR MORE CHARACTERS
+grep -c . grepopfile 					=> Return the count of line having ATLEAT SINGLE OR MORE CHARACTERS
+grep "\.$" grepopfile  					=> Return line ends with (.) META DATA THATS Y USING "\"
+grep -c "\.$" grepopfile  				=> Return count of line ending with (.)
+grep -c "\." grepopfile					=> Return count of . no of time it appears in the file
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------- WC -------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+wc - print newline, word, and byte counts for each file
+
+wc -l grepopfile 						=> displays two-columnar output, 1st column shows number of lines present in a file and 
+wc -c grepopfile 		<ls -l>			=> This option displays count of bytes present in a file.
+wc -L grepopfile						=> used to print out the length of longest (number of characters) line in a file
+
+-------------------------- CUT --------------------------
+       cut - remove sections from each line of files
+
+ls -l $filename | cut -c14-19 
+	//		-c, --characters=LIST 		=> select only these characters
+vi FileDetail > Group name of the file is			
+ls -l variabletest.sh | cut -c14-20 | cat >> FileDetail
+
+
+------------------------------------------------------------------------------------------------------
+------------------------------------------- TR -------------------------------------------------------
+------------------------------------------------------------------------------------------------------
+					TR	is use to translate/Replace or delete characters 
+						tr "abc" "xyz" directly on the Shell
+ll > pract
+vi pract 
+cat pract 
+tr " " "|" < pract  			=>		Replace space to | symbol
+tr -s " " "|" < pract 			=>		squeeze repeated 
+tr -s 							=>use to squeeze repetition/occurence of charcter || remove repeated charcter
+tr -s " " "|" < pract > spract	=>squeeze repeated & put the output in spact file						
+cat spract 
+tr -d "0-9" < spract 			=>Delete the character given in range <<Delete between 0to9>>
+tr -d "0-9 a-z" < spract 		=>Delete the character & Alphabets and display
+tr -dc "a-z" < spract			=>Dont Delete the given character and display contineously 
+tr -dc "a-z\n" < spract 		=>Dont Delete between a to z and New Lines
+tr -dc "a-z\012" < spract 
+tr "a-z" "A-Z" < spract 		=>	replace lower to capital letters
+
+vi names
+sort names
+vi names
+sort names
+uniq names
+sort names > snames
+uniq snames 
+ 
+vi grepopfile 
+tr "a-z" "A-Z" < grepopfile 
+tr "a-z" "A-Z" < grepopfile > g1
+vi g1
+tr -dc "A-Z \012" < g1
+tr -dc "A-Z \012" < g1 > g2
+tr " " "\012" < g2
+tr " " "\012" < g2 > g3
+cat g3
+grep . g3
+grep . g3 > g4
+grep ^...$ g4
+grep ^...$ g4 > g5
+sort g5
+sort g5 > g6
+uniq g6
+uniq g6 > finalopfile
+
+ALL the above approach in single line command using pipe "|" operator
+cat grepopfile 
+cat grepopfile | tr "a-z" "A-Z"
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012"
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012"
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep .
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$ | sort
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$ | sort | uniq
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$ | sort | uniq > finalopfile
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$ | sort | uniq tee  finalopfile
+cat grepopfile | tr "a-z" "A-Z" | tr -dc "A-Z \012" | tr " " "\012" | grep . | grep ^...$ | sort | uniq | tee  finalopfile
+
+vi hello.sh
+ll hello.sh 
+chmod u+x hello.sh 
+sh hello.sh
+
+vi variabletest.sh
+chmod +x variabletest.sh
+sh variabletest.sh 
+
+cp variabletest.sh iotest.sh
+vi iotest.sh 
+sh iotest.sh 
+
+cp iotest.sh iftest1.sh
+vi iftest1.sh 
+sh iftest1.sh 
+
+cp iftest1.sh iftest2.sh 
+vi iftest2.sh 
+sh iftest2.sh 
+
+vi whiletest.sh
+chmod +x whiletest.sh
+sh whiletest.sh
+ 
+cp whiletest.sh fortest.sh
+vi fortest.sh 
+sh fortest.sh 
+
+vi foreachtest.sh
+chmod +x foreachtest.sh
+sh foreachtest.sh 
+sh foreachtest.sh Jack Jill Valentine
+
+vi casetest.sh
+chmod +x casetest.sh
+sh casetest.sh 
+
+vi filepermission.sh
+chmod +x filepermission.sh
+sh filepermission.sh	=> give you an error to input file name for checking their permissions
+sh filepermission.sh variabletest.sh
